@@ -1,0 +1,231 @@
+{% extends 'common_app_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+<link rel="stylesheet" href="{% static 'css/style_index.css' %}">
+{% endblock %}
+
+{% block title %}hello{% endblock %}
+{% block content %}
+
+<br>
+
+<!-- Slide -->
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active" style="background-color: black;">
+            <img src="{% static 'images/homeImage1.jpg' %} " class="d-block w-100" alt="..." style="height: 600px;    opacity: 0.4;
+    transition: opacity 03s ease;">
+            <div class="carousel-caption ">
+                <h5 style="color: #fff;">We take care of your health</h5>
+                <p style="color: #fff; font-weight: 500;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sint repellendus, aliquam quos
+                    voluptatum, perspiciatis deleniti magnam nisi ipsam provident aliquid impedit rem in laboriosam?
+                    Odit
+                    quae facere sint tempore.</p>
+                <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+            </div>
+
+        </div>
+        <div class="carousel-item" style="background-color: black;">
+            <img src="{% static 'images/homeImage2.jpg' %}" class="d-block w-100" alt="..." style="height: 700px;  opacity: 0.4;
+    transition: opacity 03s ease;">
+            <div class="carousel-caption ">
+                <h5 style="color: #fff;">Best Doctors</h5>
+                <p style="color: #fff; font-weight: 500;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sint repellendus, aliquam quos
+                    voluptatum, perspiciatis deleniti magnam nisi ipsam provident aliquid impedit rem in laboriosam?
+                    Odit
+                    quae facere sint tempore.</p>
+                <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+            </div>
+
+        </div>
+
+
+        <div class="carousel-item" style="background-color: black;">
+            <img src="{% static 'images/GettyImages-1316652803.jpg' %}" class="d-block w-100" alt="..."
+                style="height: 700px;  opacity: 0.4;
+    transition: opacity 03s ease;">
+            <div class="carousel-caption">
+                <h5 style="color: #fff;">Best Care</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sint repellendus, aliquam quos
+                    voluptatum, perspiciatis deleniti magnam nisi ipsam provident aliquid impedit rem in laboriosam?
+                    Odit
+                    quae facere sint tempore.</p>
+                <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+            </div>
+
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- content -->
+
+<section id="about" class="about section-padding">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-5 col-md-12 col-12">
+                <div class="about-img">
+                    <img src="{% static 'images/single-img-07new.jpg' %}" alt="" class="img-fluid">
+
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12 ps-lg-5 mt-md-5">
+                <div class="about-text">
+                    <p>Welcome To National Hospital</p>
+                    <hr>
+                    <p class="text2">Established in 2014, National Hospital is leading the healthcare industry with its
+                        superlative, patient-centric,
+                        all-embracing, and world-class orthopaedic services. Therefore, we are recognized as one of the
+                        best
+                        orthopaedic
+                        hospitals in India offering quality healthcare to the masses in, Kerala and promotion of health
+                        tourism. <br><br>
+
+                        Hence, if you are looking for the complete and state of art orthopaedic hospital in Malabar,
+                        National
+                        Hospital provides
+                        expert care for complex trauma, poly-trauma, and associated subspecialties. <br><br>
+
+                        Our orthopaedic department delivers matchless personalized care through cutting-edge research
+                        and
+                        authentic medicines.</p>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+</section>
+
+<!--  -->
+
+
+
+<section id="mission" class="mission section-padding" style="padding-top: 51px;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-12 ps-lg-5 mt-md-5">
+                <div class="teaser_content">
+                    <div class="media-left">
+                        <h4 class="media-heading">Vision</h4>
+                    </div>
+                    <div class="media-body">
+                        <div class="disk-border">
+                            <img src="{% static 'images/vision-icon.png' %}" alt="">
+
+                        </div>
+                        <p class="text-center">
+                            ""To create a just and healthy society""
+                            <br>
+                            "To create a just and healthy society"
+                            To Heal, to Humanize and Empower people to experience wholeness of health, fullness of life,
+                            peace and harmony."
+                        </p>
+                        <a href="#" class="newsReadMore">Rearn More</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="col-lg-6 col-12 ps-lg-5 mt-md-5">
+                <div class="teaser_content">
+                    <div class="media-left">
+                        <h4 class="media-heading">Mission</h4>
+                    </div>
+                    <div class="media-body">
+                        <div class="disk-border">
+                            <img src="{% static 'images/mission-icon.png' %}" alt="">
+
+                        </div>
+                        <p class="text-center">
+                            A just and healthy society in which the crucified of today, the oppressed, the marginalized,
+                            the sick and suffering,
+                            especially the vulnerable group can experience love, care, compassion, being empowered to
+                            enjoy positive health.
+                        </p>
+                        <a href="#" class="newsReadMore">Rearn More</a>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--  -->
+        </div>
+
+    </div>
+
+</section>
+
+<!--  -->
+
+
+<section id="appointment" class="appointment ">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <p>We are here for you</p>
+                <h1>Best Care & Better Doctor !</h1>
+                <p>Hidden among the beautiful place of calicut. <br> National hospital is a perfect Traetment
+                    destination at
+                    the <br> beautiful calicut. The precisely designed hospitality is the best <br> place for a family
+                    or friends
+                    get together</p>
+                <button class="appointment_btn">
+                    <a style="text-decoration: none;" href="{% url 'common_app:patient_login' %}"><h2>MAKE AN APPOINTMENT</h2></a>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="logo_section" style="margin-bottom: -48px;">
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="img_logo">
+                    <a class="img_insideLogo" href="#"><img src="{% static 'images/social-media-icon-1.png' %}"
+                            alt=""></a>
+                    <a class="img_insideLogo" href="#"><img src="{% static 'images/social-media-icon-2.png' %}"
+                            alt=""></a>
+                    <a class="img_insideLogo" href="#"><img src="{% static 'images/social-media-icon-3.png' %}"
+                            alt=""></a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- footer -->
+
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'patient_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+<link rel="stylesheet" href="{% static 'css/style_booked.css' %}">
+{% endblock %}
+
+{% block title %}Patient Booked{% endblock %}
+{% block content %}
+
+<br><br>
+
+
+<section id="bookedmain" style="height: 120vh;">
+
+    <section>
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-12 col-sm-12" style="margin-top: 80px;">
+                    <div class="successImg text-center">
+                        <img src="{% static 'images/Booking-Success.png' %}" alt="">
+                    </div>
+                    <div class="content text-center py-1">
+                        
+                        <h2>{{ name | upper}}</h2>
+                        <h2><span>We have received your booking request. We will get back to you soon.</span> </h2>
+
+                    </div>
+                    <div class="exitbtn" style="text-align: center;   margin-top: 42px;">
+                        <!-- <button class="leftBtn">
+                            <a href="{% url 'common_app:home' %}">GO TO HOME</a>
+                        </button>
+                        <button class="rightBtn">
+                            <a href="{% url 'patient:booking' %}">BOOKING FOR OTHER PATIENT</a>
+                        </button> -->
+                        <button type="button" class="btn btn-primary"><a href=""></a> GO TO HOME PAGE</button>
+                        <button type="button" class="btn btn-success"><a style="text-decoration: none; color: #fff;"
+                                href="{% url 'patient:booking' %}">BOOKING FOR OTHER PATIENT</a></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+</section>
+
+<!-- footer -->
+
+
+{% endblock %}

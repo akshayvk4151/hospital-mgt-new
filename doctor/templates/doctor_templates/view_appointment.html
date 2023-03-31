@@ -1,0 +1,110 @@
+{% extends 'doctor_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th,
+    td {
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+
+        font-size: 17px;
+        font-weight: 500;
+        background-color: sandybrown;
+        color: ivory;
+    }
+
+    .tableHead {
+        background-color: brown;
+        color: #fff;
+        height: 53px;
+    }
+
+
+
+    .notFound {
+        text-align: center;
+    }
+</style>
+{% endblock %}
+
+{% block title %}View Appointments{% endblock %}
+{% block content %}
+
+<br><br><br><br><br>
+
+
+<section class="content">
+    <div class='container'>
+        <div class="row">
+            <div class="col-lg-12">
+                <h4 style="margin-top: 20px;margin-bottom: 30px;">View Appointments
+                    <hr>
+                </h4>
+
+            </div>
+            <div class="container-fluid">
+                <div style="overflow-x: auto;">
+                    <table>
+                        <tr class="tableHead">
+                            <th>SL.No</th>
+                            <th>Patient Name</th>
+                            <th>Description</th>
+                            <th>Gender</th>
+                            <th>Mobile</th>
+
+                            <th>Appontment Date</th>
+                            <th>Appontment Time</th>
+                            <th>Action</th>
+                        </tr>
+                        {% for booking_record in appointments %}
+
+                        <tr>
+                            <td>{{ forloop.counter }}</td>
+
+                            <td>{{booking_record.patient_name}}</td>
+                            <td>{{booking_record.patient_description}}</td>
+                            <td>{{booking_record.patient_gender}}</td>
+                            <td>{{booking_record.patient_phone}}</td>
+
+                            <td>{{booking_record.booking_date}}</td>
+                            <td>{{booking_record.booking_time}}</td>
+                            <td>
+                                <a href="{% url 'doctor:prescription' booking_record.id %}"
+                                    style="float: right;margin-right: 8px;" class="btn btn-danger "><i class="view">Add
+                                        Prescription</i> </a>
+                            </td>
+
+
+
+                        </tr>
+                        {% empty %}
+                        <h4 class="notFound">No Booking found.</h4>
+
+                        {% endfor %}
+
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+
+<!-- footer -->
+
+
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends 'common_app_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+<link rel="stylesheet" href="{% static 'css/style_login.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<!-- CSS only
+<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+<script src="{% static 'bootstrap/js/bootstrap.js' %}"></script> -->
+{% endblock %}
+
+{% block title %}hello{% endblock %}
+{% block content %}
+
+<br><br><br>
+
+<!-- login page -->
+
+<section id="loginPage">
+
+    <section class="login py-5" style="    margin-bottom: -48px;">
+        <div class="container">
+            <div class="row g-0" id="log">
+                <div class="col-lg-5">
+                    <img src="{% static 'images/pexels-pixabay-40568.jpg' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-7 text-center py-5">
+                    <h1>Doctors Login</h1>
+
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="form-row py-3 pt-5">
+                            <div class="offset-1 col-lg-10">
+                                <input type="text" class="inp px-3" name="user_name" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-row py-3">
+                            <div class="offset-1 col-lg-10">
+                                <input type="password" class="inp px-3" name="password" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-row py-3">
+                            <div class="offset-1 col-lg-10">
+                                <button class="btnn">Login</button>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="question">Don't have an account?</p>
+                    <a class="createAcc" href="{% url 'common_app:doctor_register' %}">Create an account.</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- footer -->
+
+{% endblock %}

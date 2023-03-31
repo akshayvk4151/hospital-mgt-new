@@ -1,0 +1,159 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/style_base.css' %}">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    {% block header %}
+
+    {% endblock %}
+
+    <title>{% block title %}base{% endblock %}</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top" style="background-color: black;">
+        <div class="container">
+
+            <a class="navbar-brand fs-2 fw-bold" href="#"><span class="text-danger">National</span>&nbsp; Hospital</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark"
+                aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse show" id="navbarDark">
+                <ul class="navbar-nav ms-auto mb-2 mb-xl-0 fs-5 ms-auto p-2 text-center">
+                    <li class="nav-item me-3">
+                        <a class="nav-link active " aria-current="page" href="{% url 'common_app:home' %}">Home</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="{% url 'common_app:department' %}" style="color: #fff;">Department</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="{% url 'common_app:doctors' %}" style="color: #fff;">Doctors</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="{% url 'patient:booking' %}" style="color: #fff;">Booking</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="{% url 'common_app:about' %}" style="color: #fff;">About Us</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="{% url 'common_app:contact' %}" style="color: #fff;">Contact Us</a>
+                    </li>
+                    <!-- <li class="nav-item me-3">
+                        <a class="nav-link" href="#">User Login</a>
+                    </li> -->
+                    <li>
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                User Login
+                            </a>
+
+                            <ul class="dropdown-menu drop" style="background-color: black; text-align: center;">
+                                <li><a class="dropdown-item" href="{% url 'common_app:admin_click' %}">Admin</a>
+                                </li>
+                                <li><a class="dropdown-item" href="{% url 'common_app:doctor_click' %}">Doctor</a>
+                                </li>
+                                <li><a class="dropdown-item" href="{% url 'common_app:patient_click' %}">Patient</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- Header Ends -->
+
+
+    <!-- footer -->
+    {% block content %}{% endblock %}
+
+    <footer class="mt-5 pt-5 pb-5 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xs-12">
+                    <a class="navbar-brand fs-2 fw-bold" href="#"><span class="text-danger">National</span>&nbsp;
+                        Hospital
+                    </a>
+                    <p>Established in 2014, National Hospital is leading the healthcare industry with its
+                        superlative, patient-centric,
+                        all-embracing, and world-class orthopaedic services. Therefore, we are recognized as one of the
+                        best
+                        orthopaedic
+                        hospitals in India offering quality healthcare to the masses in, Kerala and promotion of health
+                        tourism.</p>
+                    <ul class="social">
+                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-xs-12 links">
+                    <h4 class="mt-lg-0 mt-sm-3">Quick Links</h4>
+                    <ul class="m-0 p-0">
+                        <li><a href="{% url 'common_app:home' %}">Home</a></li>
+                        <li><a href="{% url 'common_app:department' %}">Department</a></li>
+                        <li><a href="{% url 'common_app:doctors' %}">Doctors</a></li>
+                        <li><a href="{% url 'patient:booking' %}">Booking</a></li>
+                        <li><a href="{% url 'common_app:about' %}">About Us</a></li>
+                        <li><a href="{% url 'common_app:contact' %}">contact Us</a></li>
+
+                    </ul>
+
+                </div>
+                <div class="col-lg-4 col-xs-12 Location">
+                    <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+                    <p><i class="bi bi-geo-alt-fill">&nbsp Building No. 38/2208-B Karaparamba – Kunduparamba, &nbsp
+                            &nbsp&nbsp&nbsp&nbsp Mini Bypass
+                            Rd,Edakkad, Kerala 673005, India.
+                        </i>
+                    </p>
+                    <p><i class="bi bi-telephone">&nbsp +91 495 712 3456</i></p>
+                    <p><i class="bi bi-envelope-fill">&nbsp info@national.com</i></p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col copyright text-center">
+                    <p>
+                        <small class="text-white-50">
+                            Ⓒ 2022 National. All Right Reserved
+                        </small>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+{% extends 'doctor_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th,
+    td {
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+
+        font-size: 17px;
+        font-weight: 500;
+        background-color: sandybrown;
+        color: ivory;
+    }
+
+    .tableHead {
+        background-color: brown;
+        color: #fff;
+        height: 53px;
+    }
+</style>
+{% endblock %}
+
+{% block title %}View Appointments{% endblock %}
+{% block content %}
+
+<br><br><br><br><br>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div>
+                    <h3>View Prescription
+                        <hr>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" style="background-color: gainsboro;padding: 10px;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Patient Information
+
+
+                            <hr>
+                        </h4>
+                    </div>
+                    <div class="col-md-8">
+                        <h5 style=" float: right;margin-top: 5px;margin-right: 5px;">Reference No. {{book.reference_no}}
+
+                        </h5>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Name : {{ book.patient_name }}</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Age : {{ book.patient_age }}</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Phone No. : {{ book.patient_phone }}</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Date of Birth : {{ book.birth_date }}</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Email : {{ book.patient_email }}</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Gender : {{book.patient_gender}}</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Address : {{ book.patient_address }}</h5>
+                    </div>
+
+                </div>
+
+                <div class="row" style="margin-top: 35px;">
+                    <div class="col-md-4">
+                        <h4>Prescription Details
+                            <hr>
+                        </h4>
+                    </div>
+                    <div class="container-fluid">
+                        <div style="overflow-x: auto;">
+                            <table id="storeList" class="table table-bordered table-hover table-striped">
+                                <thead>
+                                    <tr class="tableHead">
+                                        <th>Diagnosis</th>
+                                        <th>Medication Name</th>
+                                        <th>Purpose</th>
+                                        <th>Dosage</th>
+                                        <th>Route</th>
+                                        <th>Frequency</th>
+
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+                                    {% for p in pre %}
+                                    <tr>
+                                        <td>{{p.diagnosis}}</td>
+                                        <td>{{p.medication_name}}</td>
+                                        <td>{{p.purpose}}</td>
+                                        <td>{{p.dosage}}</td>
+                                        <td>{{p.route}}</td>
+                                        <td>{{p.frequency}}</td>
+                                    </tr>
+                                    {% endfor %}
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 55px;">
+                        <div class="col-md-4 mb-4">
+                            <div>
+                                <p>Doctor Name : {{ book.doctor_name.doctor_name }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div>
+                                <p>Doctor Phone Number : {{ book.doctor_name.doctor_phone }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div>
+                                <p>Doctor Email : {{ book.doctor_name.doctor_email }}</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+
+
+{% endblock %}

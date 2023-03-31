@@ -1,0 +1,127 @@
+#profile_page {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.3s;
+    height: 700px;
+
+}
+
+/* .profileBody { */
+    /* background-repeat: no-repeat; */
+    /* background-image: url(/static/images/doctor-stethoscope-hand-hospital-background-gown-94227568.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 65px;
+    margin-bottom: 2%;
+}
+ */
+
+
+
+.card {
+    max-width: 350px;
+    margin: 150px auto 0;
+    box-shadow: 0 10px 9px black;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-bottom: 121px;
+    margin-top: 92px;
+
+}
+
+.card .card-header {
+    position: relative;
+    height: 48px;
+}
+
+.card .card-header .profile-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 1000px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 8px solid orange;
+    box-shadow: 0 0 20px green;
+
+}
+
+.card .card-body {
+    padding: 10px 40px;
+}
+
+.card .card-body .name {
+    margin-top: 30px;
+    font-size: 23px;
+    font-weight: bold;
+    color: blue;
+}
+
+.mail {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    margin-top: 6px;
+    margin-bottom: 52px;
+}
+
+/* 
+.card .social-links .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: aquamarine;
+    color: white;
+    font-size: 20px;
+} */
+
+
+.social-links a {
+    width: 40px;
+    height: 0px;
+}
+
+.appBtn a {
+    text-decoration: none;
+
+    font-weight: 500;
+    font-size: 19px;
+    color: #fff;
+}
+
+.appBtn button {
+    background: blue;
+    border: none;
+    margin: none;
+    border-radius: 18px;
+}
+
+.appBtn button:hover {
+    background: rgb(1, 1, 109);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.h6 {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.text-muted {
+    font-size: 18px;
+}

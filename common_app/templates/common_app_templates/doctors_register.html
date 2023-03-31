@@ -1,0 +1,138 @@
+{% extends 'common_app_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+<link rel="stylesheet" href="{% static 'css/style_register.css' %}">
+{% endblock %}
+
+{% block title %}hello{% endblock %}
+{% block content %}
+
+
+
+<section id="main_body">
+
+
+    <div class="heading" style="padding-top: 200px;">
+        <h1 class="heading_text text-center mb-2"><u>Doctors Register here</u> </h1>
+    </div>
+    <div>
+        <h6 style="    text-align: center;font-size: 22px;font-weight: 400;color: greenyellow;">{{message1}}</h6>
+    </div>
+
+
+    <section id="reg_form" style="margin-bottom: -50px;">
+        <div class="container">
+            <div class="row justify-content-center mt-5">
+                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5">
+                    <div class="card" style="box-shadow: 12px 12px 22px;">
+                        <div class="card-header">
+                            <h5 class="card-title">Register</h5>
+                        </div>
+                        <div class="card-body">
+                            <form method="POST" enctype="multipart/form-data">
+                                {% csrf_token %}
+
+                                <div class="form-group">
+                                    <label for="">Name</label>
+                                    <input type="text" placeholder="Name" name="doc_name" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Email</label>
+                                    <input type="email" placeholder="Email" name="doc_email" id="email" class="form-control" />
+                                    <span id="email_check"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Select Department*</label>
+
+                                    <select name="doc_department" class="form-control" id="doctors">
+                                        <option value="">Select Department</option>
+                                        {% for i in departments %}
+                                        <option value="{{i.id}}">{{i.dep_name}}</option>
+                                        {% endfor %}
+                                       
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="">Contact</label>
+                                    <input type="number" name="doc_phone" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Address</label><br>
+                                    <textarea style="font-size: 20px;" name="doc_address" name="remark" id="" cols="30"
+                                        rows="4" placeholder="Write here..."></textarea>
+                                </div>
+                                <div class="form-group">
+
+                                    <label for="">Gender </label> <br>
+                                    &nbsp;
+                                    <input type="radio" name="doc_gender" value="male" />Male
+                                    &nbsp;
+                                    <input type="radio" name="doc_gender" value="female" />Female
+                                    &nbsp;
+                                    <input type="radio" name="doc_gender" value="others" />Others
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="">Doctor image</label>
+                                    <input type="file" value="image" name="doc_image" class="form-control" />
+                                </div>
+                                <button  class="btn btn-outline-success form-control mt-3" id="btnColor">
+                                    Register
+                                </button>
+                                <p style="text-align: center; color: green; margin-top: 5px; font-size: 20px;font-weight: 500;">{{message1}}</p>
+                               
+                            </form>
+                            <br>
+                            <p class="text-left" style="font-size:15px">If you already have an account, <a
+                                    href="/doctors_login">login</a> instead.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</section>
+
+
+<script>
+    $('#email').change(function () {
+
+            console.log($(this).val())
+            $.ajaxSetup({
+                headers: {
+                    "X-CSRFToken": $('[name=csrfmiddlewaretoken]').val() //passing csrf token in ajax request
+                }
+            })
+
+            $.ajax({
+                type: 'POST',
+                url: "{% url 'common_app:check_email_doctor' %}",
+                data: {
+                    'doc_email': $(this).val(),
+
+                },
+                success: function (response) {
+                    if (response.email_exist == true) {
+                        $('#email_check').html('Email already registerd.').css("color", "red",)
+                        $('#btnColor').prop('disabled', true)
+                    }
+                    else {
+                        $('#email_check').html('Email available for register.').css("color", "green")
+                        $('#btnColor').prop('disabled', false)
+
+                    }
+                    console.log(response.email_exist)
+                }
+            })
+        })
+    </script>
+</script>
+
+
+
+<!-- footer -->
+
+{% endblock %}

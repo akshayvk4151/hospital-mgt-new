@@ -1,0 +1,134 @@
+{% extends 'patient_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+<style>
+    .card-img-top {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 269px;
+    }
+
+    .card {
+        margin-bottom: 22px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: saddlebrown;
+        color: #fff
+    }
+
+    .card-text a {
+        text-decoration: none;
+        color: #fff;
+        background-color: darkred;
+        border: 1px solid #fff;
+        border-radius: 5px;
+    }
+</style>
+{% endblock %}
+
+{% block title %}Doctors{% endblock %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2 style="    margin-top: 116px;text-align: center;margin-bottom: 50px;font-size: 37px;font-weight: 700;">
+                Our Qualified Doctors</h2>
+        </div>
+        <div class="row" style="    margin-bottom: 50px">
+            <div class="col-md-3">
+                <div>
+                    <form action="{% url 'patient:searchdoctor' %}" method="POST" class="form-inline my-2 my-lg-0"
+                        style="display: flex;">
+                        {% csrf_token %}
+                        <input class="form-control mr-sm-2" type="search" id="searchdoctor" name="doctorsearch"
+                            placeholder="Search" aria-label="Search" required>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<section>
+
+    <div class="container text-center">
+
+        <div class="row justify-content-center">
+            {% for i in doctor %}
+            <div class=" col-md-6 col-lg-4 cards" style="margin-bottom: 30px;">
+
+
+                <div class="card text-center" style="width: 18rem;margin: auto;">
+                    <a href="{% url 'patient:search_result' i.id %}" style="text-decoration: none; color: #fff;">
+                        {% if i.doctor_image == 'static/images/dummy-user.png' %}
+                        <img src="{% static 'images/dummy-user.png' %}" class="card-img-top" alt="..."
+                            style="background-color:  cadetblue;">
+                        {% else %}
+                        <img src="{{ i.doctor_image.url}}" class="card-img-top" alt="...">
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title">{{i.doctor_name}}</h5>
+                            <p class="card-text">({{i.doctor_department.dep_name}})</p>
+                            <p class="card-text">Phone No : {{i.doctor_phone}}</p>
+                            <p class="card-text">Email : {{i.doctor_email}}</p>
+                            <p class="card-text"><a href="{% url 'patient:consultation_details' i.id %}">Consultation
+                                    Details</a></p>
+                            <a href="{% url 'patient:booking' %}" class="btn btn-primary"
+                                style="width: 145px;">Booking</a>
+                        </div>
+                    </a>
+
+                </div>
+
+
+            </div>
+            {% endfor %}
+
+        </div>
+
+    </div>
+</section>
+
+<script>
+
+    var availableTags = [];
+
+    $.ajax({
+        method: "GET",
+        url: "{% url 'patient:doctor_search' %}",
+        success: function (response) {
+
+            startAutocomplete(response)
+
+        }
+    });
+
+    function startAutocomplete(availableTags) {
+        $("#searchdoctor").autocomplete({
+            source: availableTags
+        });
+    }
+
+</script>
+
+
+
+
+
+
+
+
+<!-- footer -->
+{% endblock %}

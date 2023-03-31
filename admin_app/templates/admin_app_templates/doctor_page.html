@@ -1,0 +1,124 @@
+{% extends 'admin_app_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+<!-- <link rel="stylesheet" href="{% static 'css/style_doctors.css' %}"> -->
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<style>
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 269px;
+        background-color: blue;
+        color: #fff;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+    }
+
+    /* .page-header {
+        margin-left: 200px;
+        margin-top: 44px;
+        margin-right: 50px;
+    } */
+</style>
+{% endblock %}
+
+{% block title %}hello{% endblock %}
+{% block content %}
+<br><br><br><br>
+<div class="page-header pt-3">
+    <div class="container">
+        <div class="row" style="    margin-top: 20px;">
+            <!-- <div class="co" style="text-decoration: none;">
+                <div cl-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <a href="{% url 'admin_app:doctor_record' %}lass=" card mb-5>
+                        <img src="{% static 'images/doctorrec (1).png' %}" class="card-img-top" alt="..."
+                            style="    width: 110px;margin-top: 10px;">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+
+                        </div>
+                </div>
+                </a>
+            </div> -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <a href="{% url 'admin_app:doctor_record' %}" style="text-decoration: none;">
+                    <div class="card mb-5">
+                        <img src="{% static 'images/doctorrec (1).png' %}" class="card-img-top" alt="..."
+                            style="    width: 110px;margin-top: 10px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Doctor Record</h5>
+            
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <a href="{% url 'admin_app:register_doctor' %}" style="text-decoration: none;">
+                    <div class="card mb-5">
+                        <img src="{% static 'images/doctorrec (3).png' %}" class="card-img-top" alt="..."
+                            style="    width: 110px;margin-top: 10px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Register Doctor</h5>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <a href="{% url 'admin_app:approve_doctor' %}" style="text-decoration: none;">
+                    <div class="card mb-5">
+                        <img src="{% static 'images/doctorrec (4).png' %}" class="card-img-top" alt="..."
+                            style="    width: 110px;margin-top: 10px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Approve Doctor</h5>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <a href="{% url 'admin_app:doctor_specialisation' %}" style="text-decoration: none;">
+                    <div class="card mb-5">
+                        <img src="{% static 'images/doctorrec (2).png' %}" class="card-img-top" alt="..."
+                            style="    width: 110px;margin-top: 10px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Specialisation</h5>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <a href="{% url 'admin_app:adm_departments' %}" style="text-decoration: none;">
+                    <div class="card mb-5">
+                        <img src="{% static 'images/find.png' %}" class="card-img-top" alt="..."
+                            style="    width: 110px;margin-top: 10px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Doctor Departments</h5>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}

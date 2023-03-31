@@ -1,0 +1,379 @@
+{% extends 'doctor_templates/base.html' %}
+{% load static %}
+<!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+
+<!-- Popper.js library -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-5fyzc5jz7kHZtwCJ9+pG/zbl8YEcQjpaabNwH5bN/EJ22KjgDbV7h4q3X9k7jId" crossorigin="anonymous"></script>
+
+<!-- Bootstrap library -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-NgG3rj3UnlnT+YZiLlQ2FQi5xowl1X9KjPxW8nZ+nju1IaKw/KnUeMndIf8QvNQ6"
+    crossorigin="anonymous"></script>
+
+
+{% block header %}
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th,
+    td {
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+
+        font-size: 17px;
+        font-weight: 500;
+        background-color: sandybrown;
+        color: ivory;
+    }
+
+    .tableHead {
+        background-color: brown;
+        color: #fff;
+        height: 53px;
+    }
+
+    /* .tdAction {
+        display: flex;
+    } */
+
+    .btn-cancel {
+        margin-left: 3px;
+    }
+
+    .btn-danger {
+        margin-left: 5px;
+    }
+
+    .message1 {
+        font-size: 18px;
+        margin-left: 28px;
+        margin-top: 8px;
+        font-weight: 600;
+        color: green;
+    }
+
+    .inputs {
+        margin-top: 10px;
+    }
+</style>
+{% endblock %}
+
+{% block title %}View Appointments{% endblock %}
+{% block content %}
+
+<br><br><br><br><br>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                {% if ed_item %}
+                <h1>Prescription for {{ ed_item.booking.patient_name | upper }}</h1>
+                {% else %}
+                <h1>Prescription for {{ booking.patient_name | upper }}</h1>
+                {% endif %}
+
+
+                <!-- <input type="hidden" id='book_id' value="{{ booking_id }}" name="" id=""> -->
+                <div>
+
+                </div>
+                <h4 style="margin-top: 20px;margin-bottom: 30px;">Prescription
+                    <hr>
+                </h4>
+                <h6 style=" float: right;">Reference No. {{booking.reference_no}}
+                    
+                </h6>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5 style="margin-top: 20px;margin-bottom: 30px;background-color: gainsboro;">Doctor Note.
+                        <hr>
+                    </h5>
+                    {% if ed_item %}
+
+                    <form method="POST" action="{% url 'doctor:update_item' ed_item.id %}">
+                        {% csrf_token %}
+                        <input type="hidden" name="booking_id" value="{{ booking.id }}">
+
+
+                        <div class="row">
+                            <div class="col-lg-8 mb-4 pb-2">
+
+                                <div class="form-outline">
+                                    <label class="form-label">Diagnosis : </label>
+                                    <textarea class="form-control" style="font-size: 14px;height: 50px;"
+                                        name="p_diagnosis" id="diagnosis" cols="30" rows="4" placeholder="Diagnosis...">
+                                        {{ed_item.diagnosis}}
+                                    </textarea>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div>
+                            <h5 style="background-color: gainsboro;">List of Presceibed Medications
+                                <hr>
+                            </h5>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 text-right">
+                                    <div>
+                                        <label>Medication Name : </label>
+                                        <input type="text" id="me_name" name="p_name"
+                                            value="{{ed_item.medication_name}}" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-right">
+                                    <div>
+                                        <label>Purpose : </label>
+                                        <input type="text" id="purpose" name="p_purpose" value="{{ed_item.purpose}}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-md-4 text-right">
+                                    <div>
+                                        <label>Route : </label>
+                                        <input type="text" id="route" name="p_route" value="{{ed_item.route}}" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-right">
+                                    <div>
+                                        <label>Dosage : </label>
+                                        <input type="text" id="dosage" name="p_dosage" value="{{ed_item.dosage}}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 text-right">
+                                    <div>
+                                        <label>Frequency : </label>
+                                        <input type="text" id="frequency" name="p_frequency"
+                                            value="{{ed_item.frequency}}" />
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="mt-4 pt-2">
+                                        <button class="btn btn-outline-success form-control mt-3" type="submit">
+                                            Update
+                                        </button>
+                                        <p>{{message}}</p>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </form>
+
+                    {% else %}
+
+
+
+                    <form method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <input type="hidden" name="booking_id" value="{{ booking.id }}">
+
+
+                        <div class="row">
+                            <div class="col-lg-8 mb-4 pb-2">
+
+                                <div class="form-outline">
+                                    <label class="form-label">Diagnosis : </label>
+                                    <textarea class="form-control " style="font-size: 14px;height: 50px;"
+                                        name="p_diagnosis" id="diagnosis" cols="30" rows="4" placeholder="Diagnosis... "
+                                        required>
+                                    </textarea>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div>
+                            <h5 style="background-color: gainsboro;">List of Presceibed Medications
+                                <hr>
+                            </h5>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 text-right inputs">
+                                    <div>
+                                        <label>Medication Name : </label>
+                                        <input type="text" id="me_name" name="p_name" required />
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-right inputs">
+                                    <div>
+                                        <label>Purpose : </label>
+                                        <input type="text" id="purpose" name="p_purpose" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 text-right inputs">
+                                    <div>
+                                        <label>Dosage : </label>
+                                        <input type="text" id="dosage" name="p_dosage" required />
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-right inputs">
+                                    <div>
+                                        <label>Route : </label>
+                                        <input type="text" id="route" name="p_route" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 text-right inputs">
+                                    <div>
+                                        <label>Frequency : </label>
+                                        <input type="text" id="frequency" name="p_frequency" required />
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="mt-4 pt-2">
+                                        <button class="btn btn-outline-success form-control mt-3" type="submit">
+                                            Submit
+                                        </button>
+                                        <div style="width: 400px;">
+                                            <p class="message1">{{message1}}</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </form>
+
+                    {% endif %}
+
+                    <div class="container-fluid">
+                        <div style="overflow-x: auto;">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    {% for msg in messages %}
+                                    <div class="p-3 mb-2 bg-success text-white alert alert-{{ message.tags }} alert-dismissible fade show"
+                                        role="alert">
+                                        {{ msg }}
+                                        <button type="button" class="close" onclick="dismissAlert(this)"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <table id="storeList" class="table table-bordered table-hover table-striped">
+                                <thead>
+                                    <tr class="tableHead">
+                                        <th>Medication Name</th>
+                                        <th>Purpose</th>
+                                        <th>Dosage</th>
+                                        <th>Route</th>
+                                        <th>Frequency</th>
+                                        <th>Diagnosis</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+
+                                </thead>
+                                <tbody id="t_boady">
+                                    {% for i in list %}
+                                    <tr>
+                                        <td>{{i.medication_name}}</td>
+
+                                        <td>{{i.purpose}}</td>
+                                        <td>{{i.dosage}}</td>
+                                        <td>{{i.route}}</td>
+                                        <td>{{i.frequency}}</td>
+                                        <td>{{i.diagnosis}}</td>
+                                        <td>
+
+                                            <a href="{% url 'doctor:delete_item' i.id %}" style="float: right;"
+                                                class="btn btn-danger "><i class="fa fa-trash"></i> Remove</a>
+                                        </td>
+                                        <td>
+                                            <a href="{% url 'doctor:edit_item' i.id %}"
+                                                style="float: right;margin-right: 8px;" class="btn btn-danger "><i
+                                                    class="fa fa-trash"></i> Edit</a>
+
+
+
+                                        </td>
+
+                                    </tr>
+                                    {% endfor %}
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+</section>
+
+
+<script>
+    function dismissAlert(button) {
+        $(button).parent().fadeOut();
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

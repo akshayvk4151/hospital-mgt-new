@@ -1,0 +1,242 @@
+{% extends 'doctor_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+<link rel="stylesheet" href="{% static 'css/style_profile.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<style>
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 32px;
+    }
+
+    #success_message {
+        display: none;
+    }
+
+    .update {
+        background-color: blanchedalmond;
+
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .select {
+        font-size: 13px;
+        margin-top: 11px;
+        margin-bottom: 13px;
+    }
+
+    .message {
+        font-size: 18px;
+        font-weight: 500;
+        color: green;
+        letter-spacing: 1px;
+        margin-left: 5px;
+    }
+
+    @media only screen and (max-width:478px) {
+        .update {
+            margin-top: 180px;
+        }
+    }
+
+    @media only screen and (max-width:391px) {
+        .update {
+            margin-top: 211px;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block title %}hello{% endblock %}
+{% block content %}
+
+
+
+<div id="profile_page">
+
+    <section class="profileBody py-5">
+        <div class="container">
+            <div class="row px-5 main">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="card" style="background: linear-gradient(to bottom, #1e90ff, #b0c4de);">
+                        {% for i in profile %}
+                        <div class="card-header">
+                            {% if i.doctor_image == 'static/images/dummy-user.png' %}
+                            <img src="{% static 'images/dummy-user.png' %}" alt="" class="profile-img">
+                            {% else %}
+                            <img src="{{ i.doctor_image.url}}" alt="" class="profile-img">
+                            {% endif %}
+                        </div>
+                        <div class="card-body">
+
+                            <p class="name">{{i.doctor_name}}</p>
+                            <p class="id">Doctor ID : {{i.id}}</p>
+                            <p class="mail" style="color: green;">( {{i.doctor_department.dep_name}} )</p>
+
+                            <p class="mail">Phone No. : {{i.doctor_phone}}</p>
+                            <p class="mail">Email ID :{{i.doctor_email}}</p>
+                            <p class="mail">Address :{{i.doctor_address}}</p>
+
+                        </div>
+                        {% endfor %}
+                        <div class="social-links">
+                            <a href="#" class="bi bi-instagram"></a>
+                            <a href="#" class="bi bi-facebook"></a>
+                            <a href="#" class="bi bi-whatsapp"></a>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+</div>
+<div>
+    <section class="update">
+        <div class="container">
+
+            <form class="well form-horizontal" action=" " method="POST" id="contact_form">
+                {% csrf_token %}
+                <fieldset style="padding: 17px;">
+
+                    <!-- Form Name -->
+                    <legend>Update Your Profile!</legend>
+
+                    <!-- Text input-->
+
+                    <div class="form-group">
+                        <label class="col-md-6 control-label">Full Name</label>
+                        <div class="col-md-6 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="name" placeholder="fullname" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-6 control-label">E-Mail</label>
+                        <div class="col-md-6 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+
+                        <div>
+                            <label class="form-label select-label">Choose Department</label>
+
+                            <select class="select form-control-lg" name="department">
+                                {% for i in departments %}
+                                <option value="{{i.id}}">{{i.dep_name}}</option>
+                                {% endfor %}
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-6 control-label">Gender</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="pat_gender" id="maleGender"
+                                    value="male" checked />
+                                <label class="form-check-label">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="pat_gender" id="femaleGender"
+                                    value="femail" />
+                                <label class="form-check-label">Female</label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="pat_gender" id="otherGender"
+                                    value="other" />
+                                <label class="form-check-label">Other</label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <!-- Text input-->
+
+
+                    <div class="form-group">
+                        <label class="col-md-6 control-label">Phone #</label>
+                        <div class="col-md-6 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+
+                    <div class="form-group">
+                        <label class="col-md-6 control-label">Address</label>
+                        <div class="col-md-6 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                <input name="address" placeholder="Address" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <!-- Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label"></label>
+                        <div class="col-md-4">
+                            <button class="btn btn-warning">Update <span
+                                    class="glyphicon glyphicon-send"></span></button>
+                        </div>
+                        <span class="message">{{message}}</span>
+                    </div>
+
+
+                </fieldset>
+            </form>
+        </div>
+
+    </section>
+</div>
+
+
+
+
+
+
+
+<!-- footer -->
+{% endblock %}

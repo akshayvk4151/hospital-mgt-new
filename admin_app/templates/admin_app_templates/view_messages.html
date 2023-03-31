@@ -1,0 +1,114 @@
+{% extends 'admin_app_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+<link rel="stylesheet" href="{% static 'css/approve_doctor.css' %}">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th,
+    td {
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+
+        font-size: 17px;
+        font-weight: 500;
+        background-color: cadetblue;
+        color: ivory;
+    }
+
+    .tableHead {
+        background-color: darkblue;
+        color: #fff;
+        height: 53px;
+    }
+
+    .docImage img {
+        width: 85px;
+        border-radius: 9px;
+        border: 1px solid #fff;
+    }
+
+    .notFound {
+        text-align: center;
+        margin-bottom: 16px;
+        color: red;
+        font-size: 27px;
+        font-weight: 500;
+    }
+
+    .btn {
+        float: right;
+        margin-bottom: 1px;
+    }
+</style>
+{% endblock %}
+
+{% block title %}View Messages{% endblock %}
+{% block content %}
+<br><br><br><br>
+<section class="content">
+    <div class='container'>
+        <div class="row">
+            <div class="col-lg-12">
+                <h4 style="margin-top: 20px;margin-bottom: 30px;">Enquary
+                    <hr>
+                </h4>
+
+            </div>
+            <div class="container-fluid">
+                <div style="overflow-x: auto;">
+                    <table>
+                        <tr class="tableHead">
+                            <th>SL.No</th>
+                            <th>Name</th>
+                            <th>Mobile</th>
+                            <th>Remarks</th>
+                        </tr>
+                        {% for messages in message %}
+                        <form method="POST" action="{% url 'admin_app:clear_all' %}">
+                            {% csrf_token %}
+
+                            <tr>
+                                <td>{{ forloop.counter }}</td>
+                                <td>{{messages.name}}</td>
+
+                                <td>{{messages.phone}}</td>
+                                <td>{{messages.remark}}</td>
+                            </tr>
+                        </form>
+
+                        {% empty %}
+                        <h4 class="notFound">No messages found.</h4>
+
+                        {% endfor %}
+                        <div class="btn"><a href="{% url 'admin_app:clear_all' %}" class="btn btn-danger"><i
+                                    class="fa fa-trash"></i> Clear All</a></div>
+
+
+                    </table>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+</section>
+
+
+
+
+
+{% endblock %}

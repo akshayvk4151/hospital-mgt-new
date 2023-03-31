@@ -1,0 +1,90 @@
+{% extends 'admin_app_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+<!-- <link rel="stylesheet" href="{% static 'css/style_doctors.css' %}"> -->
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<style>
+    .content {
+        height: 100vh;
+    }
+</style>
+{% endblock %}
+
+{% block title %}Add Department{% endblock %}
+{% block content %}
+<br><br><br><br>
+<section class="content">
+    <div class='container'>
+        <div class="row">
+            <div class="col-sm-12">
+                <h4 style="margin-top: 20px;margin-bottom: 30px;">Add Departments.</h4>
+            </div>
+            <p style="text-align: center;font-size: 20px;color: green;letter-spacing: 2px;"> <span
+                    style="background-color: lightblue;">{{message1}}</span> </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <form method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label"
+                                    style="font-size: 20px;font-weight: 400;">Department Name :</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    name="department_name" placeholder="Enter Department Name">
+
+                                <p style="color: red; letter-spacing: 1px; margin-left: 13px;">{{message2}}</p>
+
+
+                            </div>
+                            <!-- <p><p>message{{message2}}</p></p> -->
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label"
+                                    style="font-size: 20px;font-weight: 400;">Department Description
+                                    :</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    name="department_description" placeholder="Type here..."></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label"
+                                    style="font-size: 20px;font-weight: 400;">Department Name
+                                    :</label>
+                                <input type="file" value="image" name="department_image" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="Enter Department Name">
+                            </div>
+
+
+
+                            <div class="btn" style="float: right;">
+                                <!-- <button type="button" class="btn btn-primary">Edit</button> -->
+
+                                <button class="btn btn-success" style="width: 115px;">Save</button>
+
+
+
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    </div>
+
+
+</section>
+
+
+
+
+
+{% endblock %}

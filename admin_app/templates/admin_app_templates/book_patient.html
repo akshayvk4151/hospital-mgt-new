@@ -1,0 +1,255 @@
+{% extends 'admin_app_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+<!-- <link rel="stylesheet" href="{% static 'css/style_doctors.css' %}"> -->
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<style>
+    .gradient-custom {
+        /* fallback for old browsers */
+        background: #f093fb;
+
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));
+
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1))
+    }
+
+    .card-registration .select-input.form-control[readonly]:not([disabled]) {
+        font-size: 1rem;
+        line-height: 2.15;
+        padding-left: .75em;
+        padding-right: .75em;
+    }
+
+    .card-registration .select-arrow {
+        top: 13px;
+    }
+
+
+    .success p {
+        text-align: center;
+        margin-top: 11px;
+        font-size: 20px;
+        font-weight: 500;
+        color: green;
+        background-color: gainsboro;
+    }
+</style>
+{% endblock %}
+
+{% block title %}Patient booking{% endblock %}
+{% block content %}
+
+<div><a href="{% url 'admin_app:doctor_page' %}" style="float: left;margin-top: 7px;" class="btn btn-primary">
+        Back Home</a>
+</div>
+
+
+
+<section class="vh-180 ">
+    <div class="container py-5 ">
+        <div class="row justify-content-center align-items-center h-100" style="margin-top: 76px;">
+            <div class="col-12 col-lg-9 col-xl-7">
+                <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                    <div class="card-body p-4 p-md-5">
+                        <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Patient Booking</h3>
+                        <form method="POST">
+                            {% csrf_token %}
+
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+
+                                    <div class="form-outline">
+                                        <label class="form-label">Patient Name</label>
+                                        <input type="text" id="Name" name="pat_name"
+                                            class="form-control form-control-lg" />
+
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 mb-4">
+
+                                    <div class="form-outline">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" name="pat_email" id="email"
+                                            class="form-control form-control-lg" />
+
+                                    </div>
+                                    <span id="email_check"></span>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-4 d-flex align-items-center">
+
+                                    <div class="form-outline datepicker w-100">
+                                        <label class="form-label" required>Phone.No</label>
+                                        <input type="number" name="pat_phone" class="form-control form-control-lg"
+                                            id="phone" />
+
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 mb-4">
+
+                                    <h6 class="mb-2 pb-1">Gender: </h6>
+
+
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="pat_gender" id="maleGender"
+                                            value="male" checked />
+                                        <label class="form-check-label">Male</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="pat_gender" id="femaleGender"
+                                            value="femail" />
+                                        <label class="form-check-label">Female</label>
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="pat_gender" id="otherGender"
+                                            value="other" />
+                                        <label class="form-check-label">Other</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-md-6 mb-4 pb-2">
+
+                                    <div class="form-outline datepicker w-100">
+                                        <label class="form-label" required>Date of Birth</label>
+                                        <input type="date" name="pat_birth" class="form-control form-control-lg"
+                                            id="dob" onchange="calaculate_age()" required />
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+
+                                    <div class="form-outline">
+                                        <label class="form-label">Age</label>
+                                        <input type="number" name="pat_age" id="age"
+                                            class="form-control form-control-lg" required />
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-4 pb-2">
+                                    <div class="form-outline datepicker w-100">
+                                        <label class="form-label" required>Booking Date</label>
+                                        <input type="date" name="pat_date" class="form-control form-control-lg"
+                                            id="date" />
+
+                                    </div>
+
+
+                                </div>
+                                <div class="col-md-6 mb-4 pb-2">
+
+                                    <div class="form-outline datepicker w-100">
+                                        <label class="form-label" required>Booking Time</label>
+                                        <input type="time" name="pat_time" class="form-control form-control-lg"
+                                            id="time" />
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 md-4 pb-2 ">
+                                    <label class="form-label select-label">Choose Doctor</label>
+
+                                    <select class="select form-control-lg  w-100" name="pat_doctor">
+                                        <option value="">Select Doctor</option>
+                                        {% for i in doctor %}
+                                        <option value="{{i.id}}">{{i.doctor_name}}</option>
+                                        {% endfor %}
+
+                                    </select>
+
+
+                                </div>
+
+                                <div class="col-md-6 mb-4 pb-2">
+
+                                    <div class="form-outline">
+                                        <label class="form-label" for="Address">Description</label>
+                                        <textarea class="form-control form-control-lg"
+                                            style="font-size: 20px;height: 50px;" name="pat_description" name="remark"
+                                            id="" cols="30" rows="4" placeholder="Description..."></textarea>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4 pb-2">
+
+                                    <div class="form-outline">
+                                        <label class="form-label" for="Address">Address</label>
+                                        <textarea class="form-control form-control-lg"
+                                            style="font-size: 20px;height: 50px;" name="pat_address" id="" cols="30"
+                                            rows="4" placeholder="Write here..." required></textarea>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                            <div class="mt-4 pt-2">
+                                <button class="btn btn-outline-success form-control mt-3" id="btnColor">
+                                    Submit
+                                </button>
+                            </div>
+                            <div class="success">
+                                <p>{{message}}</p>
+                            </div>
+
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<script>
+    function calaculate_age() {
+        let today = new Date()
+        console.log(today)
+        let dob = new Date(document.getElementById('dob').value)
+        console.log(dob)
+        age_year = today.getFullYear() - dob.getFullYear() - ((today.getMonth(), today.getDate()) < (dob.getMonth(), dob.getDate()))
+        document.getElementById('age').value = age_year
+        console.log(age_year)
+
+    }
+
+
+
+
+</script>
+
+
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'common_app_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+<link rel="stylesheet" href="{% static 'css/style_department.css' %}">
+{% endblock %}
+
+{% block title %}hello{% endblock %}
+{% block content %}
+
+
+
+
+<section id="main_body">
+    <div class="heading" style="padding-top: 100px; padding-bottom: 20px;">
+        <h1 class="heading_text text-center mb-2" style="font-family: sans-serif;"><u>Our Departments</u> </h1>
+    </div>
+
+    <div class="container">
+        <div class="row gy-3 my-3" style="padding-bottom: 80px;">
+            {% for d in dic_dept %}
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="card">
+                    <div class="inner">
+                        <img src="{{ d.image_url }}" class="card-img-top"  alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{d.dep_name}}</h5>
+                        <p class="card-text">{{d.dep_description}}</p>
+
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+
+</section>
+
+<!-- footer -->
+
+
+{% endblock %}

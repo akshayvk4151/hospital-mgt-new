@@ -1,0 +1,72 @@
+{% extends 'doctor_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+<style>
+    .text-right i {
+        font-size: 74px;
+        margin-left: 13px;
+        color: red;
+    }
+
+    .card {
+        height: 182px;
+        background-color: darkseagreen;
+        margin-bottom: 20px
+    }
+
+    a .text h6 {
+        font-size: 32px;
+        color: #fff;
+        margin-top: 0px;
+    }
+</style>
+{% endblock %}
+
+{% block title %}Appointments{% endblock %}
+{% block content %}
+<br><br><br><br><br><br>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-xl-6">
+                <div class="card ">
+                    <div class="card-body">
+                        <h2 class="text-right"><i class="bi bi-person-lines-fill"></i></h2>
+                        <a href="/doctor/view_appointment" style="text-decoration: none;">
+                            <h6 class="text text-center" style=" font-size: 26px;color: #fff;margin-top: 0px;">View Your
+                                Appointment</h6>
+                        </a>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-6  col-md-6 col-xl-6">
+                <div class="card ">
+                    <div class="card-body">
+                        <h2 class="text-right"><i class="bi bi-trash3-fill"></i></h2>
+                        <br>
+                        <a href="/doctor/delete_appointment" style="text-decoration: none;">
+                            <h6 class=" text text-center"
+                                style=" font-size: 26px;color: #fff;margin-top: 0px;margin-top: -28px;">Delete Your
+                                Appointment</h6>
+                        </a>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+<!-- footer -->
+{% endblock %}

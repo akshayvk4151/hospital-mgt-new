@@ -1,0 +1,221 @@
+{% extends 'patient_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<style>
+    .card_body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 140px;
+    }
+
+    .content h3 {
+        font-size: 16px;
+    }
+
+    .icon {
+        font-size: 80px;
+        margin-right: 43px;
+
+    }
+
+    .card {
+        /* width: 300px; */
+        margin-top: 20px;
+    }
+
+    @media (max-width: 767px) {
+        .cards {
+            justify-content: center;
+        }
+    }
+</style>
+{% endblock %}
+{% block details %}
+
+<div class="profile-details">
+
+    <span class="admin_name">{{ p_name | upper}}</span>
+
+</div>
+{% endblock %}
+
+{% block title %}Patient Dasbord{% endblock %}
+{% block content %}
+<br><br><br><br>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <strong>
+                    <h3>Recent Booking</h3>
+                    <hr>
+                </strong>
+            </div>
+        </div>
+        <div class="row cards">
+            <div class="col-md-4 col-sm-4" style="width: 315px;">
+                <div class="card" style="background-color: blue; color: #fff;">
+                    <div class="card_body text-center">
+                        <div class="icon">
+                            <i class="bi bi-person-circle"></i>
+                        </div>
+                        <div class="content">
+
+                            <h5>Doctor Name</h5>
+                            {% if doctor %}
+                            <h3>{{ doctor.doctor_name }}</h3>
+                            {% else %}
+                            <p>No recent booking found.</p>
+                            {% endif %}
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" col-md-4 col-sm-4" style="width: 315px;">
+                <div class="card" style="background-color: darkblue; color: #fff;">
+                    <div class="card_body text-center">
+                        <div class="icon">
+                            <i class="bi bi-card-checklist"></i>
+                        </div>
+                        <div class="content">
+                            <h5>Symptoms</h5>
+                            {% if booking_list %}
+                            {% for booking in booking_list %}
+                            <h3>{{ booking.patient_description }}</h3>
+                            {% endfor %}
+                            {% else %}
+                            <p>No recent booking found.</p>
+                            {% endif %}
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" col-md-4 col-sm-4" style="width: 315px;">
+                <div class="card" style="background-color: blue; color: #fff;">
+                    <div class="card_body text-center">
+                        <div class="icon">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <div class="content">
+                            <h5>Doctor Mobile</h5>
+                            {% if doctor %}
+                            <h3>{{ doctor.doctor_phone }}</h3>
+                            {% else %}
+                            <p>No recent booking found.</p>
+                            {% endif %}
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class=" col-md-4 col-sm-4" style="width: 315px;">
+                <div class="card" style="background-color: darkblue; color: #fff;">
+                    <div class="card_body text-center">
+                        <div class="icon">
+                            <i class="bi bi-envelope-at"></i>
+                        </div>
+                        <div class="content">
+                            <h5>Doctor Email</h5>
+                            {% if doctor %}
+                            <h3>{{ doctor.doctor_email }}</h3>
+                            {% else %}
+                            <p>No recent booking found.</p>
+                            {% endif %}
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" col-md-4 col-sm-4" style="width: 315px;">
+                <div class="card" style="background-color: blue; color: #fff;">
+                    <div class="card_body text-center">
+                        <div class="icon">
+                            <i class="bi bi-award"></i>
+                        </div>
+                        <div class="content">
+                            <h5>Doctor Department</h5>
+                            {% if doctor %}
+                            <h3>{{ doctor.doctor_department.dep_name }}</h3>
+                            {% else %}
+                            <p>No recent booking found.</p>
+                            {% endif %}
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" col-md-4 col-sm-4" style="width: 315px;">
+                <div class="card" style="background-color: darkblue; color: #fff;">
+                    <div class="card_body text-center">
+                        <div class="icon">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <div class="content">
+                            <h5>Doctor Address</h5>
+                            <h3>{% if doctor %}
+                                <h3>{{ doctor.doctor_address }}</h3>
+                                {% else %}
+                                <p>No recent booking found.</p>
+                                {% endif %}
+                            </h3>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" col-md-4 col-sm-4" style="width: 315px;">
+                <div class="card" style="background-color: blue; color: #fff;">
+                    <div class="card_body text-center">
+                        <div class="icon">
+                            <i class="bi bi-bookmark"></i>
+                        </div>
+                        <div class="content">
+                            <h5>Booking Status</h5>
+                            <h3>{% if booking_list %}
+                                {% for booking in booking_list %}
+                                <h3>{{ booking.status }}</h3>
+                                {% endfor %}
+                                {% else %}
+                                <p>No recent booking found.</p>
+                                {% endif %}
+                            </h3>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+{% endblock %}

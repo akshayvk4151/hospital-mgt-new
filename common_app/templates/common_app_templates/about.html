@@ -1,0 +1,137 @@
+{% extends 'common_app_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+<link rel="stylesheet" href="{% static 'css/style_about.css' %}">
+{% endblock %}
+
+{% block title %}hello{% endblock %}
+{% block content %}
+
+<br>
+<!-- image section -->
+<section id="about_img" class="mission section-padding">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="about_img1">
+                    <img src="{% static 'images/pexels-pixabay-247786.jpg' %}" alt="">
+                    <div class="image_caption">
+                        <h1>About Us</h1>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- content section -->
+
+<section id="contentText">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-xxl-12">
+                <div class="aboutUs_para">
+                    <p class="cont_text">National Hospital, one of the earliest hospitals in Malabar, has been in
+                        service to the cause of
+                        health for nearly half
+                        a century. This 400 bedded super-specialty <br> hospital, most strategically situated in the
+                        heart of the
+                        city at Mavoor Road
+                        junction, Kozhikode, is well equipped to handle medical emergencies and is considered <br> to be
+                        one of
+                        the best referral
+                        hospitals in the region. The easy accessibility to the hospital by road, rail and air and the
+                        team
+                        of well qualified and
+                        dedicated doctors <br> and paramedical staff make it a preferred health care destination.</p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FACILITIES & SERVICES section -->
+
+<section id="services" class="services section-padding">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading1">
+                    <h1>
+                        <span class="headerSub">FACILITIES &</span>SERVICES
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="icon text-center">
+                    <div class="icon-body">
+                        <img src="{% static 'images/tab-icon-1.png' %}" alt="">
+                        <h6 class="icon-title py-2">Ambulance</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="icon text-center">
+                    <div class="icon-body">
+                        <img src="{% static 'images/tab-icon-2.png' %}" alt="">
+                        <h6 class="icon-title py-2">24/7 Emergency care</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="icon text-center">
+                    <div class="icon-body">
+                        <img src="{% static 'images/tab-icon-3.png' %}" alt="">
+                        <h6 class="icon-title py-2">Laboratory</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="icon text-center">
+                    <div class="icon-body">
+                        <img src="{% static 'images/tab-icon-4.png' %}" alt="">
+                        <h6 class="icon-title py-2">Blood Bank</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="icon text-center">
+                    <div class="icon-body">
+                        <img src="{% static 'images/tab-icon-5.png' %}" alt="">
+                        <h6 class="icon-title py-2">Pharmacy</h6>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-12 col-md-6 col-lg-3">
+                <div class="icon text-center">
+                    <div class="icon-body">
+                        <img src="{% static 'images/ot.png' %}" alt="">
+                        <h6 class="icon-title py-2">OT</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<br><br><br>
+<!-- footer -->
+
+{% endblock %}

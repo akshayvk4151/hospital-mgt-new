@@ -1,0 +1,28 @@
+#main_body {
+    background: linear-gradient(to bottom, #483d8b, #fe8c00);
+    margin-bottom: -50px;
+}
+
+.heading_text {
+    font-size: 39px;
+    color: white;
+    font-weight: 500;
+    font-style: initial;
+}
+
+.card {
+    min-height: 520px;
+    box-shadow: 9px 9px;
+}
+
+.inner {
+    overflow: hidden;
+}
+
+.inner img {
+    transition: all 1.5s ease;
+}
+
+.inner:hover img {
+    transform: scale(1.5);
+}

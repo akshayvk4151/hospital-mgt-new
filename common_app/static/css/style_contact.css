@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #add8e6;
+}
+
+#about_img {
+    background-color: #add8e6;
+}
+
+.about_img1 img {
+    width: 100%;
+    height: 560px;
+    margin-top: 51px;
+    object-fit: cover;
+}
+
+.image_caption h1 {
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    margin-top: -60px;
+    /* margin-left: 30px; */
+    opacity: 0.6;
+    box-sizing: border-box;
+    background: black;
+    margin-left: 1px;
+    padding-left: 40px;
+    font-family: RobotoLight, Arial, Tahoma;
+}
+
+
+/*  */
+.heading1 h1 {
+    text-align: center;
+    margin-top: 47px;
+    letter-spacing: 7px;
+    color: #191970;
+    font-weight: 500;
+}
+
+h1 .headerSub {
+    font-weight: 200;
+    color: #8b0000;
+    letter-spacing: 5px;
+    padding-right: 14px;
+}
+
+/*  */
+.input-div input {
+    width: 279px;
+    border-radius: 4px;
+    color: black;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 20px;
+    line-height: 1;
+    color: #6e4e46;
+    font-weight: 400;
+    background-color: #f7e1c2;
+}
+
+.input-div textarea {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    height: 110px;
+    width: 100%;
+    padding: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+    resize: none;
+    overflow: auto;
+    background-color: #f7e1c2;
+}
+
+#contact_txt {
+    background-color: #5f9ea0;
+    margin-top: -25px;
+}
+
+.input_head {
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff
+}
+
+
+
+.heading1 h1 {
+    background-color: #5f9ea0;
+    margin-bottom: -24px;
+    padding-bottom: 51px;
+}
+
+.subBtn {
+    font-family: sans-serif;
+    width: 374px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    background: #87ceeb;
+    font-size: 24px;
+    font-weight: 500;
+    color: #008000;
+}
+
+.subBtn:hover {
+    background: #4682b470;
+    transition: 0.5s;
+    color: #005f00;
+}
+
+
+/* whatsapp logo */
+.whatsapp img {
+    float: right;
+    display: block;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 55px;
+    right: 20px;
+    z-index: 100;
+}
+
+.last {
+    background: #008b8b;
+    margin-top: 0px;
+    padding-top: 56px;
+    margin-bottom: -121px;
+    padding-bottom: 60px;
+}
+
+.lastHead {
+    margin-top: 30px;
+    font-size: 54px;
+    color: #fff;
+
+}
+
+.lastPara {
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.lastcontentHead {
+    margin-top: -7px;
+    font-size: 36px;
+    font-weight: 500;
+
+}
+
+
+
+.iframe-contact iframe {
+    border: 0;
+    height: 249px;
+    width: 500px;
+}
+
+.success {
+    margin-top: -36px;
+    font-size: 20px;
+    font-weight: 700;
+    color: green;
+    background-color: gray;
+    text-align: center;
+}
+
+/* responsive css***************************************** */
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .about_img1 img {
+        height: 257px;
+        width: 100%;
+        margin-top: 45px;
+    }
+
+}
+
+@media only screen and (max-width:767px) {
+    .about_img1 img {
+        height: 257px;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .image_caption h1 {
+        font-size: 26px;
+        margin-top: -32px;
+        padding-left: 9px;
+    }
+
+
+}
+
+@media only screen and (max-width:535px) {
+    .iframe-contact iframe {
+        border: 0;
+        width: 343px;
+    }
+
+    .subBtn {
+        width: 253px;
+    }
+
+
+}

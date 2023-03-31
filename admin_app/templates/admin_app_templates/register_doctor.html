@@ -1,0 +1,222 @@
+{% extends 'admin_app_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+<!-- <link rel="stylesheet" href="{% static 'css/style_doctors.css' %}"> -->
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<style>
+    .gradient-custom {
+        /* fallback for old browsers */
+        background: #f093fb;
+
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));
+
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1))
+    }
+
+    .card-registration .select-input.form-control[readonly]:not([disabled]) {
+        font-size: 1rem;
+        line-height: 2.15;
+        padding-left: .75em;
+        padding-right: .75em;
+    }
+
+    .card-registration .select-arrow {
+        top: 13px;
+    }
+
+    .result p {
+        text-align: center;
+        margin-top: 12px;
+        font-size: 18px;
+        font-weight: 500;
+        color: green;
+        background-color: gainsboro;
+    }
+</style>
+{% endblock %}
+
+{% block title %}Doctor Register{% endblock %}
+{% block content %}
+<br><br><br>
+
+
+<div><a href="{% url 'admin_app:doctor_page' %}" style="float: left;margin-top: 7px;" class="btn btn-primary">
+        Back Home</a>
+</div>
+
+
+
+<section class="vh-100 ">
+    <div class="container py-5 ">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+                <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                    <div class="card-body p-4 p-md-5">
+                        <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Doctor Registration</h3>
+                        <form method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+
+                                    <div class="form-outline">
+                                        <label class="form-label" for="firstName">Name</label>
+                                        <input type="text" id="firstName" name="doc_name"
+                                            class="form-control form-control-lg" />
+
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 mb-4">
+
+                                    <div class="form-outline">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" name="doc_email" id="email"
+                                            class="form-control form-control-lg" />
+
+                                    </div>
+                                    <span id="email_check"></span>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-4 d-flex align-items-center">
+
+                                    <div class="form-outline datepicker w-100">
+                                        <label class="form-label" required>Phone.No</label>
+                                        <input type="number" name="doc_phone" class="form-control form-control-lg"
+                                            id="phone" />
+
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 mb-4">
+
+                                    <h6 class="mb-2 pb-1">Gender: </h6>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="doc_gender" id="femaleGender"
+                                            value="femail" checked />
+                                        <label class="form-check-label">Female</label>
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="doc_gender" id="maleGender"
+                                            value="male" />
+                                        <label class="form-check-label">Male</label>
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="doc_gender" id="otherGender"
+                                            value="other" />
+                                        <label class="form-check-label">Other</label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-4 pb-2">
+
+                                    <div class="form-outline">
+                                        <label class="form-label" for="Address">Address</label>
+                                        <textarea class="form-control form-control-lg"
+                                            style="font-size: 20px;height: 50px;" name="doc_address" name="remark" id=""
+                                            cols="30" rows="4" placeholder="Write here..."></textarea>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 mb-4 pb-2">
+
+                                    <div class="form-outline">
+                                        <label class="form-label">Profile Pic</label>
+                                        <input type="file" name="doc_image" id="image"
+                                            class="form-control form-control-lg" />
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="form-label select-label">Choose option</label>
+
+                                    <select class="select form-control-lg" name="doc_department">
+                                        {% for i in departments %}
+                                        <option value="{{i.id}}">{{i.dep_name}}</option>
+                                        {% endfor %}
+
+                                    </select>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="mt-4 pt-2">
+                                <button class="btn btn-outline-success form-control mt-3" id="btnColor">
+                                    Register
+                                </button>
+                            </div>
+                            <div class="result">
+                                <p>{{message}}</p>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+
+    $('#email').change(function () {
+
+        console.log($(this).val())
+        $.ajaxSetup({
+            headers: {
+                "X-CSRFToken": $('[name=csrfmiddlewaretoken]').val() //passing csrf token in ajax request
+            }
+        })
+
+        $.ajax({
+            type: 'POST',
+            url: "{% url 'common_app:check_email_doctor' %}",
+            data: {
+                'doc_email': $(this).val(),
+
+            },
+            success: function (response) {
+                if (response.email_exist == true) {
+                    $('#email_check').html('Email already registerd.').css("color", "red",)
+                    $('#btnColor').prop('disabled', true)
+                }
+                else {
+                    $('#email_check').html('Email available for register.').css("color", "green")
+                    $('#btnColor').prop('disabled', false)
+
+                }
+                console.log(response.email_exist)
+            }
+        })
+    })
+</script>
+
+
+
+
+
+{% endblock %}

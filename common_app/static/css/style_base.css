@@ -1,0 +1,96 @@
+nav .collapse ul li a {
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    transition: all 400ms;
+}
+
+nav .collapse ul li a:hover {
+    padding: 10px;
+    background: rgb(87, 71, 71);
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+
+
+/* footer section */
+
+footer {
+    background-color: black;
+    color: #fff;
+    width: 100vw;
+}
+
+.social {
+    padding: 0;
+}
+
+h4 {
+    padding: 15px 0px;
+}
+
+.social li {
+    display: inline-block;
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    padding: 0cm;
+}
+
+.social li a i {
+    padding-top: 4px;
+    color: #333;
+    transition: .3s;
+    font-size: 25px;
+}
+
+.social li a i:hover {
+    color: rgb(30, 118, 226);
+    text-decoration: none;
+}
+
+.footer .links ul {
+    list-style-type: none;
+}
+
+
+
+
+
+.footer .links li a {
+    color: #fff;
+    transition: color 0.2s;
+    text-decoration: none;
+
+}
+
+.footer .links li a:hover {
+    text-decoration: none;
+    color: rgb(30, 118, 226);
+}
+
+.footer .location i {
+    font-size: 18px;
+}
+
+footer .copyright p {
+    font-size: 1.3rem;
+    text-shadow: 1px 1px black;
+    border-top: 1px solid rgb(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgb(255, 255, 255, 0.8);
+}
+
+
+@media only screen and (max-width:1192px) {
+    ul li .dropdown-item {
+        text-align: center;
+    }
+
+}

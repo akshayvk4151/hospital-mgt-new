@@ -1,0 +1,231 @@
+{% extends 'doctor_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+<style>
+    .rounded-start {
+        width: 100px;
+        margin-top: 9px;
+        margin-left: 20px;
+
+    }
+
+    .card-title {
+        font-size: 50px;
+        text-align: center;
+        color: red;
+
+    }
+
+    .card-text {
+        text-align: center;
+        font-size: 17px;
+        color: red;
+        font-weight: 700;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+    .tableHeading h4 {
+        margin-top: 60px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+
+
+    table {
+        border-collapse: collapse;
+        width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    th,
+    td {
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+
+        font-size: 14px;
+        font-weight: 500;
+        background-color: chocolate;
+        color: ivory;
+    }
+
+    .tableHead {
+        background-color: brown;
+        color: #fff;
+        height: 53px;
+        font-size: 13px;
+    }
+
+
+
+    .notFound {
+        text-align: center;
+    }
+</style>
+{% endblock %}
+
+{% block title %}Doctor Home{% endblock %}
+
+{% block details %}
+
+<div class="profile-details">
+    <img src="/media/{{ d_image }}" alt="">
+    <span class="admin_name">{{ d_name | upper}}</span>
+
+</div>
+{% endblock %}
+
+{% block content %}
+
+<br><br><br><br><br>
+
+<section>
+    <div class="container">
+        <div class="row" style="margin-top: 22px;">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                <div class="card mb-3" style="max-width: 540px;background-color: gold;">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-center">
+                            <a href=""><img src="{% static 'images/ddii (1).png' %}"
+                                    class="img-fluid mx-auto d-block rounded-start" alt="..."></a>
+
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card-body">
+                                <h5 class="card-title">10{{doctor_count}}</h5>
+                                <p class="card-text">Patient Under You</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                <div class="card mb-3" style="max-width: 540px;background-color: cadetblue;">
+                    <div class="row g-0">
+                        <div class="col-md-4  text-center">
+                            <a href=""><img src="{% static 'images/doctorrec (4).png' %}"
+                                    class="img-fluid rounded-start" alt="..."></a>
+
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card-body">
+                                <h5 class="card-title">14{{patient_count}}</h5>
+                                <p class="card-text">Total Patient Discharge</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                <div class="card mb-3" style="max-width: 540px;    background-color: darkorange;">
+                    <div class="row g-0">
+                        <div class="col-md-4  text-center">
+                            <a href=""><img src="{% static 'images/ddii (3).png' %}" class="img-fluid rounded-start"
+                                    alt="..."></a>
+
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card-body">
+                                <h5 class="card-title">{{appointment}}</h5>
+                                <p class="card-text">Total Appointment</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="content">
+    <div class='container'>
+        <div class="row">
+            <div class="col-lg-12 tableHeading">
+                <h4 >Recent Appointments
+                    <hr>
+                </h4>
+
+            </div>
+            <div class="container-fluid">
+                <div style="overflow-x: auto;">
+                    <table>
+                        <tr class="tableHead">
+                            <th>SL.No</th>
+                            <th>Patient Name</th>
+                            <th>Description</th>
+                            <th>Mobile</th>
+
+                            <th>Appontment Date</th>
+                            <th>Appontment Time</th>
+                        </tr>
+
+                        {% for p in recent_apponitments %}
+
+
+                        <tr>
+                            <td>{{ forloop.counter }}</td>
+
+                            <td>{{p.patient_name}}</td>
+                            <td>{{p.patient_description}}</td>
+                            <td>{{p.patient_phone}}</td>
+
+                            <td>{{p.booking_date}}</td>
+                            <td>{{p.booking_time}}</td>
+
+
+
+                        </tr>
+                        {% empty %}
+                        <h4 class="notFound">No Booking found.</h4>
+                        
+                        {% endfor %}
+
+
+                    </table>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+    </div>
+    </div>
+</section>
+
+
+
+
+{% endblock %}

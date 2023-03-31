@@ -1,0 +1,125 @@
+{% extends 'common_app_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+<link rel="stylesheet" href="{% static 'css/style_contact.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+{% endblock %}
+
+{% block title %}hello{% endblock %}
+{% block content %}
+
+<br>
+<!-- body -->
+
+<section id="about_img" class="mission section-padding">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <div class="about_img1">
+                    <img src="{% static 'images/contactUs.jpg' %}" alt="">
+                    <div class="image_caption">
+                        <h1>Contact Us</h1>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<br><br>
+<div class="heading1">
+    <h1>
+        <span class="headerSub">CONTACT</span>INFO
+    </h1>
+</div>
+<br>
+<br>
+
+<!-- contact table -->
+<section id="contact_txt">
+    <div class="container">
+        <div class="row tex">
+            <form method="POST">
+                {% csrf_token %}
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                    <div class="input-div">
+                        <label class="input_head" for="">Name*</label>
+                        <input type="text" placeholder="Name" name="name" required/>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                    <div class="input-div">
+                        <label class="input_head" for="">Patient Mobile No.*</label>
+                        <input type="text" placeholder="Mobile No." name="mobile" required/>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-2">
+                    <div class="input-div">
+                        <label class="input_head" for="">Remarks.*</label>
+                        <textarea style="font-size: 20px;" name="remark" id="" cols="30" rows="4"
+                            placeholder="Write here..." name="remark" required></textarea>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <button class="subBtn">Submit</button>
+                    <p class="success">{{message}}</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<a class="whatsapp" href=""><img src="{% static 'images/icons8-whatsapp-1500.png' %}" alt=""></a>
+
+<!-- Hospital details and map -->
+<section class="last">
+
+    <div class="container">
+        <h2 class="lastHead">Our Location</h2>
+        <p class="lastPara">Meitra works closely with its partners to reduce disparities in healthcare, improve access
+            and increase vital
+            resources
+            for those in need. We seek to leverage our expertise in prevention, patient care, and education to make the
+            greatest
+            impact in the community.</p>
+        <br>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <h4 class="lastcontentHead text-danger">National <span style="color:#fff">Hospital</span></h4>
+                <br>
+                <h5 style="color: #fff; font-size: 21px;">We'd love to hear from you!</h5>
+                <p style="color: #fff; font-size: 18px;">Building No. 38/2208-B Karaparamba – Kunduparamba, Mini Bypass
+                    Rd,
+                <p style="line-height: 0px; color: #fff; font-size: 18px;">Edakkad, Kerala 673005, India
+                </p>
+                </p>
+                <p style="color: #fff; font-size: 18px;"><i class="bi bi-telephone-fill mr-2"></i> : +91 495 712 3456
+                    <br>
+                    <i class="bi bi-envelope-fill" style="color: #fff; font-size: 18px;"></i> : info@national.com
+                </p>
+                <p style="color: #fff; font-size: 18px;">Monday-Friday 9:00 Am to 5:00 Pm</p>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="iframe-contact">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15652.103345229192!2d75.7812429!3d11.2595096!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x289f1c125026f075!2sNational%20Hospital!5e0!3m2!1sen!2sin!4v1671898418774!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<br><br><br>
+<!-- footer -->
+
+{% endblock %}

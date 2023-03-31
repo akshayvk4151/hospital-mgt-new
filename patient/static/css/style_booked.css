@@ -1,0 +1,79 @@
+.content h2 {
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 15px;
+    margin-top: 53px;
+}
+
+#bookedmain {
+    /* background: linear-gradient(to bottom, #483d8b, #fe8c00); */
+    height: 89vh;
+    background-color: lightblue;
+}
+
+
+
+.content h2 span {
+    background: #daa520;
+    color: #fff;
+}
+
+.leftBtn {
+    margin-right: 40px;
+    margin-left: 40px;
+    font-size: 25px;
+    font-weight: 500;
+    background: #008000;
+    border-radius: 13px;
+    border: none;
+
+}
+
+.leftBtn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.leftBtn:hover {
+    background: rgb(0, 96, 0);
+    transition: 0.5s;
+    transform: scale(0.9);
+}
+
+.rightBtn {
+    margin-right: 40px;
+    margin-left: 40px;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    background: #483d8b;
+    border-radius: 13px;
+    border: none;
+
+}
+
+.rightBtn:hover {
+    background: #0c005c;
+    transition: 0.5s;
+    transform: scale(0.9);
+}
+
+.rightBtn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+
+@media only screen and (max-width:511px) {
+    .btn-success {
+        margin-top: 5px;
+    }
+
+    .content h2 span {
+        font-size: 17px;
+    }
+}

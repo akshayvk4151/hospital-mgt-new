@@ -1,0 +1,50 @@
+{% extends 'common_app_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+<link rel="stylesheet" href="{% static 'css/style_doctors.css' %}">
+{% endblock %}
+
+{% block title %}hello{% endblock %}
+{% block content %}
+
+<br>
+
+
+
+
+<section id="main_body">
+    <div class="heading" style="padding-top: 100px; padding-bottom: 20px;">
+        <h1 class="heading_text text-center mb-2"><u style="font-family: sans-serif;">Our Doctors</u> </h1>
+    </div>
+
+    <div class="container">
+        <div class="row gy-3 my-3" style="padding-bottom: 80px;">
+            {% for i in doctors %}
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="card">
+                    <div class="inner">
+                        <img class="card-img" src="{{ i.image_url }}">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{i.doctor_name}}</h5>
+                        <p class="card-text">
+                        <h4>{{i.doctor_department.dep_name}}</h4><br>
+                        <h3>Email : {{i.doctor_email}}</h3>
+                        </p>
+                        <a href="{% url 'patient:booking' %}" class="btn btn-primary">Book Doctor</a>
+
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+
+</section>
+
+
+
+
+{% endblock %}
