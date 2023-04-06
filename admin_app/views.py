@@ -7,7 +7,7 @@ from django.urls import reverse_lazy
 from admin_app.decorators import auth_admin
 from admin_app.models import Consultation
 
-from common_app.models import Contact, Departments, Doctors, Patient
+from common_app.models import Admin, Contact, Departments, Doctors, Patient
 from patient.models import Booking
 from django.contrib import messages
 
@@ -16,6 +16,9 @@ from django.contrib import messages
 
 @auth_admin
 def admin_app_index(request):
+    admin = Admin.objects.filter(id = request.session['admin']).values('admin_name')
+    
+    admin_name = admin[0]['admin_name']
     doctor = Doctors.objects.all().count()   
     patient = Patient.objects.all().count() # customer count
     booking = Booking.objects.all().count()
@@ -45,7 +48,7 @@ def admin_app_index(request):
             recent_patients[regs.patient_email] = regs
     reg_patient_list = list(recent_patients.values())
     
-    return render(request,'admin_app_templates/index.html',{'patient_count':patient,'doctor_count':doctor,'booking_count':booking, 'reg_doctors_list':reg_doctors_list,'reg_patient_list':reg_patient_list})
+    return render(request,'admin_app_templates/index.html',{'patient_count':patient,'doctor_count':doctor,'booking_count':booking, 'reg_doctors_list':reg_doctors_list,'reg_patient_list':reg_patient_list,'admin_name':admin_name})
 
 @auth_admin
 def admin_app_view_messages(request):
@@ -173,7 +176,11 @@ def admin_app_doctor_specialisation(request):
 
 @auth_admin
 def admin_app_doctor_record(request):
-    doctor_rec = Doctors.objects.filter(status = 'approved')
+    if 'q' in request.GET:
+        q=request.GET['q']
+        doctor_rec = Doctors.objects.filter(doctor_name__icontains=q, status='approved').order_by('doctor_name')
+    else:
+        doctor_rec = Doctors.objects.filter(status = 'approved')
     return render(request,'admin_app_templates/doctor_record.html',{'doctor':doctor_rec})
 
 @auth_admin
@@ -307,7 +314,7 @@ def admin_app_approve_patient(request):
         if 'approve' in request.POST:
           
             
-            patients.status = 'approved' #sql update query
+            patients.status = 'booked' #sql update query
            
           
             patients.save()
@@ -346,7 +353,7 @@ def remove_regpatient_record(request,p_id):
 
 @auth_admin
 def admin_app_view_patients(request):
-    patient = Booking.objects.filter(status = 'approved')
+    patient = Booking.objects.filter(status = 'booked')
     return render(request,'admin_app_templates/view_patients.html',{'view_patient':patient})
 
 @auth_admin
@@ -358,7 +365,11 @@ def remove_patient_record(request,p_id):
 
 @auth_admin
 def admin_app_consulted_patient(request):
-    patient = Booking.objects.filter(status = 'consulted')
+    if 'q' in request.GET:
+        q=request.GET['q']
+        patient = Booking.objects.filter(patient_name__icontains=q, status='consulted').order_by('patient_name')
+    else:
+        patient = Booking.objects.filter(status = 'consulted')
     return render(request,'admin_app_templates/consulted_patient.html',{'view_patient':patient})
 @auth_admin
 def remove_consulted_patient(request,p_id):
@@ -412,12 +423,12 @@ def admin_app_patient_page(request):
 
 @auth_admin
 def admin_app_appointments(request):
-    patient = Booking.objects.filter(status = 'approved')
+    patient = Booking.objects.filter(status = 'booked')
     return render(request,'admin_app_templates/appointments.html',{'view_patient':patient})
 
 
 
-def logout(request):
-    del request.session['admin']
-    request.session.flush() #to close database
+def admin_logout(request):
+    if 'admin' in request.session:
+        request.session.pop('admin')
     return redirect('common_app:home')

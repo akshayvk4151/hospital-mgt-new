@@ -10,28 +10,7 @@ from patient.models import Booking
 # Create your views here.
 
 
-def doctorSearchAjax(request):
-    doctors = Doctors.objects.filter(status = 'approved').values_list('doctor_name', flat=True)
-    doctorList = list(doctors)
 
-    return JsonResponse(doctorList, safe=False)
-
-def searchdoctor(request):
-    if request.method == 'POST':
-        searchedterm = request.POST.get('doctorsearch')
-        if searchedterm == "":
-            return redirect(request.META.get('HTTP_REFERER'))
-        else:
-            doct = Doctors.objects.filter(doctor_name__contains = searchedterm).first()
-
-            if doct:
-                return redirect(f'/patient/view_search_result/{doct.id}/')
-    return redirect(request.META.get('HTTP_REFERER'))
-
-@auth_patient
-def patient_view_search_result(request, d_id):
-    doctor = Doctors.objects.get(id=d_id)
-    return render(request,'patient_templates/view_search_result.html',{'doc':doctor})
 
 
 
@@ -151,6 +130,31 @@ def patient_view_booking(request):
 def patient_pat_doctors(request):
     doctor = Doctors.objects.all()
     return render(request,'patient_templates/pat_doctors.html',{'doctor':doctor})
+
+def doctorSearchAjax(request):
+    doctors = Doctors.objects.filter(status = 'approved').values_list('doctor_name', flat=True)
+    doctorList = list(doctors)
+
+    return JsonResponse(doctorList, safe=False)
+
+def searchdoctor(request):
+    if request.method == 'POST':
+        searchedterm = request.POST.get('doctorsearch')
+        if searchedterm == "":
+            return redirect(request.META.get('HTTP_REFERER'))
+        else:
+            doct = Doctors.objects.filter(doctor_name__contains = searchedterm).first()
+
+            if doct:
+                return redirect(f'/patient/view_search_result/{doct.id}/')
+    return redirect(request.META.get('HTTP_REFERER'))
+
+@auth_patient
+def patient_view_search_result(request, d_id):
+    doctor = Doctors.objects.get(id=d_id)
+    return render(request,'patient_templates/view_search_result.html',{'doc':doctor})
+
+
 from django.http import Http404
 
 def patient_consultation_details(request, consultation_id):
@@ -201,8 +205,8 @@ def patient_view_prescription(request,booking_id):
 
 
 
-def logout(request):
-    del request.session['patient']
-    request.session.flush() #to close database
+def patient_logout(request):
+    if 'patient' in request.session:
+        request.session.pop('patient')
     return redirect('common_app:home')
 

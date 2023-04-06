@@ -1,4 +1,5 @@
-from django.shortcuts import redirect, render
+from audioop import reverse
+from django.shortcuts import get_object_or_404, redirect, render
 from django.http import HttpResponse
 from.models import Admin, Contact, Departments, Doctors, Patient
 from django.http import JsonResponse
@@ -144,9 +145,13 @@ def common_app_doctors_register(request):
             doctor = Doctors(doctor_name = d_name, doctor_email = d_email, doctor_department_id = dep, doctor_phone = d_phone, doctor_address = d_address, doctor_gender = d_gender)
         doctor.save()
         msg1 = 'You are Successfully Registred'
+        return redirect('common_app:doc_logincheck', doctor_id=doctor.id)
     dep = Departments.objects.all()
     return render(request,'common_app_templates/doctors_register.html',{'departments':dep , 'message1':msg1, 'message2':msg2})
 
+def common_app_doc_logincheck(request,doctor_id): # for name
+    doctor = Doctors.objects.get( id=doctor_id)
+    return render(request,'common_app_templates/doc_logincheck.html', {'doctor': doctor})
 
 
 def common_app_department(request):
@@ -197,12 +202,12 @@ def common_app_admin_login(request):
    
     return render(request,'common_app_templates/admin_login.html',{'message':msg})
 
+
+
 def common_app_admin_click(request):
     return render(request,'common_app_templates/admin_click.html')
 
-def common_app_doc_logincheck(request): # for name
-    return render(request,'common_app_templates/doc_logincheck.html')
-     
+
      
     
 

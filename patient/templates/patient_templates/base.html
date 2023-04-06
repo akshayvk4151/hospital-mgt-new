@@ -1,11 +1,11 @@
 {% load static %}
 <!DOCTYPE html>
-<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+
 <html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
-    <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+    <!--<title> Responsive Admin Dashboard | CodingLab </title>-->
     <link rel="stylesheet" href="style.css">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -414,7 +414,7 @@
             </li>
 
             <li class="log_out">
-                <a href="{% url 'patient:logout' %}">
+                <a href="{% url 'patient:patient_logout' %}">
                     <i class='bx bx-log-out'></i>
                     <span class="links_name">Log out</span>
                 </a>
@@ -427,10 +427,7 @@
                 <i class='bx bx-menu sidebarBtn'></i>
                 <span class="dashboard">Dashboard</span>
             </div>
-            <div class="search-box">
-                <input type="text" placeholder="Search...">
-                <i class='bx bx-search'></i>
-            </div>
+            
             {% block details %}
 
 
