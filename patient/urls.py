@@ -25,5 +25,5 @@ urlpatterns=[
   
     path('view_prescription/<int:booking_id>/',views.patient_view_prescription,name='view_prescription'),
 
-    path('logout',views.logout,name='logout'),
+    path('patient_logout',views.patient_logout,name='patient_logout'),
 ]

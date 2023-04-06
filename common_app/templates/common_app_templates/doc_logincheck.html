@@ -2,16 +2,66 @@
 {% load static %}
 
 {% block header %}
+<style>
+    .content {
+        margin-top: 6rem
+    }
 
+    .content h1 {
+        font-weight: 400;
+        margin-bottom: 22px;
+        font-size: 55px;
+    }
+
+    .content p {
+        letter-spacing: 1px;
+        color: goldenrod;
+        font-size: 18px;
+    }
+
+    .bottom_content {
+        margin-top: 31px;
+    }
+
+    .bottom_content button a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .bottom_content button {
+        background-color: blue;
+        border: none;
+        border-radius: 5px;
+        width: 150px;
+        height: 32px;
+    }
+</style>
 
 
 {% endblock %}
 
-{% block title %}hello{% endblock %}
+{% block title %}doc_logincheck{% endblock %}
 {% block content %}
 
 <br><br><br>
+<section>
+    <div class="container">
+        <div class="col-lg-12">
+            <div class="content text-center">
+                <h1>Hello {{ doctor.doctor_name|title }}</h1>
+                <p>Your Account is not approved till now</p>
+                <p>Our Team is checking your profile</p>
+                <p>Soon your Account will be confirmed!!!</p>
+            </div>
+            <hr>
+            <div class="bottom_content text-center">
+                <h6>Check Later</h6>
+                <button><a href="{% url 'common_app:home' %}">Go Back For Now</a></button>
+            </div>
 
+        </div>
+    </div>
+</section>
 
 
 

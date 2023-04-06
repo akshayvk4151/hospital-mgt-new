@@ -1,0 +1,67 @@
+{% extends 'doctor_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+<style>
+    .card {
+        align-items: center;
+        justify-content: center;
+        max-width: 400px;
+        background-color: firebrick;
+        color: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .card:hover  {
+    transform: scale(1.2);
+}
+</style>
+{% endblock %}
+
+{% block title %}View Appointments{% endblock %}
+{% block content %}
+
+<br><br><br><br><br>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="{% url 'doctor:patient_record' %}" style="text-decoration: none;">
+                    <div class="card mb-5">
+                        <div style="    font-size: 95px;margin-left: 15px;">
+                            <i class='bi bi-person-circle'></i>
+
+                        </div>
+                        <div>
+                            <h5>Patient Consulted</h5>
+                        </div>
+
+
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="{% url 'doctor:patient_booked' %}" style="text-decoration: none;">
+                    <div class="card mb-5">
+                        <div style="    font-size: 95px;margin-left: 15px;">
+                            <i class="bi bi-card-checklist"></i>
+
+                        </div>
+                        <div>
+                            <h5>Booked Patients</h5>
+                        </div>
+
+
+
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+{% endblock %}

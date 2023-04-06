@@ -12,7 +12,10 @@ urlpatterns=[
    
     path('delete_appointment',views.doctor_delete_appointment,name='delete_appointment'),
     path('remove_appointment/<int:d_id>',views.remove_appointment,name='remove_app'),
+
+    path('patient_page',views.doctor_patient_page,name='patient_page'),
     path('patient_record',views.doctor_patient_record,name='patient_record'),
+    path('patient_booked',views.doctor_patient_booked,name='patient_booked'),
   
     path('view_prescription/<int:booking_id>',views.doctor_view_prescription,name='view_prescription'),
 
@@ -26,5 +29,5 @@ urlpatterns=[
     path('edit_item/<int:booking_id>/',views.edit_item,name='edit_item'),
     path('update_item/<int:booking_id>/',views.update_item,name='update_item'),
     path('consultation',views.doctor_consultation,name='consultation'),
-    path('logout',views.logout,name='logout'),
+    path('doctor_logout',views.doctor_logout,name='doctor_logout'),
 ]

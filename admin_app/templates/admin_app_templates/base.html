@@ -363,7 +363,7 @@
 </head>
 
 <body>
-    <div class="sidebar">
+    <div class="sidebar" style="background-color: black;">
         <div class="logo-details">
 
             <h6 class="navbar-brand "><span class="text-danger">National</span>&nbsp;
@@ -407,9 +407,9 @@
             
 
             <li class="log_out">
-                <a href="{% url 'admin_app:logout' %}">
+                <a href="{% url 'admin_app:admin_logout' %}">
                     <i class='bx bx-log-out'></i>
-                    <span class="links_name">Log out</span>
+                    <span class="links_name">Logout</span>
                 </a>
             </li>
         </ul>
@@ -418,17 +418,13 @@
         <nav>
             <div class="sidebar-button">
                 <i class='bx bx-menu sidebarBtn'></i>
-                <span class="dashboard">Doctor Dashboard</span>
+                <span class="dashboard">Admin Dashboard</span>
             </div>
-            <div class="search-box">
-                <input type="text" placeholder="Search...">
-                <i class='bx bx-search'></i>
-            </div>
-            <div class="profile-details">
-                <img src="/media/{{ image }}" alt="">
-                <span class="admin_name">{{ name | upper}}</span>
-
-            </div>
+            {% block details %}
+            
+            
+            {% endblock %}
+            
         </nav>
 
 

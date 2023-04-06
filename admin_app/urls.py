@@ -39,7 +39,7 @@ urlpatterns=[
 
 
     path('appointments',views.admin_app_appointments,name='appointments'),
-    path('logout',views.logout,name='logout'),
+    path('admin_logout',views.admin_logout,name='admin_logout'),
     
   
 ]

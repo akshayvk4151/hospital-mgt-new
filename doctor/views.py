@@ -29,11 +29,13 @@ def doctor_index(request):
 
 
     doctor = Doctors.objects.get(id = request.session['doctor'])
-    appointment = Booking.objects.filter(doctor_name=doctor).count()
+    total_patients = Booking.objects.filter(doctor_name=doctor).count()
+    consulted = Booking.objects.filter(doctor_name=doctor, status='consulted').count()
+    booked = Booking.objects.filter(doctor_name=doctor, status='booked').count()
 
 
 
-    appointments = Booking.objects.filter(doctor_name=doctor).order_by('-booking_date')[0:5]
+    appointments = Booking.objects.filter(doctor_name=doctor, status='booked' ).order_by('-booking_date')[0:5]
     recent_appointments = {}
     for appoint in appointments:
         if appoint.patient_email in recent_appointments:
@@ -47,11 +49,26 @@ def doctor_index(request):
     context = {
         'd_name': doctor_name,
         'd_image': doctor_pic,
-        'appointment':appointment,
-        'recent_apponitments': recent_appointments_list
+        'total_patients':total_patients,
+        'recent_apponitments': recent_appointments_list,
+        'consulted':consulted,
+        'booked':booked
     }
 
     return render(request,'doctor_templates/index.html',context)
+
+
+@auth_doctor
+def doctor_patient_page(request):
+    return render(request,'doctor_templates/patient_page.html',)
+
+@auth_doctor
+def doctor_patient_booked(request):
+    doctor = Doctors.objects.get(id = request.session['doctor'])
+    booked_patients = Booking.objects.filter(doctor_name = doctor, status = 'approved')
+    return render(request,'doctor_templates/patient_booked.html',{'booked_patients':booked_patients})
+
+
 
 @auth_doctor
 def doctor_patient_record(request):
@@ -240,9 +257,9 @@ def doctor_consultation(request):
 
     return render(request,'doctor_templates/consultation.html',{'consultation_details':consultation_detail})
 
-def logout(request):
-    del request.session['doctor']
-    request.session.flush() #to close database
+def doctor_logout(request):
+    if 'doctor' in request.session:
+        request.session.pop('doctor')
     return redirect('common_app:home')
 
 
