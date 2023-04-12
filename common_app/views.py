@@ -29,7 +29,8 @@ def common_app_contact(request):
 
 
 
-# ////////////////////////Patient///////////////////////////////////////
+# ////////////////////////Patient section///////////////////////////////////////
+
 def common_app_patient_click(request):
     return render(request,'common_app_templates/patient_click.html')
 
@@ -68,7 +69,7 @@ def common_app_patient_register(request):
         
     return render(request,'common_app_templates/patient_register.html',{'message2':msg2})
 
-# ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 def check_email(request):  #checking email of patient
     email = request.POST['p_email']
     print(email)

@@ -325,15 +325,11 @@
                                         <td>
 
                                             <a href="{% url 'doctor:delete_item' i.id %}" style="float: right;"
-                                                class="btn btn-danger "><i class="fa fa-trash"></i> Remove</a>
+                                                class="btn btn-danger "> Remove</a>
                                         </td>
                                         <td>
                                             <a href="{% url 'doctor:edit_item' i.id %}"
-                                                style="float: right;margin-right: 8px;" class="btn btn-danger "><i
-                                                    class="fa fa-trash"></i> Edit</a>
-
-
-
+                                                style="float: right;margin-right: 8px;" class="btn btn-danger "> Edit</a>
                                         </td>
 
                                     </tr>
@@ -343,6 +339,10 @@
                                 </tbody>
                             </table>
                         </div>
+                    </div>
+
+                    <div>
+                         <a href="{% url 'doctor:view_appointment' %}" class="btn btn-danger mb-5 mt-3 ">Go Back</a>
                     </div>
 
 

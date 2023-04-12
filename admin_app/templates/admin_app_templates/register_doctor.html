@@ -194,7 +194,7 @@
 
         $.ajax({
             type: 'POST',
-            url: "{% url 'common_app:check_email_doctor' %}",
+            url: "{% url 'admin_app:check_email_doctor' %}",
             data: {
                 'doc_email': $(this).val(),
 

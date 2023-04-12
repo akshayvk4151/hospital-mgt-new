@@ -29,5 +29,9 @@ urlpatterns=[
     path('edit_item/<int:booking_id>/',views.edit_item,name='edit_item'),
     path('update_item/<int:booking_id>/',views.update_item,name='update_item'),
     path('consultation',views.doctor_consultation,name='consultation'),
+    path('update_consultation_status',views.update_consultation_status,name='update_consultation_status'),
+
+
+
     path('doctor_logout',views.doctor_logout,name='doctor_logout'),
 ]

@@ -146,15 +146,16 @@
                                     <option>Friday</option>
                                     <option>Saturday</option>
                                 </select>
+                      
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-2" for="pwd">Time:</label>
                             <div class="col-sm-10">
-                                <input type="time" id="frm_time" name="frm_time" value="{{time1}}" class="form-control"
+                                <input type="text" id="frm_time" name="frm_time" value="{{time1}}" class="form-control"
                                     style="width: 200px; display: inline;">
                                 To
-                                <input type="time" id="to_time" name="to_time" value="{{time2}}" class="form-control"
+                                <input type="text" id="to_time" name="to_time" value="{{time2}}" class="form-control"
                                     style="width: 200px; display: inline;">
                             </div>
                         </div>
@@ -168,7 +169,7 @@
                                 <div class="p-3 mb-2 bg-success text-white alert alert-{{ message.tags }} alert-dismissible fade show"
                                     role="alert" style="width: 221px;">
                                     {{ msg }}
-                                    <button type="button" class="close" onclick="dismissAlert(this)" aria-label="Close">
+                                    <button type="submit" class="close" id="submit_btn" onclick="dismissAlert(this)" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
@@ -223,11 +224,7 @@
 
 
             </div>
-            <!-- <div><a href="{% url 'admin_app:doctor_page' %}" style="float: left;margin-top: 7px;"
-                    class="btn btn-danger ">
-                    Back Home</a>
-            </div> -->
-
+           
 
 
 
@@ -248,5 +245,30 @@
         $(button).parent().fadeOut();
     }
 </script>
+
+<script>
+$(document).ready(function() {
+  $('#consult_day').change(function() {
+    var selectedDay = $(this).val();
+    $.ajax({
+      url: "{% url 'admin_app:check_day' %}",
+      type: 'POST',
+      data: { consult_day: selectedDay },
+      success: function(response) {
+        if (response.day_exist) {
+          
+          $('#error_message').text(selectedDay + ' already exists.');
+        } else {
+          
+          $('#error_message').text('');
+        }
+      }
+    });
+  });
+});
+
+</script>
+
+
 
 {% endblock %}

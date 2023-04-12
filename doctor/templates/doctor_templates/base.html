@@ -379,20 +379,27 @@
             </li>
             <li>
                 <a href="{% url 'doctor:patient_page' %}">
-                    <i class='bx bx-box'></i>
+                    <i class="bi bi-person-circle"></i>
                     <span class="links_name">Patient</span>
                 </a>
             </li>
 
             <li>
                 <a href="{% url 'doctor:appointments' %}">
-                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <i class="bi bi-check2-circle"></i>
                     <span class="links_name">Appointment</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="{% url 'doctor:consultation' %}">
+                    <i class="bi bi-calendar-check"></i>
+                    <span class="links_name">Your Consulting Details</span>
                 </a>
             </li>
             <li>
                 <a href="{% url 'doctor:change_password' %}">
-                    <i class='bx bx-coin-stack'></i>
+                    <i class="bi bi-person-lock"></i>
                     <span class="links_name">Change Password</span>
                 </a>
             </li>

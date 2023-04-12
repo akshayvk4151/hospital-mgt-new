@@ -8,7 +8,10 @@ urlpatterns=[
     path('doc_booking',views.patient_doc_booking,name='booking'),
     path('profile',views.patient_profile,name='profile'),
     path('booked',views.patient_booked,name='booked'),
-    path('view_booking',views.patient_view_booking,name='view_booking'),
+
+    path('your_bookings',views.patient_your_bookings,name='your_bookings'),
+    path('prescription_list',views.patient_prescription_list,name='prescription_list'),
+    path('view_bookings',views.patient_view_bookings,name='view_bookings'),
     path('pat_doctors',views.patient_pat_doctors,name='pat_doctors'),
 
     path('doctor_search',views.doctorSearchAjax,name='doctor_search'),

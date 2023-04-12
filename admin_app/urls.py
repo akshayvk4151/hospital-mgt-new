@@ -19,7 +19,9 @@ urlpatterns=[
     path('doctor_record',views.admin_app_doctor_record,name='doctor_record'),
     path('doctor/remove/<int:d_id>',views.remove_doctor_record,name='remove_doctor'),
     path('register_doctor',views.admin_app_register_doctor,name='register_doctor'),
+
     path('consultation/<int:d_id>',views.admin_app_consultation,name='consultation'),
+    path('check_day/', views.check_day, name='check_day'),
     path('delete_consultation/<int:c_id>/', views.delete_consultation, name='delete_consultation'),
     path('edit_consultation/<int:d_id>/', views.edit_consultation, name='edit_consultation'),
     path('update_consultation/<int:d_id>/',views.update_consultation,name='update_consultation'),

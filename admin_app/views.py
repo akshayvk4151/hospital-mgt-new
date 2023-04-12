@@ -265,6 +265,15 @@ def admin_app_consultation(request, d_id):
             }
     
     return render(request,'admin_app_templates/consultation.html',context)
+
+def check_day(request): # checking consult day and time is repeating or not
+    c_day = request.POST.get('consult_day')
+    day_exist = Consultation.objects.filter(day=c_day).exists()
+    status = {'day_exist': day_exist}
+    return JsonResponse(status)
+
+
+
 @auth_admin
 def delete_consultation(request,c_id):
     details = Consultation.objects.get(id = c_id)
@@ -364,13 +373,14 @@ def remove_patient_record(request,p_id):
 
 
 @auth_admin
-def admin_app_consulted_patient(request):
+def admin_app_consulted_patient(request):  #For searching
     if 'q' in request.GET:
         q=request.GET['q']
         patient = Booking.objects.filter(patient_name__icontains=q, status='consulted').order_by('patient_name')
     else:
         patient = Booking.objects.filter(status = 'consulted')
     return render(request,'admin_app_templates/consulted_patient.html',{'view_patient':patient})
+
 @auth_admin
 def remove_consulted_patient(request,p_id):
     pat_record = Booking.objects.get(id = p_id)

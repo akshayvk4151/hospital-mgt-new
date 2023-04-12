@@ -72,14 +72,17 @@
                             {% for consult in consultation_details %}
                             <form method="POST">
                                 {% csrf_token %}
-                                <tr class="tableBody">
+                                <tr class="tableBody" id="consult{{consult.id}}">
                                     <td>{{consult.day }}</td>
                                     <td>{{consult.time}}</td>
                                     <td>{{consult.status}}</td>
 
-                                    <td><button class="btn btn-danger" name='unavailable' type="submit">Not
-                                            Available</button><span style="margin-left: 5px;"><button class="btn btn-success" name='available'
-                                                type="submit">Available</button></span>
+                                    <td><button class="btn btn-danger" name='unavailable' type="button"
+                                        onclick="updateConsultationStatus('{{consult.id}}', 'unavailable')">Not Available</button>
+                                        <span style="margin-left: 5px;">
+                                        <button class="btn btn-success" name='available' type="button"
+                                            onclick="updateConsultationStatus('{{consult.id}}', 'available')">Available</button>
+                                        </span>
 
                                     </td>
 
@@ -101,6 +104,28 @@
         </div>
     </div>
 </section>
+
+
+<script>
+    function updateConsultationStatus(consultationId, newStatus) {
+            $.ajax({
+                type: "POST",
+                url: "{% url 'doctor:update_consultation_status' %}",
+                data: {
+                    'consultation_id': consultationId,
+                    'new_status': newStatus,
+                    'csrfmiddlewaretoken': '{{ csrf_token }}'
+                },
+                success: function (data) {
+                    // Update the status of the relevant row
+                    $('#consult' + consultationId + ' td:eq(2)').text(newStatus);
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    alert('Error updating consultation status: ' + errorThrown);
+                }
+            });
+        }
+</script>
 
 
 {% endblock %}

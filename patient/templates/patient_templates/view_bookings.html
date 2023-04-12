@@ -12,15 +12,13 @@
     td {
         text-align: left;
         padding: 8px;
+        color: #fff;
+    }
+    .tbody{
+        background-color: burlywood;
     }
 
-    tr:nth-child(even) {
-
-        font-size: 17px;
-        font-weight: 500;
-        background-color: sandybrown;
-        color: ivory;
-    }
+    
 
     .tableHead {
         background-color: brown;
@@ -46,7 +44,7 @@
     <div class='container'>
         <div class="row">
             <div class="col-lg-12">
-                <h4 style="margin-top: 20px;margin-bottom: 30px;">Your Bookings.
+                <h4 style="margin-top: 20px;margin-bottom: 30px;">Your Booking Details.
                     <hr>
                 </h4>
 
@@ -65,7 +63,7 @@
                         </tr>
                         {% for p in views %}
 
-                        <tr>
+                        <tr class="tbody">
                             <td>{{ forloop.counter }}</td>
 
                             <td>{{p.doctor_name.doctor_name}}</td>
@@ -74,19 +72,20 @@
                             <td>{{p.booking_date}}</td>
 
                             <td>{{p.booking_time}}</td>
-                            {% if p.status == "pending" %}
-                            <td class="bg-danger text-white">{{p.status}}</td>
-                            {% elif p.status == "approved" %}
-                            <td class="bg-success text-white">{{p.status}}</td>
-                            {% elif p.status == "consulted" %}
+
+
                             <td>
+                                {% if p.status == 'booked' %}
                                 <span class="bg-success text-white">{{ p.status }}</span>
-                                <a href="{% url 'patient:view_prescription' p.id %}" class="btn btn-sm btn-info" style="float: right;color: #fff;">View
-                                    Prescription</a>
+                                {% else %}
+                                <span class="bg-danger text-white">{{ p.status }}</span>
+                                {% endif %}
+
+                               
                             </td>
-                            {% else %}
-                            <td class="bg-success text-white">{{ p.status }}</td>
-                            {% endif %}
+
+
+
 
 
                         </tr>
@@ -100,8 +99,8 @@
 
 
             </div>
-            <div><a href="{% url 'patient:index' %}" style="float: left;margin-top: 7px;" class="btn btn-danger ">
-                    Back Home</a>
+            <div><a href="{% url 'patient:your_bookings' %}" style="float: left;margin-top: 7px;" class="btn btn-danger ">
+                    Back</a>
             </div>
 
 
@@ -113,13 +112,12 @@
     </div>
 
 
-    </div>
-    </div>
+   
 </section>
 
 
 
-<!-- footer -->
+
 
 
 {% endblock %}

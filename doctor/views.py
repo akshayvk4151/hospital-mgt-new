@@ -7,7 +7,7 @@ from admin_app.models import Consultation
 from common_app.models import Departments, Doctors, Patient
 from doctor.decorators import auth_doctor
 from doctor.models import Prescription
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from patient.models import Booking
 from django.contrib import messages
 
@@ -65,7 +65,7 @@ def doctor_patient_page(request):
 @auth_doctor
 def doctor_patient_booked(request):
     doctor = Doctors.objects.get(id = request.session['doctor'])
-    booked_patients = Booking.objects.filter(doctor_name = doctor, status = 'approved')
+    booked_patients = Booking.objects.filter(doctor_name = doctor, status = 'booked')
     return render(request,'doctor_templates/patient_booked.html',{'booked_patients':booked_patients})
 
 
@@ -148,7 +148,7 @@ def doctor_doctor_profile(request):
 
 def doctor_delete_appointment(request):
    doctor = Doctors.objects.get(id = request.session['doctor'])
-   appointment = Booking.objects.filter(doctor_name = doctor,status = 'approved')
+   appointment = Booking.objects.filter(doctor_name = doctor,status = 'booked')
    return render(request,'doctor_templates/delete_appointment.html',{'appointments':appointment})
 def remove_appointment(request,d_id):
     app_list = Booking.objects.get(id = d_id)
@@ -158,13 +158,12 @@ def remove_appointment(request,d_id):
 
 @auth_doctor
 def doctor_appointments(request):
-
     return render(request,'doctor_templates/appointments.html')
 
 @auth_doctor
 def doctor_view_appointment(request):
     doctor = Doctors.objects.get(id = request.session['doctor'])
-    appointment = Booking.objects.filter(doctor_name = doctor,status = 'approved')
+    appointment = Booking.objects.filter(doctor_name = doctor,status = 'booked')
     return render(request, 'doctor_templates/view_appointment.html', {'appointments':appointment})
 
 
@@ -193,7 +192,7 @@ def doctor_prescription(request, booking_id):
         proute = request.POST['p_route']
         pfrequency = request.POST['p_frequency']
         prescription = Prescription(booking=bkng, diagnosis=pdiagnosis, medication_name=pname, purpose=ppurpose, dosage=pdosage, route=proute, frequency=pfrequency)
-        prescription.status = 'cunsulted'
+        prescription.status = 'consulted'
         
         prescription.save()
         bkng.status = 'consulted'
@@ -241,21 +240,24 @@ def update_item(request,booking_id):
 
 @auth_doctor
 def doctor_consultation(request):
-    # doctor = Doctors.objects.get(id = request.session['doctor'])
+    
     consultation_detail = Consultation.objects.filter(doctor_id = request.session['doctor'])
 
-    if request.method == 'POST':
-        consult_id = request.POST['consultation_id']
-        consultation = Consultation.objects.get(id=consult_id)
-        if 'unavailable' in request.POST:
-            consultation.status = 'unavailable'
-            consultation.save()
-        if 'available' in request.POST:
-            consultation.status = 'available'
-            consultation.save()
     
-
     return render(request,'doctor_templates/consultation.html',{'consultation_details':consultation_detail})
+
+def update_consultation_status(request):
+    if request.method == 'POST':
+        consultation_id = request.POST['consultation_id']
+        new_status = request.POST['new_status']
+        consultation = Consultation.objects.get(id=consultation_id)
+        consultation.status = new_status
+        consultation.save()
+        return JsonResponse({'success': True})
+    else:
+        return JsonResponse({'success': False, 'message': 'Invalid request method'})
+
+
 
 def doctor_logout(request):
     if 'doctor' in request.session:

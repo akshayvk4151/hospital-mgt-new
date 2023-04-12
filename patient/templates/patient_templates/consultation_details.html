@@ -44,7 +44,7 @@
 
 {% endblock %}
 
-{% block title %}Patient Booked{% endblock %}
+{% block title %}Consultation{% endblock %}
 {% block content %}
 
 <br><br><br><br><br>
@@ -52,7 +52,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h3>Doctor Consultation Details.
+                <h3>{{doctor_name}} Consultation Details.
                     <hr>
                 </h3>
             </div>
@@ -75,9 +75,13 @@
                             <tr class="tableBody">
                                 <td>{{ forloop.counter }}</td>
                                 </td>
-                                <td>{{c.day}}</td>
+                                <td>{{c.day|title}}</td>
                                 <td>{{c.time}}</td>
-                                <td>{{c.status}}</td>
+                                {% if c.status == 'available' %}
+                                <td style="color:green">{{c.status|title}}</td>
+                                {% else %}
+                                <td style="color:red">{{c.status|title}}</td>
+                                {% endif %}
                             </tr>
                             {% empty %}
                             <h4 class="notFound text-center text-danger">No doctor record found.</h4>

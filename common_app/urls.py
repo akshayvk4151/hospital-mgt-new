@@ -4,7 +4,7 @@ app_name='common_app'
 
 
 urlpatterns=[
-    path('index',views.common_app_index,name='home'),
+    path('',views.common_app_index,name='home'),
    
     path('about',views.common_app_about,name='about'),
     path('contact',views.common_app_contact,name='contact'),

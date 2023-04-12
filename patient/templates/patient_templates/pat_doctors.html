@@ -20,8 +20,15 @@
         margin-bottom: 22px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background-color: saddlebrown;
-        color: #fff
+        color: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: transform 0.3s ease-in-out;
     }
+
+    .card:hover {
+        transform: scale(1.1);
+    }
+
 
     .card-text a {
         text-decoration: none;
@@ -29,6 +36,12 @@
         background-color: darkred;
         border: 1px solid #fff;
         border-radius: 5px;
+    }
+    .consult{
+        transition: transform 0.3s ease-in-out;
+    }
+    .consult:hover{
+        transform: scale(1.1);
     }
 </style>
 {% endblock %}
@@ -50,7 +63,8 @@
                         {% csrf_token %}
                         <input class="form-control mr-sm-2" type="search" id="searchdoctor" name="doctorsearch"
                             placeholder="Search" aria-label="Search" required>
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        <button class="btn btn-outline-success my-2 my-sm-0 " style="margin-left: 5px;"
+                            type="submit">Search</button>
                     </form>
 
                 </div>
@@ -83,7 +97,7 @@
                             <p class="card-text">({{i.doctor_department.dep_name}})</p>
                             <p class="card-text">Phone No : {{i.doctor_phone}}</p>
                             <p class="card-text">Email : {{i.doctor_email}}</p>
-                            <p class="card-text"><a href="{% url 'patient:consultation_details' i.id %}">Consultation
+                            <p class="card-text consult"><a href="{% url 'patient:consultation_details' i.id %}">Consultation
                                     Details</a></p>
                             <a href="{% url 'patient:booking' %}" class="btn btn-primary"
                                 style="width: 145px;">Booking</a>

@@ -1,4 +1,4 @@
-{% extends 'doctor_templates/base.html' %}
+{% extends 'patient_templates/base.html' %}
 {% load static %}
 
 {% block header %}
@@ -7,7 +7,7 @@
         align-items: center;
         justify-content: center;
         max-width: 400px;
-        background-color: firebrick;
+        background-color: blue;
         color: #fff;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         transition: transform 0.3s ease-in-out;
@@ -16,9 +16,10 @@
     transform: scale(1.1);
     }
 </style>
+</style>
 {% endblock %}
 
-{% block title %}View Appointments{% endblock %}
+{% block title %}View Bookind=g{% endblock %}
 {% block content %}
 
 <br><br><br><br><br>
@@ -27,14 +28,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <a href="{% url 'doctor:patient_record' %}" style="text-decoration: none;">
+                <a href="{% url 'patient:view_bookings' %}" style="text-decoration: none;">
                     <div class="card mb-5">
                         <div style="    font-size: 95px;margin-left: 15px;">
                             <i class='bi bi-person-circle'></i>
 
                         </div>
                         <div>
-                            <h5>Patient Consulted</h5>
+                            <h5>Your Booking</h5>
                         </div>
 
 
@@ -44,14 +45,14 @@
             </div>
 
             <div class="col-md-4">
-                <a href="{% url 'doctor:patient_booked' %}" style="text-decoration: none;">
+                <a href="{% url 'patient:prescription_list' %}" style="text-decoration: none;">
                     <div class="card mb-5">
                         <div style="    font-size: 95px;margin-left: 15px;">
                             <i class="bi bi-card-checklist"></i>
 
                         </div>
                         <div>
-                            <h5>Booked Patients</h5>
+                            <h5>Your Prescription</h5>
                         </div>
 
 

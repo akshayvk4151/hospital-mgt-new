@@ -5,6 +5,7 @@ from admin_app.models import Consultation
 from common_app.models import Doctors, Patient
 from doctor.models import Prescription
 from patient.decorators import auth_patient
+from django.http import Http404
 
 from patient.models import Booking
 # Create your views here.
@@ -23,7 +24,7 @@ def patient_index(request):
 
 
     patient_id = request.session['patient']
-    booking_view = Booking.objects.filter(doctor_name=patient_id).order_by('-booking_date')[0:1]
+    booking_view = Booking.objects.filter(doctor_name=patient_id).order_by('-id')[0:1]
     
     recent_booking = {}
     for book in booking_view:
@@ -116,19 +117,31 @@ def patient_profile(request):
 @auth_patient
 def patient_booked(request):
     return render(request,'patient_templates/booked.html')
+
+
+@auth_patient
+def patient_your_bookings(request):
+    return render(request,'patient_templates/your_bookings.html')
     
 @auth_patient
-def patient_view_booking(request):
+def patient_prescription_list(request):
     patient_id = request.session['patient']
-    patient_view = Booking.objects.filter(patient_id=patient_id)
+    patient_view = Booking.objects.filter(patient_id=patient_id, status = 'consulted')
     # patient_view = Booking.objects.filter(id = request.session['patient'])
     print(patient_view)
-    return render(request,'patient_templates/view_booking.html',{'views':patient_view})
+    return render(request,'patient_templates/prescription_list.html',{'views':patient_view})
 
+@auth_patient
+def patient_view_bookings(request):
+    patient_id = request.session['patient']
+    patient_view = Booking.objects.filter(patient_id=patient_id, status__in=['pending', 'booked'])
+    # patient_view = Booking.objects.filter(id = request.session['patient'])
+    print(patient_view)
+    return render(request,'patient_templates/view_bookings.html',{'views':patient_view})
 
 @auth_patient
 def patient_pat_doctors(request):
-    doctor = Doctors.objects.all()
+    doctor = Doctors.objects.filter(status = 'approved')
     return render(request,'patient_templates/pat_doctors.html',{'doctor':doctor})
 
 def doctorSearchAjax(request):
@@ -143,10 +156,10 @@ def searchdoctor(request):
         if searchedterm == "":
             return redirect(request.META.get('HTTP_REFERER'))
         else:
-            doct = Doctors.objects.filter(doctor_name__contains = searchedterm).first()
+            doct = Doctors.objects.filter(doctor_name = searchedterm).first()
 
             if doct:
-                return redirect(f'/patient/view_search_result/{doct.id}/')
+                return redirect(f'/patient/view_search_result/{doct.id}/') # f formatted string
     return redirect(request.META.get('HTTP_REFERER'))
 
 @auth_patient
@@ -155,13 +168,14 @@ def patient_view_search_result(request, d_id):
     return render(request,'patient_templates/view_search_result.html',{'doc':doctor})
 
 
-from django.http import Http404
 
+@auth_patient
 def patient_consultation_details(request, consultation_id):
 
     consultation = Consultation.objects.filter(doctor_id=consultation_id)
-    
-    return render(request, 'patient_templates/consultation_details.html', {'details': consultation})
+    doctor = Doctors.objects.filter(id = consultation_id).values('doctor_name')[0]['doctor_name']
+    print(doctor)
+    return render(request, 'patient_templates/consultation_details.html', {'details': consultation,'doctor_name':doctor})
 
 @auth_patient
 def patient_change_password(request):
@@ -197,9 +211,6 @@ def patient_view_prescription(request,booking_id):
     booked_patient = Booking.objects.get(id=booking_id)
     
     prescript = Prescription.objects.filter(booking_id=booking_id)
-    
-
-    
     return render(request,'patient_templates/view_prescription.html',{'pre':prescript,'book':booked_patient})
 
 
