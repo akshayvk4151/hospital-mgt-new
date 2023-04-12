@@ -24,7 +24,7 @@ def patient_index(request):
 
 
     patient_id = request.session['patient']
-    booking_view = Booking.objects.filter(doctor_name=patient_id).order_by('-id')[0:1]
+    booking_view = Booking.objects.filter(patient_id=patient_id).order_by('-id')[0:1]
     
     recent_booking = {}
     for book in booking_view:
@@ -42,7 +42,7 @@ def patient_index(request):
             doctor = Doctors.objects.get(id=recent_booking.doctor_name.id)
         except Doctors.DoesNotExist:
             pass
-    print(doctor)
+    print(doctor,'00000000000')
     return render(request,'patient_templates/index.html',{'booking_list':recent_booking_list ,'doctor': doctor,'p_name':patient_name})
 
 @auth_patient
@@ -172,7 +172,7 @@ def patient_view_search_result(request, d_id):
 @auth_patient
 def patient_consultation_details(request, consultation_id):
 
-    consultation = Consultation.objects.filter(doctor_id=consultation_id)
+    consultation = Consultation.objects.filter(doctor_id=consultation_id).order_by('id')
     doctor = Doctors.objects.filter(id = consultation_id).values('doctor_name')[0]['doctor_name']
     print(doctor)
     return render(request, 'patient_templates/consultation_details.html', {'details': consultation,'doctor_name':doctor})
