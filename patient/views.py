@@ -42,7 +42,7 @@ def patient_index(request):
             doctor = Doctors.objects.get(id=recent_booking.doctor_name.id)
         except Doctors.DoesNotExist:
             pass
-    print(doctor,'00000000000')
+    
     return render(request,'patient_templates/index.html',{'booking_list':recent_booking_list ,'doctor': doctor,'p_name':patient_name})
 
 @auth_patient

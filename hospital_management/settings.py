@@ -149,3 +149,42 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+# DataFlair #Logging configuration
+LOGGING = {
+    'version': 1,
+    # Version of logging
+    'disable_existing_loggers': False,
+    #disable logging
+    'handlers': {
+        'file': {
+
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': BASE_DIR /'logs/debug.log',
+        },
+
+        'infofile': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': BASE_DIR /'logs/info.log',
+            'formatter' : 'simpleRe',
+        },
+    },
+# Loggers
+    'loggers': {
+        'django': {
+            'handlers': ['file','infofile'],
+            'level': 'DEBUG',
+        },
+    },
+#formatter
+    'formatters': {
+        'simpleRe': {
+            'format': '{levelname} {asctime} {module} {message}',
+            'style': '{',
+        }
+    }
+}

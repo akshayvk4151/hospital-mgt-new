@@ -1,0 +1,650 @@
+INFO 2023-04-18 11:53:54,996 autoreload Watching for file changes with StatReloader
+INFO 2023-04-18 11:54:04,957 autoreload Watching for file changes with StatReloader
+INFO 2023-04-18 11:55:58,881 autoreload Watching for file changes with StatReloader
+INFO 2023-04-18 20:16:53,967 autoreload Watching for file changes with StatReloader
+INFO 2023-04-24 15:01:19,111 autoreload Watching for file changes with StatReloader
+INFO 2023-04-24 15:02:06,558 autoreload Watching for file changes with StatReloader
+INFO 2023-04-24 15:02:54,005 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\hospital_management\urls.py changed, reloading.
+INFO 2023-04-24 15:02:55,599 autoreload Watching for file changes with StatReloader
+INFO 2023-04-24 15:03:42,279 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\hospital_management\urls.py changed, reloading.
+INFO 2023-04-24 15:03:43,811 autoreload Watching for file changes with StatReloader
+INFO 2023-04-24 15:03:59,755 autoreload Watching for file changes with StatReloader
+INFO 2023-04-24 15:04:29,992 basehttp "GET / HTTP/1.1" 200 15835
+INFO 2023-04-24 15:04:30,338 basehttp "GET /static/css/style_index.css HTTP/1.1" 304 0
+INFO 2023-04-24 15:04:30,344 basehttp "GET /static/css/style_base.css HTTP/1.1" 304 0
+INFO 2023-04-24 15:04:51,222 basehttp "GET /admin_click HTTP/1.1" 200 7711
+INFO 2023-04-24 15:04:55,044 basehttp "GET /admin_register HTTP/1.1" 200 10515
+INFO 2023-04-24 15:04:55,104 basehttp "GET /static/css/style_register.css HTTP/1.1" 304 0
+INFO 2023-04-24 15:05:00,673 basehttp "GET /admin_login HTTP/1.1" 200 8930
+INFO 2023-04-24 15:05:00,803 basehttp "GET /static/images/adminLogin.jpg HTTP/1.1" 304 0
+INFO 2023-04-24 15:05:00,821 basehttp "GET /static/css/style_login.css HTTP/1.1" 304 0
+INFO 2023-04-24 15:05:04,632 basehttp "POST /admin_login HTTP/1.1" 200 8960
+INFO 2023-04-24 15:05:07,471 basehttp "GET /admin_login HTTP/1.1" 200 8930
+INFO 2023-04-24 15:05:17,541 basehttp "GET /patient_click HTTP/1.1" 200 7716
+INFO 2023-04-24 15:05:23,494 basehttp "GET /patient_login HTTP/1.1" 200 8955
+INFO 2023-04-24 15:05:23,680 basehttp "GET /static/images/Patient-Engagement-in-Healthcare.jpg HTTP/1.1" 304 0
+INFO 2023-04-24 15:06:12,017 basehttp "POST /patient_login HTTP/1.1" 302 0
+INFO 2023-04-24 15:06:12,540 basehttp "GET /patient/index HTTP/1.1" 200 16952
+WARNING 2023-04-24 15:06:13,106 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:06:13,107 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:06:22,014 basehttp "GET /patient/doc_booking HTTP/1.1" 200 22491
+WARNING 2023-04-24 15:06:22,089 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:06:22,090 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:06:24,069 basehttp "GET /patient/index HTTP/1.1" 200 16952
+WARNING 2023-04-24 15:06:24,121 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:06:24,122 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:06:28,355 basehttp "GET /patient/your_bookings HTTP/1.1" 200 12753
+WARNING 2023-04-24 15:06:28,642 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:06:28,643 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:06:31,286 basehttp "GET /patient/view_bookings HTTP/1.1" 200 12886
+WARNING 2023-04-24 15:06:31,351 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:06:31,352 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:06:34,416 basehttp "GET /patient/prescription_list HTTP/1.1" 200 12710
+WARNING 2023-04-24 15:06:34,479 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:06:34,480 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:06:43,935 basehttp - Broken pipe from ('127.0.0.1', 60779)
+INFO 2023-04-24 15:06:43,966 basehttp "GET /patient/index HTTP/1.1" 200 16952
+WARNING 2023-04-24 15:06:44,030 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:06:44,031 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:06:45,517 basehttp "GET /patient/doc_booking HTTP/1.1" 200 22491
+WARNING 2023-04-24 15:06:45,565 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:06:45,565 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:06:51,081 basehttp "GET /patient/patient_logout HTTP/1.1" 302 0
+INFO 2023-04-24 15:06:51,090 basehttp "GET / HTTP/1.1" 200 15835
+INFO 2023-04-24 15:06:54,761 basehttp "GET /patient_click HTTP/1.1" 200 7716
+INFO 2023-04-24 15:06:56,440 basehttp "GET /patient_login HTTP/1.1" 200 8955
+INFO 2023-04-24 15:07:17,578 basehttp "POST /patient_login HTTP/1.1" 302 0
+INFO 2023-04-24 15:07:17,687 basehttp "GET /patient/index HTTP/1.1" 200 17022
+WARNING 2023-04-24 15:07:17,752 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:07:17,753 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:07:21,097 basehttp "GET /patient/doc_booking HTTP/1.1" 200 22491
+WARNING 2023-04-24 15:07:21,153 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:07:21,154 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:07:23,999 basehttp "GET /patient/pat_doctors HTTP/1.1" 200 24808
+WARNING 2023-04-24 15:07:24,064 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:07:24,064 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:07:24,155 basehttp "GET /media/doctor/istockphoto-1327024466-170667a.jpg HTTP/1.1" 304 0
+INFO 2023-04-24 15:07:24,278 basehttp "GET /media/doctor/dr-yusof-mutahar1709962271_3cnZif8.jpg HTTP/1.1" 304 0
+INFO 2023-04-24 15:07:24,283 basehttp "GET /media/doctor/balveer-nehra_GAKHt1w.jpg HTTP/1.1" 304 0
+INFO 2023-04-24 15:07:24,284 basehttp "GET /media/doctor/dr-dk-gupta_Qragbru.jpg HTTP/1.1" 304 0
+INFO 2023-04-24 15:07:24,291 basehttp "GET /media/doctor/doctor_CgEIMYV.jpg HTTP/1.1" 304 0
+INFO 2023-04-24 15:07:24,298 basehttp "GET /media/doctor/lady-doctor_D5Hp6hL.png HTTP/1.1" 304 0
+INFO 2023-04-24 15:07:24,323 basehttp "GET /media/doctor/portrait-successful-mid-adult-doctor-with-crossed-arms.jpg HTTP/1.1" 304 0
+INFO 2023-04-24 15:07:24,356 basehttp "GET /patient/doctor_search HTTP/1.1" 200 115
+INFO 2023-04-24 15:07:24,356 basehttp "GET /media/doctor/Dr.-S-Rajesh-Reddy-1024x598.jpg HTTP/1.1" 304 0
+INFO 2023-04-24 15:07:24,414 basehttp "GET /media/doctor/istockphoto-1342708859-170667a.jpg HTTP/1.1" 304 0
+INFO 2023-04-24 15:07:29,807 basehttp "GET /patient/consultation_details/25/ HTTP/1.1" 200 12799
+WARNING 2023-04-24 15:07:29,867 log Not Found: /patient/consultation_details/25/style.css
+WARNING 2023-04-24 15:07:29,868 basehttp "GET /patient/consultation_details/25/style.css HTTP/1.1" 404 8709
+INFO 2023-04-24 15:07:48,986 basehttp "GET /patient/consultation_details/31/ HTTP/1.1" 200 15326
+WARNING 2023-04-24 15:07:49,049 log Not Found: /patient/consultation_details/31/style.css
+WARNING 2023-04-24 15:07:49,050 basehttp "GET /patient/consultation_details/31/style.css HTTP/1.1" 404 8709
+INFO 2023-04-24 15:10:40,728 basehttp "GET /patient/consultation_details/31/ HTTP/1.1" 200 15326
+WARNING 2023-04-24 15:10:40,799 log Not Found: /patient/consultation_details/31/style.css
+WARNING 2023-04-24 15:10:40,800 basehttp "GET /patient/consultation_details/31/style.css HTTP/1.1" 404 8709
+INFO 2023-04-24 15:23:06,622 basehttp "GET /patient/profile HTTP/1.1" 200 16889
+INFO 2023-04-24 15:23:06,669 basehttp "GET /static/css/style_profile.css HTTP/1.1" 304 0
+WARNING 2023-04-24 15:23:06,682 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:23:06,682 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:23:06,733 basehttp "GET /static/images/proimg.png HTTP/1.1" 304 0
+INFO 2023-04-24 15:23:25,744 basehttp "GET /patient/change_password HTTP/1.1" 200 14114
+WARNING 2023-04-24 15:23:25,780 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:23:25,781 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:23:27,216 basehttp "GET /patient/your_bookings HTTP/1.1" 200 12753
+WARNING 2023-04-24 15:23:27,268 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:23:27,269 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:23:29,315 basehttp "GET /patient/view_bookings HTTP/1.1" 200 14051
+WARNING 2023-04-24 15:23:29,369 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:23:29,369 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:23:34,022 basehttp "GET /patient/prescription_list HTTP/1.1" 200 13230
+WARNING 2023-04-24 15:23:34,070 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:23:34,071 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:23:36,763 basehttp "GET /patient/view_prescription/20/ HTTP/1.1" 200 16858
+WARNING 2023-04-24 15:23:36,810 log Not Found: /patient/view_prescription/20/style.css
+WARNING 2023-04-24 15:23:36,810 basehttp "GET /patient/view_prescription/20/style.css HTTP/1.1" 404 8700
+INFO 2023-04-24 15:25:37,898 basehttp "GET / HTTP/1.1" 200 15835
+INFO 2023-04-24 15:25:41,188 basehttp "GET /doctor_click HTTP/1.1" 200 7688
+INFO 2023-04-24 15:25:42,560 basehttp "GET /doctors_login HTTP/1.1" 200 8742
+INFO 2023-04-24 15:25:42,592 basehttp "GET /static/images/pexels-pixabay-40568.jpg HTTP/1.1" 304 0
+INFO 2023-04-24 15:26:21,970 basehttp "POST /doctors_login HTTP/1.1" 200 8742
+INFO 2023-04-24 15:26:34,240 basehttp "POST /doctors_login HTTP/1.1" 200 8742
+INFO 2023-04-24 15:26:55,450 basehttp "POST /doctors_login HTTP/1.1" 200 8742
+INFO 2023-04-24 15:26:58,355 basehttp "POST /doctors_login HTTP/1.1" 200 8742
+INFO 2023-04-24 15:26:59,470 basehttp "POST /doctors_login HTTP/1.1" 200 8742
+INFO 2023-04-24 15:28:02,092 basehttp "GET /doctors_login HTTP/1.1" 200 8742
+INFO 2023-04-24 15:28:16,545 basehttp "POST /doctors_login HTTP/1.1" 200 8742
+INFO 2023-04-24 15:28:41,212 basehttp "POST /doctors_login HTTP/1.1" 302 0
+INFO 2023-04-24 15:28:41,518 basehttp "GET /doctor/index HTTP/1.1" 200 16929
+WARNING 2023-04-24 15:28:41,638 log Not Found: /doctor/style.css
+WARNING 2023-04-24 15:28:41,639 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-04-24 15:28:41,659 basehttp "GET /static/images/ddii%20(1).png HTTP/1.1" 304 0
+INFO 2023-04-24 15:28:41,719 basehttp "GET /static/images/doctorrec%20(4).png HTTP/1.1" 304 0
+INFO 2023-04-24 15:28:41,727 basehttp "GET /static/images/ddii%20(3).png HTTP/1.1" 304 0
+INFO 2023-04-24 15:28:45,519 basehttp "GET /doctor/patient_page HTTP/1.1" 200 13381
+WARNING 2023-04-24 15:28:45,561 log Not Found: /doctor/style.css
+WARNING 2023-04-24 15:28:45,561 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-04-24 15:28:46,941 basehttp "GET /doctor/index HTTP/1.1" 200 16929
+WARNING 2023-04-24 15:28:46,981 log Not Found: /doctor/style.css
+WARNING 2023-04-24 15:28:46,981 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-04-24 15:28:52,904 basehttp "GET /doctor/patient_page HTTP/1.1" 200 13381
+WARNING 2023-04-24 15:28:52,942 log Not Found: /doctor/style.css
+WARNING 2023-04-24 15:28:52,943 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-04-24 15:28:54,438 basehttp "GET /doctor/appointments HTTP/1.1" 200 13767
+WARNING 2023-04-24 15:28:54,497 log Not Found: /doctor/style.css
+WARNING 2023-04-24 15:28:54,497 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-04-24 15:28:55,431 basehttp "GET /doctor/consultation HTTP/1.1" 200 21719
+WARNING 2023-04-24 15:28:55,521 log Not Found: /doctor/style.css
+WARNING 2023-04-24 15:28:55,521 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-04-24 15:28:57,385 basehttp "GET /doctor/change_password HTTP/1.1" 200 14744
+WARNING 2023-04-24 15:28:57,442 log Not Found: /doctor/style.css
+WARNING 2023-04-24 15:28:57,443 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-04-24 15:28:58,387 basehttp "GET /doctor/doctor_profile HTTP/1.1" 200 20550
+WARNING 2023-04-24 15:28:58,467 log Not Found: /doctor/style.css
+WARNING 2023-04-24 15:28:58,468 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-04-24 15:29:24,565 basehttp "GET / HTTP/1.1" 200 15835
+INFO 2023-04-24 15:29:35,686 basehttp "GET /admin_click HTTP/1.1" 200 7711
+INFO 2023-04-24 15:29:37,374 basehttp "GET /admin_login HTTP/1.1" 200 8930
+INFO 2023-04-24 15:30:13,336 basehttp "POST /admin_login HTTP/1.1" 302 0
+INFO 2023-04-24 15:30:13,580 basehttp "GET /admin_app/index HTTP/1.1" 200 20353
+WARNING 2023-04-24 15:30:13,693 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:30:13,694 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:30:13,711 basehttp "GET /static/images/ddii%20(2).png HTTP/1.1" 304 0
+INFO 2023-04-24 15:31:12,915 basehttp "GET / HTTP/1.1" 200 15835
+INFO 2023-04-24 15:31:28,157 basehttp "GET /department HTTP/1.1" 200 14974
+INFO 2023-04-24 15:31:28,512 basehttp "GET /media/department/dermatology.jpg HTTP/1.1" 304 0
+INFO 2023-04-24 15:31:28,513 basehttp "GET /media/department/Orthodontic-Treatment-and-Dental-Caries-1400x788-1_91DMA4F.jpg HTTP/1.1" 304 0
+INFO 2023-04-24 15:31:28,514 basehttp "GET /media/department/Cardiology_UlNic2u.jpg HTTP/1.1" 304 0
+INFO 2023-04-24 15:31:28,523 basehttp "GET /media/department/gynaecology.png HTTP/1.1" 304 0
+INFO 2023-04-24 15:31:28,534 basehttp "GET /media/department/cosmetology_1lg219U.webp HTTP/1.1" 304 0
+INFO 2023-04-24 15:31:28,543 basehttp "GET /media/department/specialty_oncology_1_376da7aabb.jpg HTTP/1.1" 304 0
+INFO 2023-04-24 15:31:28,741 basehttp "GET /media/department/qtq80-uqw0yB-1024x703-1024x585.webp HTTP/1.1" 304 0
+INFO 2023-04-24 15:31:28,741 basehttp "GET /media/department/psychiatry.jpg HTTP/1.1" 304 0
+INFO 2023-04-24 15:31:28,753 basehttp "GET /media/department/Pediatrician.jpg HTTP/1.1" 304 0
+INFO 2023-04-24 15:31:28,757 basehttp "GET /media/department/psychologist.jpg HTTP/1.1" 304 0
+INFO 2023-04-24 15:31:32,872 basehttp "GET /doctors HTTP/1.1" 200 13470
+INFO 2023-04-24 15:31:32,907 basehttp "GET /static/css/style_doctors.css HTTP/1.1" 304 0
+INFO 2023-04-24 15:31:39,451 basehttp "GET /patient/doc_booking HTTP/1.1" 200 22491
+WARNING 2023-04-24 15:31:39,533 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:31:39,534 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:31:54,472 basehttp "GET /patient/patient_logout HTTP/1.1" 302 0
+INFO 2023-04-24 15:31:54,483 basehttp "GET / HTTP/1.1" 200 15835
+INFO 2023-04-24 15:31:56,764 basehttp "GET /patient/doc_booking HTTP/1.1" 302 0
+INFO 2023-04-24 15:31:56,772 basehttp "GET /patient_login HTTP/1.1" 200 8955
+INFO 2023-04-24 15:31:58,445 basehttp "GET /about HTTP/1.1" 200 10956
+INFO 2023-04-24 15:31:59,073 basehttp "GET /static/images/tab-icon-2.png HTTP/1.1" 200 902
+INFO 2023-04-24 15:31:59,108 basehttp "GET /static/images/tab-icon-1.png HTTP/1.1" 200 1680
+INFO 2023-04-24 15:31:59,109 basehttp "GET /static/images/tab-icon-5.png HTTP/1.1" 200 1665
+INFO 2023-04-24 15:31:59,129 basehttp "GET /static/images/tab-icon-3.png HTTP/1.1" 200 1143
+INFO 2023-04-24 15:31:59,131 basehttp "GET /static/css/style_about.css HTTP/1.1" 200 2245
+INFO 2023-04-24 15:31:59,140 basehttp "GET /static/images/tab-icon-4.png HTTP/1.1" 200 1168
+INFO 2023-04-24 15:31:59,167 basehttp "GET /static/images/ot.png HTTP/1.1" 200 1515
+INFO 2023-04-24 15:31:59,287 basehttp "GET /static/images/pexels-pixabay-247786.jpg HTTP/1.1" 200 1270278
+INFO 2023-04-24 15:32:04,421 basehttp "GET /contact HTTP/1.1" 200 11163
+INFO 2023-04-24 15:32:04,575 basehttp "GET /static/css/style_contact.css HTTP/1.1" 304 0
+INFO 2023-04-24 15:32:04,580 basehttp "GET /static/images/contactUs.jpg HTTP/1.1" 304 0
+INFO 2023-04-24 15:32:04,585 basehttp "GET /static/images/icons8-whatsapp-1500.png HTTP/1.1" 304 0
+INFO 2023-04-24 15:32:24,469 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-04-24 15:32:24,527 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:32:24,527 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:32:24,554 basehttp "GET /static/images/doctorrec%20(1).png HTTP/1.1" 304 0
+INFO 2023-04-24 15:32:24,587 basehttp "GET /static/images/doctorrec%20(3).png HTTP/1.1" 304 0
+INFO 2023-04-24 15:32:24,662 basehttp "GET /static/images/doctorrec%20(2).png HTTP/1.1" 304 0
+INFO 2023-04-24 15:32:24,716 basehttp "GET /static/images/find.png HTTP/1.1" 304 0
+INFO 2023-04-24 15:32:27,362 basehttp "GET /admin_app/adm_departments HTTP/1.1" 200 21378
+WARNING 2023-04-24 15:32:27,428 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:32:27,429 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:32:31,120 basehttp "GET /admin_app/doctor_specialisation HTTP/1.1" 200 16816
+WARNING 2023-04-24 15:32:31,159 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:32:31,160 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+WARNING 2023-04-24 15:32:31,196 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+INFO 2023-04-24 15:32:34,848 basehttp "GET /admin_app/approve_doctor HTTP/1.1" 200 13590
+WARNING 2023-04-24 15:32:34,909 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:32:34,910 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+ERROR 2023-04-24 15:32:40,560 log Internal Server Error: /admin_app/register_doctor
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\decorators.py", line 9, in wrapper
+    return func (request, *args, **kwargs)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py", line 230, in admin_app_register_doctor
+    return render(request,'admin_app_templates/register_doctor.html',{'departments':dep,'message':msg})
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'check_email_doctor' not found. 'check_email_doctor' is not a valid view function or pattern name.
+ERROR 2023-04-24 15:32:40,568 basehttp "GET /admin_app/register_doctor HTTP/1.1" 500 179596
+ERROR 2023-04-24 15:32:48,969 log Internal Server Error: /admin_app/register_doctor
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\decorators.py", line 9, in wrapper
+    return func (request, *args, **kwargs)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py", line 230, in admin_app_register_doctor
+    return render(request,'admin_app_templates/register_doctor.html',{'departments':dep,'message':msg})
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'check_email_doctor' not found. 'check_email_doctor' is not a valid view function or pattern name.
+ERROR 2023-04-24 15:32:48,972 basehttp "GET /admin_app/register_doctor HTTP/1.1" 500 179596
+ERROR 2023-04-24 15:35:28,332 log Internal Server Error: /admin_app/register_doctor
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\decorators.py", line 9, in wrapper
+    return func (request, *args, **kwargs)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py", line 230, in admin_app_register_doctor
+    return render(request,'admin_app_templates/register_doctor.html',{'departments':dep,'message':msg})
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'check_email_doctor' not found. 'check_email_doctor' is not a valid view function or pattern name.
+ERROR 2023-04-24 15:35:28,335 basehttp "GET /admin_app/register_doctor HTTP/1.1" 500 179561
+INFO 2023-04-24 15:36:26,813 basehttp "GET /admin_app/register_doctor HTTP/1.1" 200 20892
+WARNING 2023-04-24 15:36:26,853 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:36:26,853 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:36:49,544 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-04-24 15:36:49,705 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:36:49,706 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:36:51,943 basehttp "GET /admin_app/register_doctor HTTP/1.1" 200 20892
+WARNING 2023-04-24 15:36:52,010 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:36:52,011 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+ERROR 2023-04-24 15:37:18,915 log Internal Server Error: /admin_app/register_doctor
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\decorators.py", line 9, in wrapper
+    return func (request, *args, **kwargs)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py", line 230, in admin_app_register_doctor
+    return render(request,'admin_app_templates/register_doctor.html',{'departments':dep,'message':msg})
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'check_email_doctor' not found. 'check_email_doctor' is not a valid view function or pattern name.
+ERROR 2023-04-24 15:37:18,917 basehttp "GET /admin_app/register_doctor HTTP/1.1" 500 179561
+INFO 2023-04-24 15:41:09,012 basehttp "GET /admin_app/register_doctor HTTP/1.1" 200 20892
+WARNING 2023-04-24 15:41:09,056 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:41:09,057 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:41:50,407 basehttp "GET /admin_app/patient_page HTTP/1.1" 200 15871
+WARNING 2023-04-24 15:41:50,462 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:41:50,463 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:41:50,479 basehttp "GET /static/images/1430402.png HTTP/1.1" 304 0
+INFO 2023-04-24 15:41:51,866 basehttp "GET /admin_app/index HTTP/1.1" 200 20353
+WARNING 2023-04-24 15:41:51,918 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:41:51,918 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:41:53,423 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-04-24 15:41:53,484 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:41:53,485 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:41:55,764 basehttp "GET /admin_app/appointments HTTP/1.1" 200 13398
+WARNING 2023-04-24 15:41:55,834 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-04-24 15:41:55,838 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:41:55,839 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:41:58,640 basehttp "GET /admin_app/view_messages HTTP/1.1" 200 13614
+WARNING 2023-04-24 15:41:58,684 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-04-24 15:41:58,693 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:41:58,694 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:42:05,414 basehttp "GET /contact HTTP/1.1" 200 11163
+INFO 2023-04-24 15:43:41,369 basehttp "POST /contact HTTP/1.1" 200 11176
+INFO 2023-04-24 15:43:47,125 basehttp "GET /admin_app/view_messages HTTP/1.1" 200 14071
+WARNING 2023-04-24 15:43:47,161 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-04-24 15:43:47,171 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:43:47,172 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:44:38,858 basehttp "POST /contact HTTP/1.1" 200 11176
+INFO 2023-04-24 15:44:54,629 basehttp "GET / HTTP/1.1" 200 15835
+INFO 2023-04-24 15:45:50,392 basehttp "GET /department HTTP/1.1" 200 14974
+INFO 2023-04-24 15:46:06,278 basehttp "GET /doctors HTTP/1.1" 200 13470
+INFO 2023-04-24 15:46:15,687 basehttp "GET /patient/doc_booking HTTP/1.1" 302 0
+INFO 2023-04-24 15:46:15,695 basehttp "GET /patient_login HTTP/1.1" 200 8955
+INFO 2023-04-24 15:46:18,208 basehttp "GET /patient/doc_booking HTTP/1.1" 302 0
+INFO 2023-04-24 15:46:18,215 basehttp "GET /patient_login HTTP/1.1" 200 8955
+INFO 2023-04-24 15:46:19,998 basehttp "GET /patient/doc_booking HTTP/1.1" 302 0
+INFO 2023-04-24 15:46:20,010 basehttp "GET /patient_login HTTP/1.1" 200 8955
+INFO 2023-04-24 15:46:21,969 basehttp "GET /about HTTP/1.1" 200 10956
+INFO 2023-04-24 15:46:24,442 basehttp "GET /contact HTTP/1.1" 200 11163
+INFO 2023-04-24 15:46:47,144 basehttp "GET /patient_click HTTP/1.1" 200 7716
+INFO 2023-04-24 15:46:53,423 basehttp "GET /patient_login HTTP/1.1" 200 8955
+INFO 2023-04-24 15:47:05,409 basehttp "GET /patient_register HTTP/1.1" 200 11298
+INFO 2023-04-24 15:47:26,681 basehttp "POST /checkemail HTTP/1.1" 200 22
+INFO 2023-04-24 15:47:32,325 basehttp "POST /checkemail HTTP/1.1" 200 22
+INFO 2023-04-24 15:47:41,187 basehttp "POST /patient_register HTTP/1.1" 200 11394
+INFO 2023-04-24 15:47:49,916 basehttp "POST /checkemail HTTP/1.1" 200 22
+INFO 2023-04-24 15:47:55,849 basehttp "POST /checkemail HTTP/1.1" 200 21
+INFO 2023-04-24 15:47:55,863 basehttp "POST /patient_register HTTP/1.1" 200 11298
+INFO 2023-04-24 15:48:03,523 basehttp "POST /checkemail HTTP/1.1" 200 22
+INFO 2023-04-24 15:48:14,458 basehttp "POST /checkemail HTTP/1.1" 200 21
+INFO 2023-04-24 15:48:29,263 basehttp "GET /patient_login HTTP/1.1" 200 8955
+INFO 2023-04-24 15:48:50,595 basehttp "POST /patient_login HTTP/1.1" 302 0
+INFO 2023-04-24 15:48:50,705 basehttp "GET /patient/index HTTP/1.1" 200 17022
+WARNING 2023-04-24 15:48:50,786 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:48:50,786 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:49:34,652 basehttp "GET /patient/doc_booking HTTP/1.1" 200 22491
+WARNING 2023-04-24 15:49:34,709 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:49:34,709 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:49:42,355 basehttp "GET /patient/pat_doctors HTTP/1.1" 200 24808
+WARNING 2023-04-24 15:49:42,422 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:49:42,423 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:49:42,834 basehttp "GET /patient/doctor_search HTTP/1.1" 200 115
+INFO 2023-04-24 15:49:48,813 basehttp "GET /patient/consultation_details/31/ HTTP/1.1" 200 15326
+WARNING 2023-04-24 15:49:48,882 log Not Found: /patient/consultation_details/31/style.css
+WARNING 2023-04-24 15:49:48,883 basehttp "GET /patient/consultation_details/31/style.css HTTP/1.1" 404 8709
+INFO 2023-04-24 15:49:58,958 basehttp "GET /patient/your_bookings HTTP/1.1" 200 12753
+WARNING 2023-04-24 15:49:59,015 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:49:59,015 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:50:01,352 basehttp "GET /patient/view_bookings HTTP/1.1" 200 14051
+WARNING 2023-04-24 15:50:01,416 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:50:01,417 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:50:07,460 basehttp "GET /patient/your_bookings HTTP/1.1" 200 12753
+WARNING 2023-04-24 15:50:07,515 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:50:07,516 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:50:09,565 basehttp "GET /patient/prescription_list HTTP/1.1" 200 13230
+WARNING 2023-04-24 15:50:09,617 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:50:09,617 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:50:17,224 basehttp "GET /patient/view_prescription/20/ HTTP/1.1" 200 16858
+WARNING 2023-04-24 15:50:17,278 log Not Found: /patient/view_prescription/20/style.css
+WARNING 2023-04-24 15:50:17,279 basehttp "GET /patient/view_prescription/20/style.css HTTP/1.1" 404 8700
+INFO 2023-04-24 15:50:39,717 basehttp - Broken pipe from ('127.0.0.1', 49997)
+INFO 2023-04-24 15:50:39,757 basehttp "GET /patient/change_password HTTP/1.1" 200 14114
+WARNING 2023-04-24 15:50:39,893 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:50:39,893 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:50:42,710 basehttp "GET /patient/profile HTTP/1.1" 200 16889
+WARNING 2023-04-24 15:50:42,762 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:50:42,763 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:50:57,147 basehttp "GET /patient/pat_doctors HTTP/1.1" 200 24808
+WARNING 2023-04-24 15:50:57,206 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:50:57,207 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:50:57,430 basehttp "GET /patient/doctor_search HTTP/1.1" 200 115
+INFO 2023-04-24 15:51:09,444 basehttp "POST /patient/searchdoctor HTTP/1.1" 302 0
+INFO 2023-04-24 15:51:09,585 basehttp "GET /patient/view_search_result/31/ HTTP/1.1" 200 12891
+WARNING 2023-04-24 15:51:09,645 log Not Found: /patient/view_search_result/31/style.css
+WARNING 2023-04-24 15:51:09,645 basehttp "GET /patient/view_search_result/31/style.css HTTP/1.1" 404 8703
+INFO 2023-04-24 15:51:13,659 basehttp "GET /patient/doc_booking HTTP/1.1" 200 22491
+WARNING 2023-04-24 15:51:13,718 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:51:13,718 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:53:10,947 basehttp "POST /patient/doc_booking HTTP/1.1" 302 0
+INFO 2023-04-24 15:53:11,082 basehttp "GET /patient/booked HTTP/1.1" 200 12791
+WARNING 2023-04-24 15:53:11,143 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:53:11,144 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:53:11,145 basehttp "GET /static/css/style_booked.css HTTP/1.1" 304 0
+INFO 2023-04-24 15:53:11,190 basehttp "GET /static/images/Booking-Success.png HTTP/1.1" 304 0
+INFO 2023-04-24 15:53:29,642 basehttp "GET /admin_app/index HTTP/1.1" 200 20694
+WARNING 2023-04-24 15:53:29,790 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:53:29,790 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:53:32,108 basehttp "GET /admin_app/index HTTP/1.1" 200 20694
+WARNING 2023-04-24 15:53:32,152 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:53:32,153 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:53:36,490 basehttp "GET /admin_app/appointments HTTP/1.1" 200 13398
+WARNING 2023-04-24 15:53:36,664 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-04-24 15:53:36,674 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:53:36,675 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:53:39,668 basehttp "GET /admin_app/appointments HTTP/1.1" 200 13398
+WARNING 2023-04-24 15:53:39,713 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-04-24 15:53:39,723 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:53:39,725 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:53:41,301 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-04-24 15:53:41,365 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:53:41,365 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:53:44,407 basehttp "GET /admin_app/patient_page HTTP/1.1" 200 15871
+WARNING 2023-04-24 15:53:44,452 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:53:44,452 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:53:48,661 basehttp "GET /admin_app/approve_patient HTTP/1.1" 200 16920
+WARNING 2023-04-24 15:53:48,724 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:53:48,725 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:53:51,914 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-04-24 15:53:51,958 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:53:51,959 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:54:07,753 basehttp "GET /admin_app/patient_page HTTP/1.1" 200 15871
+WARNING 2023-04-24 15:54:07,904 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:54:07,905 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:54:09,161 basehttp "GET /admin_app/approve_patient HTTP/1.1" 200 16920
+WARNING 2023-04-24 15:54:09,228 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:54:09,228 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:54:17,251 basehttp - Broken pipe from ('127.0.0.1', 50743)
+INFO 2023-04-24 15:54:18,542 basehttp "POST /admin_app/approve_patient HTTP/1.1" 200 15828
+WARNING 2023-04-24 15:54:18,586 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:54:18,587 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:54:22,814 basehttp "POST /admin_app/approve_patient HTTP/1.1" 200 14731
+WARNING 2023-04-24 15:54:22,853 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:54:22,854 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:54:36,002 basehttp "GET /patient/your_bookings HTTP/1.1" 200 12753
+WARNING 2023-04-24 15:54:36,052 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:54:36,053 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:54:39,013 basehttp "GET /patient/view_bookings HTTP/1.1" 200 14676
+WARNING 2023-04-24 15:54:39,071 log Not Found: /patient/style.css
+WARNING 2023-04-24 15:54:39,072 basehttp "GET /patient/style.css HTTP/1.1" 404 8637
+INFO 2023-04-24 15:54:56,060 basehttp "GET /doctor/index HTTP/1.1" 200 17540
+WARNING 2023-04-24 15:54:56,113 log Not Found: /doctor/style.css
+WARNING 2023-04-24 15:54:56,113 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-04-24 15:54:58,479 basehttp "GET /doctor/index HTTP/1.1" 200 17540
+WARNING 2023-04-24 15:54:58,531 log Not Found: /doctor/style.css
+WARNING 2023-04-24 15:54:58,532 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-04-24 15:55:15,661 basehttp "GET /doctor/patient_page HTTP/1.1" 200 13381
+WARNING 2023-04-24 15:55:15,705 log Not Found: /doctor/style.css
+WARNING 2023-04-24 15:55:15,706 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-04-24 15:55:17,669 basehttp "GET /doctor/patient_record HTTP/1.1" 200 13964
+WARNING 2023-04-24 15:55:17,724 log Not Found: /doctor/style.css
+WARNING 2023-04-24 15:55:17,725 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-04-24 15:55:26,602 basehttp "GET /doctor/view_prescription/20 HTTP/1.1" 200 16749
+WARNING 2023-04-24 15:55:26,658 log Not Found: /doctor/view_prescription/style.css
+WARNING 2023-04-24 15:55:26,659 basehttp "GET /doctor/view_prescription/style.css HTTP/1.1" 404 9735
+INFO 2023-04-24 15:55:32,402 basehttp "GET /doctor/patient_booked HTTP/1.1" 200 14208
+WARNING 2023-04-24 15:55:32,456 log Not Found: /doctor/style.css
+WARNING 2023-04-24 15:55:32,457 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-04-24 15:55:36,549 basehttp "GET /doctor/appointments HTTP/1.1" 200 13767
+WARNING 2023-04-24 15:55:36,591 log Not Found: /doctor/style.css
+WARNING 2023-04-24 15:55:36,591 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-04-24 15:55:39,745 basehttp "GET /doctor/view_appointment/ HTTP/1.1" 200 14792
+WARNING 2023-04-24 15:55:39,797 log Not Found: /doctor/view_appointment/style.css
+WARNING 2023-04-24 15:55:39,798 basehttp "GET /doctor/view_appointment/style.css HTTP/1.1" 404 9732
+INFO 2023-04-24 15:55:47,767 basehttp "GET /doctor/doctor/prescription/23/ HTTP/1.1" 200 19203
+WARNING 2023-04-24 15:55:47,859 log Not Found: /doctor/doctor/prescription/23/style.css
+WARNING 2023-04-24 15:55:47,860 basehttp "GET /doctor/doctor/prescription/23/style.css HTTP/1.1" 404 9750
+INFO 2023-04-24 15:55:58,898 basehttp "GET /doctor/consultation HTTP/1.1" 200 21719
+WARNING 2023-04-24 15:55:58,941 log Not Found: /doctor/style.css
+WARNING 2023-04-24 15:55:58,942 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-04-24 15:56:07,205 basehttp "POST /doctor/update_consultation_status HTTP/1.1" 200 17
+INFO 2023-04-24 15:56:08,438 basehttp "POST /doctor/update_consultation_status HTTP/1.1" 200 17
+INFO 2023-04-24 15:56:10,249 basehttp "POST /doctor/update_consultation_status HTTP/1.1" 200 17
+INFO 2023-04-24 15:56:10,821 basehttp "POST /doctor/update_consultation_status HTTP/1.1" 200 17
+INFO 2023-04-24 15:56:14,495 basehttp "GET /doctor/consultation HTTP/1.1" 200 21715
+WARNING 2023-04-24 15:56:14,535 log Not Found: /doctor/style.css
+WARNING 2023-04-24 15:56:14,535 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-04-24 15:56:15,334 basehttp "GET /doctor/change_password HTTP/1.1" 200 14744
+WARNING 2023-04-24 15:56:15,394 log Not Found: /doctor/style.css
+WARNING 2023-04-24 15:56:15,394 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-04-24 15:56:17,114 basehttp "GET /doctor/doctor_profile HTTP/1.1" 200 20550
+WARNING 2023-04-24 15:56:17,165 log Not Found: /doctor/style.css
+WARNING 2023-04-24 15:56:17,165 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-04-24 15:56:26,751 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-04-24 15:56:26,803 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:56:26,804 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:56:30,681 basehttp "GET /admin_app/patient_page HTTP/1.1" 200 15871
+WARNING 2023-04-24 15:56:30,739 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:56:30,740 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:56:32,369 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-04-24 15:56:32,438 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:56:32,438 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:56:33,678 basehttp "GET /admin_app/adm_departments HTTP/1.1" 200 21378
+WARNING 2023-04-24 15:56:33,726 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:56:33,727 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:56:41,067 basehttp "GET /admin_app/doctor_specialisation HTTP/1.1" 200 16816
+WARNING 2023-04-24 15:56:41,123 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-04-24 15:56:41,133 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:56:41,134 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:56:46,093 basehttp "GET /admin_app/appointments HTTP/1.1" 200 14158
+WARNING 2023-04-24 15:56:46,193 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-04-24 15:56:46,199 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:56:46,200 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:56:51,732 basehttp "GET /admin_app/view_messages HTTP/1.1" 200 14640
+WARNING 2023-04-24 15:56:51,780 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-04-24 15:56:51,790 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:56:51,791 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:57:00,990 basehttp "GET /admin_app/index HTTP/1.1" 200 20694
+WARNING 2023-04-24 15:57:01,042 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:57:01,043 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 15:57:48,162 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-04-24 15:57:48,216 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 15:57:48,217 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 16:03:05,703 basehttp "GET /admin_app/register_doctor HTTP/1.1" 200 20892
+WARNING 2023-04-24 16:03:05,862 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 16:03:05,863 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11575
+INFO 2023-04-24 16:05:30,081 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\urls.py changed, reloading.
+INFO 2023-04-24 16:05:32,725 autoreload Watching for file changes with StatReloader
+INFO 2023-04-24 16:05:34,920 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\urls.py changed, reloading.
+INFO 2023-04-24 16:05:36,230 autoreload Watching for file changes with StatReloader
+INFO 2023-04-24 16:05:39,523 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\urls.py changed, reloading.
+INFO 2023-04-24 16:05:40,750 autoreload Watching for file changes with StatReloader

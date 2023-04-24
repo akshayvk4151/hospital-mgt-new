@@ -19,6 +19,7 @@ urlpatterns=[
     path('doctor_record',views.admin_app_doctor_record,name='doctor_record'),
     path('doctor/remove/<int:d_id>',views.remove_doctor_record,name='remove_doctor'),
     path('register_doctor',views.admin_app_register_doctor,name='register_doctor'),
+    path('checkemail_admin',views.check_email_doctor,name='check_email_doctor'),
 
     path('consultation/<int:d_id>',views.admin_app_consultation,name='consultation'),
     path('check_day/', views.check_day, name='check_day'),
