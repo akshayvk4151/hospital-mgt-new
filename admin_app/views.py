@@ -10,6 +10,7 @@ from admin_app.models import Consultation
 from common_app.models import Admin, Contact, Departments, Doctors, Patient
 from patient.models import Booking
 from django.contrib import messages
+from django.core.paginator import Paginator
 
 
 # Create your views here.
@@ -53,6 +54,10 @@ def admin_app_index(request):
 @auth_admin
 def admin_app_view_messages(request):
     message = Contact.objects.all()
+
+    paginator = Paginator(message,10)
+    page_number = request.GET.get('page')
+    message = paginator.get_page(page_number)
     return render(request,'admin_app_templates/view_messages.html',{'message':message})
 
 def clear_all(request):
@@ -181,6 +186,12 @@ def admin_app_doctor_record(request):
         doctor_rec = Doctors.objects.filter(doctor_name__icontains=q, status='approved').order_by('doctor_name')
     else:
         doctor_rec = Doctors.objects.filter(status = 'approved')
+    
+    paginator = Paginator(doctor_rec,10)
+    page_number = request.GET.get('page')
+    doctor_rec = paginator.get_page(page_number)
+    
+    
     return render(request,'admin_app_templates/doctor_record.html',{'doctor':doctor_rec})
 
 @auth_admin
@@ -347,11 +358,19 @@ def admin_app_approve_patient(request):
             from_email = settings.EMAIL_HOST_USER,
             recipient_list= [patients.patient_email]
             )
+        
+    paginator = Paginator(patient,20)
+    page_number = request.GET.get('page')
+    patient = paginator.get_page(page_number)
     return render(request,'admin_app_templates/approve_patient.html',{'patient_list':patient})
 
 @auth_admin
 def admin_app_patient_registered(request):
     patient = Patient.objects.all()
+
+    paginator = Paginator(patient,10)
+    page_number = request.GET.get('page')
+    patient = paginator.get_page(page_number)
     return render(request,'admin_app_templates/patient_registered.html',{'reg_patient':patient})
 
 @auth_admin
@@ -363,6 +382,10 @@ def remove_regpatient_record(request,p_id):
 @auth_admin
 def admin_app_view_patients(request):
     patient = Booking.objects.filter(status = 'booked')
+
+    paginator = Paginator(patient,10)
+    page_number = request.GET.get('page')
+    patient = paginator.get_page(page_number)
     return render(request,'admin_app_templates/view_patients.html',{'view_patient':patient})
 
 @auth_admin
@@ -379,6 +402,10 @@ def admin_app_consulted_patient(request):  #For searching
         patient = Booking.objects.filter(patient_name__icontains=q, status='consulted').order_by('patient_name')
     else:
         patient = Booking.objects.filter(status = 'consulted')
+    paginator = Paginator(patient,5)
+    page_number = request.GET.get('page')
+    patient = paginator.get_page(page_number)
+
     return render(request,'admin_app_templates/consulted_patient.html',{'view_patient':patient})
 
 @auth_admin
@@ -431,9 +458,15 @@ def admin_app_patient_page(request):
     return render(request,'admin_app_templates/patient_page.html')
 
 
+
+
 @auth_admin
 def admin_app_appointments(request):
     patient = Booking.objects.filter(status = 'booked')
+    paginator = Paginator(patient,10)
+    page_number = request.GET.get('page')
+    patient = paginator.get_page(page_number)
+
     return render(request,'admin_app_templates/appointments.html',{'view_patient':patient})
 
 

@@ -95,6 +95,42 @@
                 </div>
 
 
+                <!-- Add numbered pagination navigation links -->
+                <div class="pagination justify-content-center mt-3">
+                    <ul class="pagination">
+                        {% if appointments.has_previous %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page=1">&laquo; first</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ appointments.previous_page_number }}">previous</a>
+                        </li>
+                        {% endif %}
+                
+                        {% for num in appointments.paginator.page_range %}
+                        {% if num == appointments.number %}
+                        <li class="page-item active">
+                            <span class="page-link">{{ num }}</span>
+                        </li>
+                        {% else %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                
+                        {% if appointments.has_next %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ appointments.next_page_number }}">next</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ appointments.paginator.num_pages }}">last &raquo;</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+
+
             </div>
         </div>
     </div>

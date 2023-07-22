@@ -648,3 +648,1089 @@ INFO 2023-04-24 16:05:34,920 autoreload C:\Users\user\Desktop\Hospital-Managemen
 INFO 2023-04-24 16:05:36,230 autoreload Watching for file changes with StatReloader
 INFO 2023-04-24 16:05:39,523 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\urls.py changed, reloading.
 INFO 2023-04-24 16:05:40,750 autoreload Watching for file changes with StatReloader
+INFO 2023-04-24 16:06:51,795 basehttp "GET /admin_app/register_doctor HTTP/1.1" 200 20919
+WARNING 2023-04-24 16:06:51,857 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 16:06:51,858 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-04-24 16:06:55,444 basehttp "GET /admin_app/register_doctor HTTP/1.1" 200 20919
+WARNING 2023-04-24 16:06:55,488 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 16:06:55,489 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-04-24 16:06:59,290 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-04-24 16:06:59,332 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 16:06:59,332 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-04-24 16:07:00,429 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-04-24 16:07:00,470 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 16:07:00,471 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-04-24 16:07:01,264 basehttp "GET /admin_app/patient_page HTTP/1.1" 200 15871
+WARNING 2023-04-24 16:07:01,310 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 16:07:01,311 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-04-24 16:07:02,366 basehttp "GET /admin_app/appointments HTTP/1.1" 200 14158
+WARNING 2023-04-24 16:07:02,425 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 16:07:02,425 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+WARNING 2023-04-24 16:07:02,448 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+INFO 2023-04-24 16:07:03,553 basehttp "GET /admin_app/patient_page HTTP/1.1" 200 15871
+WARNING 2023-04-24 16:07:03,599 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 16:07:03,600 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-04-24 16:07:04,637 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-04-24 16:07:04,706 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 16:07:04,707 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-04-24 16:07:05,813 basehttp "GET /admin_app/register_doctor HTTP/1.1" 200 20919
+WARNING 2023-04-24 16:07:05,864 log Not Found: /admin_app/style.css
+WARNING 2023-04-24 16:07:05,865 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 10:55:55,924 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 10:56:42,992 basehttp "GET / HTTP/1.1" 200 15835
+INFO 2023-07-20 10:56:43,161 basehttp "GET /static/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2023-07-20 10:56:43,538 basehttp "GET /static/css/style_base.css HTTP/1.1" 200 1526
+INFO 2023-07-20 10:56:43,620 basehttp "GET /static/css/style_index.css HTTP/1.1" 200 3394
+INFO 2023-07-20 10:56:43,638 basehttp "GET /static/bootstrap/css/bootstrap.css.map HTTP/1.1" 200 514512
+INFO 2023-07-20 10:56:43,707 basehttp "GET /static/images/homeImage1.jpg HTTP/1.1" 200 69072
+INFO 2023-07-20 10:56:43,833 basehttp "GET /static/images/homeImage2.jpg HTTP/1.1" 200 93414
+INFO 2023-07-20 10:56:43,976 basehttp "GET /static/bootstrap/js/bootstrap.js HTTP/1.1" 200 148578
+INFO 2023-07-20 10:56:44,024 basehttp "GET /static/images/single-img-07new.jpg HTTP/1.1" 200 213613
+INFO 2023-07-20 10:56:44,086 basehttp "GET /static/images/vision-icon.png HTTP/1.1" 200 1522
+INFO 2023-07-20 10:56:44,127 basehttp "GET /static/images/social-media-icon-1.png HTTP/1.1" 200 1914
+INFO 2023-07-20 10:56:44,132 basehttp "GET /static/images/mission-icon.png HTTP/1.1" 200 2186
+INFO 2023-07-20 10:56:44,162 basehttp "GET /static/bootstrap/js/bootstrap.js.map HTTP/1.1" 200 290309
+INFO 2023-07-20 10:56:44,175 basehttp "GET /static/images/social-media-icon-2.png HTTP/1.1" 200 1547
+INFO 2023-07-20 10:56:44,228 basehttp "GET /static/images/social-media-icon-3.png HTTP/1.1" 200 2284
+INFO 2023-07-20 10:56:44,300 basehttp "GET /static/images/GettyImages-1316652803.jpg HTTP/1.1" 200 5642545
+WARNING 2023-07-20 10:56:45,867 log Not Found: /favicon.ico
+WARNING 2023-07-20 10:56:45,867 basehttp "GET /favicon.ico HTTP/1.1" 404 5821
+INFO 2023-07-20 10:56:55,875 basehttp "GET /patient_login HTTP/1.1" 200 8955
+INFO 2023-07-20 10:56:56,056 basehttp "GET /static/css/style_login.css HTTP/1.1" 200 1324
+INFO 2023-07-20 10:56:56,057 basehttp "GET /static/images/Patient-Engagement-in-Healthcare.jpg HTTP/1.1" 200 19128
+INFO 2023-07-20 10:57:07,304 basehttp "GET /admin_click HTTP/1.1" 200 7711
+INFO 2023-07-20 10:57:24,115 basehttp "GET /department HTTP/1.1" 200 14974
+INFO 2023-07-20 10:57:24,166 basehttp "GET /static/css/style_department.css HTTP/1.1" 200 423
+INFO 2023-07-20 10:57:24,230 basehttp "GET /media/department/Cardiology_UlNic2u.jpg HTTP/1.1" 200 160506
+INFO 2023-07-20 10:57:24,242 basehttp "GET /media/department/dermatology.jpg HTTP/1.1" 200 65046
+INFO 2023-07-20 10:57:24,287 basehttp "GET /media/department/psychologist.jpg HTTP/1.1" 200 87183
+INFO 2023-07-20 10:57:24,299 basehttp "GET /media/department/specialty_oncology_1_376da7aabb.jpg HTTP/1.1" 200 96197
+INFO 2023-07-20 10:57:24,359 basehttp "GET /media/department/Orthodontic-Treatment-and-Dental-Caries-1400x788-1_91DMA4F.jpg HTTP/1.1" 200 196135
+INFO 2023-07-20 10:57:24,398 basehttp "GET /media/department/psychiatry.jpg HTTP/1.1" 200 124259
+INFO 2023-07-20 10:57:24,411 basehttp "GET /media/department/cosmetology_1lg219U.webp HTTP/1.1" 200 120032
+INFO 2023-07-20 10:57:24,476 basehttp "GET /media/department/gynaecology.png HTTP/1.1" 200 1190369
+INFO 2023-07-20 10:57:24,492 basehttp "GET /media/department/Pediatrician.jpg HTTP/1.1" 200 219900
+INFO 2023-07-20 10:57:24,916 basehttp "GET /media/department/qtq80-uqw0yB-1024x703-1024x585.webp HTTP/1.1" 200 69076
+INFO 2023-07-20 10:57:40,386 basehttp "GET /doctors HTTP/1.1" 200 13470
+INFO 2023-07-20 10:57:40,450 basehttp "GET /media/doctor/istockphoto-1327024466-170667a.jpg HTTP/1.1" 200 55694
+INFO 2023-07-20 10:57:40,458 basehttp "GET /static/css/style_doctors.css HTTP/1.1" 200 1261
+INFO 2023-07-20 10:57:40,472 basehttp "GET /media/doctor/doctor_CgEIMYV.jpg HTTP/1.1" 200 100973
+INFO 2023-07-20 10:57:40,518 basehttp "GET /media/doctor/balveer-nehra_GAKHt1w.jpg HTTP/1.1" 200 51575
+INFO 2023-07-20 10:57:40,544 basehttp "GET /media/doctor/portrait-successful-mid-adult-doctor-with-crossed-arms.jpg HTTP/1.1" 200 73903
+INFO 2023-07-20 10:57:40,588 basehttp "GET /media/doctor/Dr.-S-Rajesh-Reddy-1024x598.jpg HTTP/1.1" 200 28559
+INFO 2023-07-20 10:57:40,591 basehttp "GET /media/doctor/lady-doctor_D5Hp6hL.png HTTP/1.1" 200 224580
+INFO 2023-07-20 10:57:40,593 basehttp "GET /media/doctor/dr-yusof-mutahar1709962271_3cnZif8.jpg HTTP/1.1" 200 42071
+INFO 2023-07-20 10:57:40,605 basehttp "GET /media/doctor/dr-dk-gupta_Qragbru.jpg HTTP/1.1" 200 83704
+INFO 2023-07-20 10:57:40,623 basehttp "GET /media/doctor/istockphoto-1342708859-170667a.jpg HTTP/1.1" 200 54652
+INFO 2023-07-20 10:57:46,864 basehttp "GET /patient/doc_booking HTTP/1.1" 302 0
+INFO 2023-07-20 10:57:46,883 basehttp "GET /patient_login HTTP/1.1" 200 8955
+INFO 2023-07-20 10:59:46,469 basehttp "GET /admin_click HTTP/1.1" 200 7711
+INFO 2023-07-20 10:59:50,972 basehttp "GET /admin_login HTTP/1.1" 200 8930
+INFO 2023-07-20 10:59:51,082 basehttp "GET /static/images/adminLogin.jpg HTTP/1.1" 200 129823
+INFO 2023-07-20 10:59:54,224 basehttp "GET /admin_register HTTP/1.1" 200 10515
+INFO 2023-07-20 10:59:54,551 basehttp "GET /static/css/style_register.css HTTP/1.1" 200 701
+INFO 2023-07-20 10:59:59,484 basehttp "GET /admin_login HTTP/1.1" 200 8930
+INFO 2023-07-20 10:59:59,598 basehttp - Broken pipe from ('127.0.0.1', 63650)
+INFO 2023-07-20 11:00:11,227 basehttp "POST /admin_login HTTP/1.1" 302 0
+INFO 2023-07-20 11:00:11,856 basehttp "GET /admin_app/index HTTP/1.1" 200 20694
+WARNING 2023-07-20 11:00:11,904 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:00:11,905 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:00:12,002 basehttp "GET /static/images/ddii%20(2).png HTTP/1.1" 200 14571
+INFO 2023-07-20 11:00:12,003 basehttp "GET /static/images/ddii%20(1).png HTTP/1.1" 200 11096
+INFO 2023-07-20 11:00:12,004 basehttp "GET /static/images/ddii%20(3).png HTTP/1.1" 200 16060
+INFO 2023-07-20 11:00:23,490 basehttp "GET /admin_app/appointments HTTP/1.1" 200 14158
+WARNING 2023-07-20 11:00:23,549 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:00:23,553 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:00:23,555 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:00:25,786 basehttp "GET /admin_app/patient_page HTTP/1.1" 200 15871
+WARNING 2023-07-20 11:00:25,860 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:00:25,861 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:00:25,894 basehttp "GET /static/images/1430402.png HTTP/1.1" 200 18458
+INFO 2023-07-20 11:00:25,942 basehttp "GET /static/images/doctorrec%20(1).png HTTP/1.1" 200 16137
+INFO 2023-07-20 11:00:25,982 basehttp "GET /static/images/doctorrec%20(4).png HTTP/1.1" 200 16813
+INFO 2023-07-20 11:00:26,028 basehttp "GET /static/images/doctorrec%20(2).png HTTP/1.1" 200 42053
+INFO 2023-07-20 11:00:26,226 basehttp "GET /admin_app/index HTTP/1.1" 200 20694
+WARNING 2023-07-20 11:00:26,274 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:00:26,276 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:00:40,266 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-07-20 11:00:40,309 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:00:40,310 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:00:40,433 basehttp "GET /static/images/find.png HTTP/1.1" 200 21746
+INFO 2023-07-20 11:00:40,441 basehttp "GET /static/images/doctorrec%20(3).png HTTP/1.1" 200 21676
+INFO 2023-07-20 11:00:42,316 basehttp "GET /admin_app/doctor_record HTTP/1.1" 200 22643
+WARNING 2023-07-20 11:00:42,399 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:00:42,410 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:00:42,411 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+WARNING 2023-07-20 11:00:57,445 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:00:57,446 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:00:59,324 basehttp "GET /admin_app/register_doctor HTTP/1.1" 200 20919
+WARNING 2023-07-20 11:00:59,371 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:00:59,372 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:01:03,642 basehttp "GET /admin_app/approve_doctor HTTP/1.1" 200 13590
+WARNING 2023-07-20 11:01:03,686 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:01:03,687 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:01:06,512 basehttp "GET /admin_app/doctor_specialisation HTTP/1.1" 200 16816
+WARNING 2023-07-20 11:01:06,557 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:01:06,568 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:01:06,569 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:01:11,130 basehttp "GET /admin_app/adm_departments HTTP/1.1" 200 21378
+WARNING 2023-07-20 11:01:11,176 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:01:11,177 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:01:15,642 basehttp "GET /admin_app/doctor_record HTTP/1.1" 200 22643
+WARNING 2023-07-20 11:01:15,682 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:01:15,696 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:01:15,697 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:04:24,373 basehttp "GET /admin_app/doctor_record HTTP/1.1" 200 22643
+WARNING 2023-07-20 11:04:24,461 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:04:24,472 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:04:24,473 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:04:31,221 basehttp "GET /admin_app/consultation/26 HTTP/1.1" 200 16800
+WARNING 2023-07-20 11:04:31,395 log Not Found: /admin_app/consultation/style.css
+WARNING 2023-07-20 11:04:31,396 basehttp "GET /admin_app/consultation/style.css HTTP/1.1" 404 11814
+WARNING 2023-07-20 11:04:40,728 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+INFO 2023-07-20 11:05:01,868 basehttp "GET /admin_app/doctor_record?q=anoop HTTP/1.1" 200 15248
+WARNING 2023-07-20 11:05:01,950 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:05:01,962 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:05:01,963 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:05:06,421 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-07-20 11:05:06,463 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:05:06,464 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:05:12,518 basehttp "GET /admin_app/doctor_record HTTP/1.1" 200 22643
+WARNING 2023-07-20 11:05:12,566 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:05:12,577 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:05:12,578 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:05:17,662 basehttp "GET /admin_app/appointments HTTP/1.1" 200 14158
+WARNING 2023-07-20 11:05:17,725 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:05:17,729 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:05:17,730 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:06:41,406 basehttp "GET /admin_app/view_messages HTTP/1.1" 200 14640
+WARNING 2023-07-20 11:06:41,464 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:06:41,481 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:06:41,482 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:06:44,163 basehttp "GET /admin_app/appointments HTTP/1.1" 200 14158
+WARNING 2023-07-20 11:06:44,202 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:06:44,220 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:06:44,221 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:06:46,151 basehttp "GET /admin_app/appointments HTTP/1.1" 200 14158
+WARNING 2023-07-20 11:06:46,192 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:06:46,207 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:06:46,209 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:09:44,752 basehttp "GET /admin_app/appointments HTTP/1.1" 200 14159
+WARNING 2023-07-20 11:09:44,799 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:09:44,816 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:09:44,817 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:15:37,455 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:15:42,919 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:15:48,035 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:15:49,089 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:15:53,934 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:15:56,185 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:16:01,002 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:16:02,202 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:16:07,638 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:16:08,846 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:16:11,984 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:16:13,113 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:16:15,389 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:16:17,021 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:16:20,035 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:16:21,876 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:16:25,371 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:16:26,811 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:16:29,847 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:16:31,322 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:16:34,391 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:16:35,559 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:16:39,780 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:16:41,359 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:16:44,471 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:16:45,713 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:17:00,909 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:17:02,513 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:17:06,042 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:17:07,113 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:17:10,300 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:17:11,985 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:17:14,438 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:17:15,988 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:17:20,145 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:17:21,259 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:17:23,825 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:17:25,071 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:17:30,422 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:17:31,491 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:17:36,645 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:17:37,876 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:18:56,428 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:18:58,545 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:19:02,297 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:19:04,179 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:19:08,565 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:19:10,109 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:19:13,084 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:19:14,645 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:19:16,905 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:19:19,154 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:19:40,657 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:19:42,157 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:19:46,178 basehttp "GET /admin_app/appointments HTTP/1.1" 200 13726
+WARNING 2023-07-20 11:19:46,348 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:19:46,380 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:19:46,381 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:23:08,189 basehttp "GET /admin_app/appointments HTTP/1.1" 200 14278
+WARNING 2023-07-20 11:23:08,246 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:23:08,247 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+WARNING 2023-07-20 11:23:08,251 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+INFO 2023-07-20 11:23:11,802 basehttp "GET /admin_app/appointments?page=2 HTTP/1.1" 200 14288
+WARNING 2023-07-20 11:23:11,841 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:23:11,860 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:23:11,861 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:23:14,088 basehttp "GET /admin_app/appointments?page=1 HTTP/1.1" 200 14278
+WARNING 2023-07-20 11:23:14,128 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:23:14,147 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:23:14,148 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:23:16,747 basehttp "GET /admin_app/appointments?page=2 HTTP/1.1" 200 14288
+WARNING 2023-07-20 11:23:18,051 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:23:18,065 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:23:18,066 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:23:19,329 basehttp "GET /admin_app/appointments?page=1 HTTP/1.1" 200 14278
+WARNING 2023-07-20 11:23:19,368 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:23:19,388 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:23:19,388 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:23:24,777 basehttp "GET /admin_app/appointments?page=2 HTTP/1.1" 200 14288
+WARNING 2023-07-20 11:23:24,815 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:23:24,834 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:23:24,835 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:23:29,590 basehttp "GET /admin_app/appointments?page=1 HTTP/1.1" 200 14278
+WARNING 2023-07-20 11:23:29,882 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:23:29,897 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:23:29,897 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:23:31,810 basehttp "GET /admin_app/appointments?page=2 HTTP/1.1" 200 14288
+WARNING 2023-07-20 11:23:31,868 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:23:31,878 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:23:31,879 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:23:34,307 basehttp "GET /admin_app/appointments?page=1 HTTP/1.1" 200 14278
+WARNING 2023-07-20 11:23:34,350 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:23:34,363 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:23:34,364 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:23:37,078 basehttp "GET /admin_app/appointments?page=2 HTTP/1.1" 200 14288
+WARNING 2023-07-20 11:23:37,843 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:23:37,855 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:23:37,855 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:30:52,264 basehttp "GET /admin_app/patient_page HTTP/1.1" 200 15871
+WARNING 2023-07-20 11:30:52,871 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:30:52,871 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:30:55,999 basehttp "GET /admin_app/approve_patient HTTP/1.1" 200 14731
+WARNING 2023-07-20 11:30:56,043 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:30:56,044 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:30:57,967 basehttp "GET /admin_app/index HTTP/1.1" 200 20694
+WARNING 2023-07-20 11:30:58,012 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:30:58,012 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:31:03,928 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-07-20 11:31:03,969 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:31:03,970 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:31:06,012 basehttp "GET /admin_app/register_doctor HTTP/1.1" 200 20919
+WARNING 2023-07-20 11:31:06,057 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:31:06,059 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:31:08,364 basehttp "GET /admin_app/adm_departments HTTP/1.1" 200 21378
+WARNING 2023-07-20 11:31:08,406 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:31:08,406 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:31:13,365 basehttp "GET /admin_app/doctor_record HTTP/1.1" 200 22643
+WARNING 2023-07-20 11:31:13,424 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:31:13,425 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+WARNING 2023-07-20 11:31:13,434 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+INFO 2023-07-20 11:31:51,544 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:31:53,238 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:31:58,164 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:32:00,200 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:33:38,906 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:33:39,986 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:33:43,422 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:33:44,679 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:33:52,210 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:33:54,498 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:34:00,079 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:34:01,176 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:34:10,810 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:34:11,961 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:34:18,866 basehttp "GET /admin_app/doctor_record HTTP/1.1" 200 18965
+WARNING 2023-07-20 11:34:18,919 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:34:18,938 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:34:18,939 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:36:02,064 basehttp "GET /admin_app/doctor_record HTTP/1.1" 200 19366
+WARNING 2023-07-20 11:36:02,123 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:36:02,126 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:36:02,127 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:36:41,241 basehttp "GET /admin_app/doctor_record HTTP/1.1" 200 19366
+WARNING 2023-07-20 11:36:41,294 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:36:41,300 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:36:41,302 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:38:29,181 basehttp "GET /admin_app/doctor_record HTTP/1.1" 200 19366
+WARNING 2023-07-20 11:38:29,247 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:38:29,270 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:38:29,271 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:38:32,753 basehttp "GET /admin_app/doctor_record HTTP/1.1" 200 19366
+WARNING 2023-07-20 11:38:32,812 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:38:32,819 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:38:32,820 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:38:51,384 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:38:52,657 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:39:02,296 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:39:04,095 autoreload Watching for file changes with StatReloader
+ERROR 2023-07-20 11:39:05,585 log Internal Server Error: /admin_app/doctor_record
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\decorators.py", line 9, in wrapper
+    return func (request, *args, **kwargs)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py", line 180, in admin_app_doctor_record
+    paginator = Paginator(doctor_rec,5)
+UnboundLocalError: local variable 'doctor_rec' referenced before assignment
+ERROR 2023-07-20 11:39:05,587 basehttp "GET /admin_app/doctor_record HTTP/1.1" 500 72819
+INFO 2023-07-20 11:39:10,632 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:39:12,166 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:39:15,739 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:39:17,195 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:39:20,531 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:39:22,079 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:39:22,847 basehttp "GET /admin_app/doctor_record HTTP/1.1" 200 23042
+WARNING 2023-07-20 11:39:22,926 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:39:22,946 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:39:22,948 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:39:30,860 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:39:32,365 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:39:38,303 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:39:39,512 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:39:40,257 basehttp "GET /admin_app/doctor_record HTTP/1.1" 200 19366
+WARNING 2023-07-20 11:39:40,334 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:39:40,347 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:39:40,348 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:39:48,334 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:39:49,528 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:39:51,982 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:39:53,368 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:41:11,761 basehttp "GET /admin_app/doctor_record HTTP/1.1" 200 19366
+WARNING 2023-07-20 11:41:11,814 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:41:11,837 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:41:11,837 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:44:55,220 basehttp "GET /admin_app/doctor_record HTTP/1.1" 200 19501
+WARNING 2023-07-20 11:44:55,272 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:44:55,285 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:44:55,287 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:44:58,257 basehttp "GET /admin_app/doctor_record?page=2 HTTP/1.1" 200 18552
+WARNING 2023-07-20 11:44:58,303 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:44:58,313 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:44:58,316 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:45:01,525 basehttp "GET /admin_app/doctor_record?page=1 HTTP/1.1" 200 19501
+WARNING 2023-07-20 11:45:01,573 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:45:01,586 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:45:01,587 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:46:44,506 basehttp "GET /admin_app/doctor_record?page=1 HTTP/1.1" 200 19761
+WARNING 2023-07-20 11:46:44,541 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:46:44,576 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:46:44,577 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:46:48,565 basehttp "GET /admin_app/doctor_record?page=2 HTTP/1.1" 200 18812
+WARNING 2023-07-20 11:46:48,621 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:46:48,627 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:46:48,628 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:46:50,532 basehttp "GET /admin_app/doctor_record?page=1 HTTP/1.1" 200 19761
+WARNING 2023-07-20 11:46:50,603 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:46:50,613 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:46:50,614 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:47:59,396 basehttp "GET /admin_app/doctor_record?page=1 HTTP/1.1" 200 20080
+WARNING 2023-07-20 11:47:59,429 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:47:59,464 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:47:59,464 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:48:04,047 basehttp "GET /admin_app/doctor_record?page=2 HTTP/1.1" 200 19131
+WARNING 2023-07-20 11:48:04,099 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:48:04,104 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:48:04,105 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:48:08,241 basehttp "GET /admin_app/doctor_record?page=1 HTTP/1.1" 200 20080
+WARNING 2023-07-20 11:48:08,285 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:48:08,301 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:48:08,301 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:49:00,800 basehttp "GET /admin_app/doctor_record?page=1 HTTP/1.1" 200 20080
+WARNING 2023-07-20 11:49:00,857 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:49:00,858 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:49:00,859 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:49:03,336 basehttp "GET /admin_app/doctor_record?page=1 HTTP/1.1" 200 20080
+WARNING 2023-07-20 11:49:03,396 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:49:03,397 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:49:03,398 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:49:04,547 basehttp "GET /admin_app/doctor_record?page=1 HTTP/1.1" 200 20080
+WARNING 2023-07-20 11:49:04,603 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:49:04,606 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:49:04,607 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:49:14,604 basehttp "GET /admin_app/doctor_record?page=1 HTTP/1.1" 200 20080
+WARNING 2023-07-20 11:49:14,679 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:49:14,685 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:49:14,687 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:49:15,925 basehttp "GET /admin_app/doctor_record?page=1 HTTP/1.1" 200 20080
+WARNING 2023-07-20 11:49:15,983 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:49:15,983 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:49:15,984 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:49:18,088 basehttp "GET /admin_app/doctor_record?page=1 HTTP/1.1" 200 20080
+WARNING 2023-07-20 11:49:18,141 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:49:18,155 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:49:18,155 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:49:20,320 basehttp "GET /admin_app/doctor_record?page=2 HTTP/1.1" 200 19130
+WARNING 2023-07-20 11:49:20,375 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:49:20,382 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:49:20,383 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:49:21,941 basehttp "GET /admin_app/doctor_record?page= HTTP/1.1" 200 20080
+WARNING 2023-07-20 11:49:21,987 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:49:22,001 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:49:22,002 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:49:33,859 basehttp "GET /admin_app/doctor_record?page= HTTP/1.1" 200 20080
+WARNING 2023-07-20 11:49:33,915 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:49:33,918 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:49:33,919 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:49:35,177 basehttp "GET /admin_app/doctor_record?page= HTTP/1.1" 200 20080
+WARNING 2023-07-20 11:49:35,231 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:49:35,251 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:49:35,252 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+ERROR 2023-07-20 11:50:19,494 log Internal Server Error: /admin_app/doctor_record
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\decorators.py", line 9, in wrapper
+    return func (request, *args, **kwargs)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py", line 191, in admin_app_doctor_record
+    return render(request,'admin_app_templates/doctor_record.html',{'doctor':doctor_rec})
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\user\Desktop\Hospital-Management\hospital_env\lib\site-packages\django\template\defaulttags.py", line 833, in do_for
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'for' statements should have at least four words: for  in doctor.paginator.page_range
+ERROR 2023-07-20 11:50:19,501 basehttp "GET /admin_app/doctor_record?page= HTTP/1.1" 500 202333
+INFO 2023-07-20 11:51:56,744 basehttp "GET /admin_app/doctor_record?page= HTTP/1.1" 200 20080
+WARNING 2023-07-20 11:51:56,803 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:51:56,804 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:51:56,805 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:52:00,185 basehttp "GET /admin_app/doctor_record?page=2 HTTP/1.1" 200 19131
+WARNING 2023-07-20 11:52:00,232 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:52:00,244 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:52:00,245 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:52:02,318 basehttp "GET /admin_app/doctor_record?page=1 HTTP/1.1" 200 20080
+WARNING 2023-07-20 11:52:02,362 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:52:02,372 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:52:02,373 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+WARNING 2023-07-20 11:52:06,254 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+INFO 2023-07-20 11:52:22,082 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 11:52:23,439 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 11:52:24,305 basehttp "GET /admin_app/doctor_record?page=2 HTTP/1.1" 200 23203
+WARNING 2023-07-20 11:52:24,365 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:52:24,382 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:52:24,382 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:52:30,290 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-07-20 11:52:30,349 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:52:30,350 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:52:32,399 basehttp "GET /admin_app/approve_doctor HTTP/1.1" 200 13590
+WARNING 2023-07-20 11:52:32,442 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:52:32,443 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:52:34,118 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-07-20 11:52:34,175 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:52:34,177 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:52:35,225 basehttp "GET /admin_app/doctor_specialisation HTTP/1.1" 200 16816
+WARNING 2023-07-20 11:52:35,269 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 11:52:35,282 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:52:35,283 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:52:40,265 basehttp "GET /admin_app/index HTTP/1.1" 200 20694
+WARNING 2023-07-20 11:52:40,310 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:52:40,311 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:52:41,858 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-07-20 11:52:41,901 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:52:41,902 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:52:45,730 basehttp "GET /admin_app/approve_doctor HTTP/1.1" 200 13590
+WARNING 2023-07-20 11:52:45,776 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:52:45,777 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 11:54:27,712 basehttp "GET /admin_app/approve_doctor HTTP/1.1" 200 13590
+WARNING 2023-07-20 11:54:27,755 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 11:54:27,757 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:39:08,841 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-07-20 16:39:08,908 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:39:08,909 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:39:10,713 basehttp "GET /admin_app/doctor_specialisation HTTP/1.1" 200 16816
+WARNING 2023-07-20 16:39:10,783 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:39:10,800 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:39:10,801 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:39:14,459 basehttp "GET /admin_app/index HTTP/1.1" 200 20694
+WARNING 2023-07-20 16:39:14,508 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:39:14,509 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:39:17,779 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-07-20 16:39:17,822 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:39:17,822 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:39:19,693 basehttp "GET /admin_app/doctor_record HTTP/1.1" 200 23203
+WARNING 2023-07-20 16:39:19,754 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:39:19,755 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+WARNING 2023-07-20 16:39:19,756 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+INFO 2023-07-20 16:39:25,034 basehttp "GET /admin_app/index HTTP/1.1" 200 20694
+WARNING 2023-07-20 16:39:25,092 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:39:25,093 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:39:25,827 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-07-20 16:39:25,892 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:39:25,893 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:39:29,796 basehttp "GET /admin_app/patient_page HTTP/1.1" 200 15871
+WARNING 2023-07-20 16:39:29,865 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:39:29,865 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:39:32,199 basehttp "GET /admin_app/view_patients HTTP/1.1" 200 15445
+WARNING 2023-07-20 16:39:32,251 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:39:32,273 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:39:32,274 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+WARNING 2023-07-20 16:39:48,726 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:39:48,727 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:39:51,273 basehttp "GET /admin_app/consulted_patient HTTP/1.1" 200 15291
+WARNING 2023-07-20 16:39:51,313 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:39:51,331 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:39:51,332 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:39:55,557 basehttp "GET /admin_app/approve_patient HTTP/1.1" 200 14731
+WARNING 2023-07-20 16:39:55,602 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:39:55,603 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:39:58,812 basehttp "GET /admin_app/patient_registered HTTP/1.1" 200 15325
+WARNING 2023-07-20 16:39:59,395 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:39:59,409 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:39:59,410 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:40:07,338 basehttp "GET /admin_app/view_patients HTTP/1.1" 200 15445
+WARNING 2023-07-20 16:40:07,382 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:40:07,393 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:40:07,394 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:40:09,821 basehttp "GET /admin_app/patient_registered HTTP/1.1" 200 15325
+WARNING 2023-07-20 16:40:09,864 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:40:09,877 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:40:09,878 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:40:12,847 basehttp "GET /admin_app/view_patients HTTP/1.1" 200 15445
+WARNING 2023-07-20 16:40:12,890 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:40:12,903 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:40:12,903 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:41:08,471 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 16:41:11,904 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 16:41:17,462 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 16:41:19,523 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 16:41:24,914 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 16:41:26,353 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 16:41:29,668 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 16:41:31,135 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 16:42:14,178 basehttp "GET /admin_app/view_patients HTTP/1.1" 200 15845
+WARNING 2023-07-20 16:42:14,433 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:42:14,474 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:42:14,475 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:43:08,694 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-07-20 16:43:08,744 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:43:08,745 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:43:11,032 basehttp "GET /admin_app/doctor_record HTTP/1.1" 200 23203
+WARNING 2023-07-20 16:43:11,076 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:43:11,095 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:43:11,095 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+WARNING 2023-07-20 16:43:16,088 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+INFO 2023-07-20 16:44:23,178 basehttp "GET /admin_app/view_patients HTTP/1.1" 200 15743
+WARNING 2023-07-20 16:44:23,277 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:44:23,287 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:44:23,288 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:44:24,219 basehttp "GET /admin_app/view_patients HTTP/1.1" 200 15743
+WARNING 2023-07-20 16:44:24,273 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:44:24,274 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+WARNING 2023-07-20 16:44:24,277 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+INFO 2023-07-20 16:44:24,997 basehttp "GET /admin_app/view_patients HTTP/1.1" 200 15743
+WARNING 2023-07-20 16:44:25,052 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:44:25,054 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+WARNING 2023-07-20 16:44:25,054 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+INFO 2023-07-20 16:44:25,856 basehttp "GET /admin_app/view_patients HTTP/1.1" 200 15743
+WARNING 2023-07-20 16:44:26,032 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:44:26,041 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:44:26,042 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:44:57,223 basehttp "GET /admin_app/view_patients HTTP/1.1" 200 15845
+WARNING 2023-07-20 16:44:57,271 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:44:57,289 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:44:57,289 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:45:47,933 basehttp "GET /admin_app/appointments HTTP/1.1" 200 14154
+WARNING 2023-07-20 16:45:47,976 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:45:47,987 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:45:47,988 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:45:53,214 basehttp "GET /admin_app/patient_page HTTP/1.1" 200 15871
+WARNING 2023-07-20 16:45:53,270 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:45:53,271 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:45:54,883 basehttp "GET /admin_app/patient_registered HTTP/1.1" 200 15325
+WARNING 2023-07-20 16:45:54,922 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:45:54,943 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:45:54,944 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:46:03,895 basehttp "GET /admin_app/view_patients HTTP/1.1" 200 15845
+WARNING 2023-07-20 16:46:03,937 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:46:03,954 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:46:03,955 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:47:41,108 basehttp "GET /admin_app/view_patients HTTP/1.1" 200 15783
+WARNING 2023-07-20 16:47:41,164 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:47:41,179 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:47:41,180 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:47:42,250 basehttp "GET /admin_app/view_patients HTTP/1.1" 200 15783
+WARNING 2023-07-20 16:47:42,314 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:47:42,316 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+WARNING 2023-07-20 16:47:42,317 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+INFO 2023-07-20 16:47:52,204 basehttp "GET /admin_app/view_patients HTTP/1.1" 200 15783
+WARNING 2023-07-20 16:47:52,252 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:47:52,261 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:47:52,262 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:48:29,338 basehttp "GET /admin_app/view_patients HTTP/1.1" 200 16003
+WARNING 2023-07-20 16:48:29,383 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:48:29,398 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:48:29,399 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:48:56,834 basehttp "GET /admin_app/patient_page HTTP/1.1" 200 15871
+WARNING 2023-07-20 16:48:56,881 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:48:56,882 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:48:58,386 basehttp "GET /admin_app/patient_registered HTTP/1.1" 200 15325
+WARNING 2023-07-20 16:48:58,489 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:48:58,505 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:48:58,505 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:49:28,132 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 16:49:29,515 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 16:49:54,812 basehttp "GET /admin_app/patient_registered HTTP/1.1" 200 15663
+WARNING 2023-07-20 16:49:54,864 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:49:54,879 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:49:54,879 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:50:54,284 basehttp "GET /admin_app/patient_registered HTTP/1.1" 200 15883
+WARNING 2023-07-20 16:50:54,325 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:50:54,343 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:50:54,344 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:51:02,716 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-07-20 16:51:02,768 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:51:02,769 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:51:04,244 basehttp "GET /admin_app/doctor_record HTTP/1.1" 200 23203
+WARNING 2023-07-20 16:51:04,298 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:51:04,317 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:51:04,318 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:51:15,939 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-07-20 16:51:15,981 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:51:15,981 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:51:19,898 basehttp "GET /admin_app/appointments HTTP/1.1" 200 14154
+WARNING 2023-07-20 16:51:19,940 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:51:19,954 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:51:19,956 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:51:22,135 basehttp "GET /admin_app/patient_page HTTP/1.1" 200 15871
+WARNING 2023-07-20 16:51:22,178 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:51:22,179 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:51:23,736 basehttp "GET /admin_app/patient_registered HTTP/1.1" 200 15883
+WARNING 2023-07-20 16:51:23,773 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:51:23,790 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:51:23,793 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:51:36,802 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 16:51:38,106 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 16:51:38,892 basehttp "GET /admin_app/patient_registered HTTP/1.1" 200 15172
+WARNING 2023-07-20 16:51:38,944 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:51:38,961 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:51:38,961 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:51:41,504 basehttp "GET /admin_app/patient_registered?page=2 HTTP/1.1" 200 15501
+WARNING 2023-07-20 16:51:41,548 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:51:41,564 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:51:41,564 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:51:43,075 basehttp "GET /admin_app/patient_registered?page=3 HTTP/1.1" 200 15510
+WARNING 2023-07-20 16:51:43,118 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:51:43,129 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:51:43,130 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:51:46,287 basehttp "GET /admin_app/patient_registered?page=1 HTTP/1.1" 200 15172
+WARNING 2023-07-20 16:51:46,331 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:51:46,346 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:51:46,346 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:51:47,718 basehttp "GET /admin_app/patient_registered?page=2 HTTP/1.1" 200 15501
+WARNING 2023-07-20 16:51:47,757 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:51:47,775 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:51:47,776 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:51:48,989 basehttp "GET /admin_app/patient_registered?page=3 HTTP/1.1" 200 15510
+WARNING 2023-07-20 16:51:49,130 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:51:49,141 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:51:49,142 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:51:50,271 basehttp "GET /admin_app/patient_registered?page=1 HTTP/1.1" 200 15172
+WARNING 2023-07-20 16:51:51,314 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 16:51:51,370 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:51:51,371 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:51:56,277 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 16:51:58,051 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 16:51:59,181 basehttp "GET /admin_app/patient_page HTTP/1.1" 200 15871
+WARNING 2023-07-20 16:51:59,260 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:51:59,261 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:52:02,202 basehttp "GET /admin_app/book_patient HTTP/1.1" 200 22605
+WARNING 2023-07-20 16:52:02,254 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:52:02,255 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:52:04,623 basehttp "GET /admin_app/approve_patient HTTP/1.1" 200 14731
+WARNING 2023-07-20 16:52:04,668 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:52:04,669 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:52:59,346 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 16:53:00,474 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 16:53:16,434 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 16:53:17,808 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 16:53:22,296 basehttp "GET /admin_app/approve_patient HTTP/1.1" 200 14731
+WARNING 2023-07-20 16:53:22,370 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:53:22,371 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:53:23,981 basehttp "GET /admin_app/approve_patient HTTP/1.1" 200 14731
+WARNING 2023-07-20 16:53:24,045 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:53:24,046 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:54:21,487 basehttp "GET /admin_app/approve_patient HTTP/1.1" 200 15069
+WARNING 2023-07-20 16:54:21,532 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:54:21,533 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:54:22,807 basehttp "GET /admin_app/approve_patient HTTP/1.1" 200 15069
+WARNING 2023-07-20 16:54:22,855 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:54:22,856 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:55:17,522 basehttp "GET /admin_app/approve_patient HTTP/1.1" 200 15289
+WARNING 2023-07-20 16:55:17,572 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:55:17,573 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:55:23,598 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-07-20 16:55:23,704 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 16:55:23,705 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 16:55:39,308 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 16:55:40,668 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 19:53:49,135 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-07-20 19:53:49,199 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 19:53:49,200 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 19:53:50,517 basehttp "GET /admin_app/doctor_record HTTP/1.1" 200 23203
+WARNING 2023-07-20 19:53:50,550 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 19:53:50,583 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 19:53:50,584 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 19:53:57,087 basehttp "GET /admin_app/adm_departments HTTP/1.1" 200 21378
+WARNING 2023-07-20 19:53:57,134 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 19:53:57,135 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 19:54:01,253 basehttp "GET /admin_app/doctor_specialisation HTTP/1.1" 200 16816
+WARNING 2023-07-20 19:54:01,301 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 19:54:01,328 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 19:54:01,329 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 19:54:03,870 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-07-20 19:54:03,914 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 19:54:03,915 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 19:54:05,423 basehttp "GET /admin_app/patient_page HTTP/1.1" 200 15871
+WARNING 2023-07-20 19:54:05,474 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 19:54:05,475 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 19:54:06,167 basehttp "GET /admin_app/view_patients HTTP/1.1" 200 16003
+WARNING 2023-07-20 19:54:06,213 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 19:54:06,225 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 19:54:06,226 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 19:54:08,700 basehttp "GET /admin_app/patient_registered HTTP/1.1" 200 15883
+WARNING 2023-07-20 19:54:08,788 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 19:54:08,797 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 19:54:08,798 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 19:54:11,767 basehttp "GET /admin_app/consulted_patient HTTP/1.1" 200 15291
+WARNING 2023-07-20 19:54:11,814 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 19:54:11,825 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 19:54:11,826 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 19:54:19,414 basehttp - Broken pipe from ('127.0.0.1', 59254)
+INFO 2023-07-20 19:54:19,592 basehttp "GET /admin_app/book_patient HTTP/1.1" 200 22605
+WARNING 2023-07-20 19:54:19,679 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 19:54:19,680 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 19:55:39,368 basehttp - Broken pipe from ('127.0.0.1', 59271)
+INFO 2023-07-20 19:55:39,453 basehttp "GET /admin_app/consulted_patient HTTP/1.1" 200 15291
+WARNING 2023-07-20 19:55:39,499 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 19:55:39,518 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 19:55:39,520 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 19:56:05,839 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 19:56:11,030 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 19:56:18,869 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 19:56:20,174 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 19:56:26,486 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 19:56:27,699 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 19:57:31,612 basehttp "GET /admin_app/consulted_patient HTTP/1.1" 200 15849
+WARNING 2023-07-20 19:57:31,666 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 19:57:31,682 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 19:57:31,683 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 19:57:55,401 basehttp "GET /admin_app/consulted_patient?q=ramu HTTP/1.1" 200 15849
+WARNING 2023-07-20 19:57:56,801 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 19:57:56,817 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 19:57:56,817 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 19:58:07,546 basehttp "GET /admin_app/consulted_patient?q=anoop HTTP/1.1" 200 15060
+WARNING 2023-07-20 19:58:07,630 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 19:58:07,650 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 19:58:07,651 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+WARNING 2023-07-20 19:58:16,544 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+INFO 2023-07-20 19:58:18,976 basehttp "GET /admin_app/patient_page HTTP/1.1" 200 15871
+WARNING 2023-07-20 19:58:19,019 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 19:58:19,020 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 19:58:20,443 basehttp "GET /admin_app/view_patients HTTP/1.1" 200 16003
+WARNING 2023-07-20 19:58:20,486 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 19:58:20,511 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 19:58:20,512 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 19:58:23,583 basehttp "GET /admin_app/consulted_patient HTTP/1.1" 200 15849
+WARNING 2023-07-20 19:58:23,627 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 19:58:23,638 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 19:58:23,639 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 19:58:26,403 basehttp "GET /admin_app/approve_patient HTTP/1.1" 200 15289
+WARNING 2023-07-20 19:58:27,119 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 19:58:27,120 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 19:58:29,768 basehttp "GET /admin_app/patient_registered HTTP/1.1" 200 15883
+WARNING 2023-07-20 19:58:29,860 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 19:58:29,873 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 19:58:29,874 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 19:58:33,268 basehttp "GET /admin_app/view_messages HTTP/1.1" 200 14640
+WARNING 2023-07-20 19:58:33,305 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 19:58:33,322 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 19:58:33,323 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:02:55,983 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 20:02:57,423 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 20:03:00,871 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 20:03:01,955 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 20:03:15,976 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 20:03:18,691 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 20:04:26,967 basehttp "GET /admin_app/view_messages HTTP/1.1" 200 15200
+WARNING 2023-07-20 20:04:27,033 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 20:04:27,036 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:04:27,038 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:04:52,260 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 20:04:53,346 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 20:04:55,545 basehttp "GET /admin_app/view_messages HTTP/1.1" 200 15186
+WARNING 2023-07-20 20:04:55,618 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 20:04:55,639 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:04:55,640 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:04:57,950 basehttp "GET /admin_app/view_messages?page=2 HTTP/1.1" 200 15208
+WARNING 2023-07-20 20:04:58,052 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 20:04:58,069 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:04:58,070 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:04:59,469 basehttp "GET /admin_app/view_messages?page=1 HTTP/1.1" 200 15186
+WARNING 2023-07-20 20:04:59,514 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 20:04:59,527 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:04:59,529 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:05:00,717 basehttp "GET /admin_app/view_messages?page=2 HTTP/1.1" 200 15208
+WARNING 2023-07-20 20:05:00,756 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 20:05:00,775 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:05:00,776 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:05:02,925 basehttp "GET /admin_app/view_messages?page=1 HTTP/1.1" 200 15186
+WARNING 2023-07-20 20:05:02,962 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 20:05:02,982 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:05:02,982 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:05:08,211 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\admin_app\views.py changed, reloading.
+INFO 2023-07-20 20:05:09,539 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 20:09:29,810 basehttp "GET /admin_app/view_messages HTTP/1.1" 200 15200
+WARNING 2023-07-20 20:09:29,861 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 20:09:29,886 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:09:29,888 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:09:34,493 basehttp "GET /admin_app/appointments HTTP/1.1" 200 14375
+WARNING 2023-07-20 20:09:34,532 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 20:09:34,552 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:09:34,553 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:09:36,035 basehttp "GET /admin_app/patient_page HTTP/1.1" 200 15871
+WARNING 2023-07-20 20:09:36,078 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:09:36,079 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:09:37,582 basehttp "GET /admin_app/view_patients HTTP/1.1" 200 16003
+WARNING 2023-07-20 20:09:37,624 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 20:09:37,643 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:09:37,644 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:09:42,452 basehttp "GET /admin_app/patient_registered HTTP/1.1" 200 15883
+WARNING 2023-07-20 20:09:42,499 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 20:09:42,513 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:09:42,515 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:09:45,417 basehttp "GET /admin_app/patient_registered HTTP/1.1" 200 15883
+WARNING 2023-07-20 20:09:45,456 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 20:09:45,474 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:09:45,475 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:09:51,654 basehttp "GET /admin_app/book_patient HTTP/1.1" 200 22605
+WARNING 2023-07-20 20:09:51,701 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:09:51,702 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:09:53,953 basehttp "GET /admin_app/approve_patient HTTP/1.1" 200 15289
+WARNING 2023-07-20 20:09:53,996 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:09:53,997 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:09:57,962 basehttp "GET /admin_app/view_patients HTTP/1.1" 200 16003
+WARNING 2023-07-20 20:09:58,001 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 20:09:58,018 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:09:58,020 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:10:04,559 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-07-20 20:10:04,602 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:10:04,603 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:10:05,612 basehttp "GET /admin_app/doctor_record HTTP/1.1" 200 23203
+WARNING 2023-07-20 20:10:05,658 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 20:10:05,671 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:10:05,672 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+WARNING 2023-07-20 20:10:09,499 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:10:09,514 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:10:10,544 basehttp "GET /admin_app/register_doctor HTTP/1.1" 200 20919
+WARNING 2023-07-20 20:10:10,588 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:10:10,590 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:10:12,400 basehttp "GET /admin_app/adm_departments HTTP/1.1" 200 21378
+WARNING 2023-07-20 20:10:12,443 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:10:12,444 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:10:15,346 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-07-20 20:10:15,412 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:10:15,413 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:10:18,091 basehttp "GET /admin_app/patient_page HTTP/1.1" 200 15871
+WARNING 2023-07-20 20:10:18,134 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:10:18,134 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:10:18,952 basehttp "GET /admin_app/view_patients HTTP/1.1" 200 16003
+WARNING 2023-07-20 20:10:18,991 basehttp "GET /static/css/approve_doctor.css HTTP/1.1" 404 1825
+WARNING 2023-07-20 20:10:19,012 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:10:19,012 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:10:58,431 basehttp "GET /admin_app/doctor_page HTTP/1.1" 200 15298
+WARNING 2023-07-20 20:10:58,482 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:10:58,483 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:10:59,945 basehttp "GET /admin_app/approve_doctor HTTP/1.1" 200 13590
+WARNING 2023-07-20 20:10:59,987 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:10:59,988 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:11:11,021 basehttp "GET /admin_app/adm_departments HTTP/1.1" 200 21378
+WARNING 2023-07-20 20:11:11,065 log Not Found: /admin_app/style.css
+WARNING 2023-07-20 20:11:11,065 basehttp "GET /admin_app/style.css HTTP/1.1" 404 11775
+INFO 2023-07-20 20:11:21,343 basehttp "GET /admin_app/admin_logout HTTP/1.1" 302 0
+INFO 2023-07-20 20:11:21,413 basehttp "GET / HTTP/1.1" 200 15835
+INFO 2023-07-20 20:11:25,601 basehttp "GET /doctor_click HTTP/1.1" 200 7688
+INFO 2023-07-20 20:11:27,984 basehttp "GET /doctors_login HTTP/1.1" 200 8742
+INFO 2023-07-20 20:11:28,168 basehttp "GET /static/images/pexels-pixabay-40568.jpg HTTP/1.1" 200 517355
+INFO 2023-07-20 20:12:26,679 basehttp "POST /doctors_login HTTP/1.1" 302 0
+INFO 2023-07-20 20:12:26,874 basehttp "GET /doctor/index HTTP/1.1" 200 16929
+WARNING 2023-07-20 20:12:26,937 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:12:26,938 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:12:32,574 basehttp "GET /doctor/patient_page HTTP/1.1" 200 13381
+WARNING 2023-07-20 20:12:32,612 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:12:32,613 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:12:33,878 basehttp "GET /doctor/index HTTP/1.1" 200 16929
+WARNING 2023-07-20 20:12:33,920 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:12:33,921 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:12:42,348 basehttp "GET /doctor/doctor_profile HTTP/1.1" 200 20551
+WARNING 2023-07-20 20:12:42,389 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:12:42,390 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:12:42,462 basehttp "GET /static/css/style_profile.css HTTP/1.1" 200 2253
+INFO 2023-07-20 20:12:48,685 basehttp "GET /doctor/change_password HTTP/1.1" 200 14566
+WARNING 2023-07-20 20:12:48,725 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:12:48,726 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:12:50,783 basehttp "GET /doctor/consultation HTTP/1.1" 200 14271
+WARNING 2023-07-20 20:12:51,017 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:12:51,018 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:12:59,719 basehttp "GET /doctor/appointments HTTP/1.1" 200 13767
+WARNING 2023-07-20 20:12:59,761 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:12:59,762 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:13:00,946 basehttp "GET /doctor/patient_page HTTP/1.1" 200 13381
+WARNING 2023-07-20 20:13:01,003 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:13:01,004 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:13:02,556 basehttp "GET /doctor/index HTTP/1.1" 200 16929
+WARNING 2023-07-20 20:13:02,595 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:13:02,596 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:13:03,371 basehttp "GET /doctor/patient_page HTTP/1.1" 200 13381
+WARNING 2023-07-20 20:13:03,418 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:13:03,418 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:13:04,186 basehttp "GET /doctor/patient_record HTTP/1.1" 200 13394
+WARNING 2023-07-20 20:13:04,241 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:13:04,243 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:13:12,687 basehttp "GET /doctor/doctor_logout HTTP/1.1" 302 0
+INFO 2023-07-20 20:13:12,697 basehttp "GET / HTTP/1.1" 200 15835
+INFO 2023-07-20 20:13:24,318 basehttp "GET /doctor_click HTTP/1.1" 200 7688
+INFO 2023-07-20 20:13:25,653 basehttp "GET /doctors_login HTTP/1.1" 200 8742
+INFO 2023-07-20 20:13:35,933 basehttp "POST /doctors_login HTTP/1.1" 200 8742
+INFO 2023-07-20 20:13:54,665 basehttp "POST /doctors_login HTTP/1.1" 200 8742
+INFO 2023-07-20 20:13:56,967 basehttp "POST /doctors_login HTTP/1.1" 200 8742
+INFO 2023-07-20 20:14:17,705 basehttp "POST /doctors_login HTTP/1.1" 302 0
+INFO 2023-07-20 20:14:17,837 basehttp "GET /doctor/index HTTP/1.1" 200 17540
+WARNING 2023-07-20 20:14:17,878 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:14:17,879 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:14:32,331 basehttp "GET /doctor/patient_page HTTP/1.1" 200 13381
+WARNING 2023-07-20 20:14:32,371 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:14:32,372 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:14:33,652 basehttp "GET /doctor/patient_record HTTP/1.1" 200 13964
+WARNING 2023-07-20 20:14:33,698 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:14:33,700 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:14:37,010 basehttp "GET /doctor/appointments HTTP/1.1" 200 13767
+WARNING 2023-07-20 20:14:37,047 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:14:37,048 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:14:38,834 basehttp "GET /doctor/view_appointment HTTP/1.1" 301 0
+INFO 2023-07-20 20:14:38,963 basehttp "GET /doctor/view_appointment/ HTTP/1.1" 200 14792
+WARNING 2023-07-20 20:14:39,004 log Not Found: /doctor/view_appointment/style.css
+WARNING 2023-07-20 20:14:39,005 basehttp "GET /doctor/view_appointment/style.css HTTP/1.1" 404 9732
+INFO 2023-07-20 20:16:21,567 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\doctor\views.py changed, reloading.
+INFO 2023-07-20 20:16:22,767 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 20:16:25,808 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\doctor\views.py changed, reloading.
+INFO 2023-07-20 20:16:27,304 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 20:16:41,060 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\doctor\views.py changed, reloading.
+INFO 2023-07-20 20:16:42,474 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 20:17:09,073 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\doctor\views.py changed, reloading.
+INFO 2023-07-20 20:17:10,301 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 20:18:18,501 basehttp "GET /doctor/view_appointment/ HTTP/1.1" 200 15131
+WARNING 2023-07-20 20:18:18,556 log Not Found: /doctor/view_appointment/style.css
+WARNING 2023-07-20 20:18:18,556 basehttp "GET /doctor/view_appointment/style.css HTTP/1.1" 404 9732
+INFO 2023-07-20 20:18:45,689 basehttp "GET /doctor/view_appointment/ HTTP/1.1" 200 15351
+WARNING 2023-07-20 20:18:45,743 log Not Found: /doctor/view_appointment/style.css
+WARNING 2023-07-20 20:18:45,744 basehttp "GET /doctor/view_appointment/style.css HTTP/1.1" 404 9732
+INFO 2023-07-20 20:19:26,607 basehttp "GET /doctor/delete_appointment HTTP/1.1" 200 14571
+WARNING 2023-07-20 20:19:26,649 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:19:26,650 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:19:32,872 basehttp "GET /doctor/change_password HTTP/1.1" 200 14566
+WARNING 2023-07-20 20:19:32,914 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:19:32,915 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:19:36,031 basehttp "GET /doctor/doctor_profile HTTP/1.1" 200 20550
+WARNING 2023-07-20 20:19:36,071 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:19:36,072 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:19:41,956 basehttp "GET /doctor/index HTTP/1.1" 200 17540
+WARNING 2023-07-20 20:19:41,998 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:19:41,999 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:19:44,595 basehttp "GET /doctor/patient_page HTTP/1.1" 200 13381
+WARNING 2023-07-20 20:19:44,632 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:19:44,633 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:19:45,851 basehttp "GET /doctor/patient_record HTTP/1.1" 200 13964
+WARNING 2023-07-20 20:19:45,895 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:19:45,896 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:19:49,356 basehttp "GET /doctor/patient_record HTTP/1.1" 200 13964
+WARNING 2023-07-20 20:19:49,398 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:19:49,399 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+WARNING 2023-07-20 20:19:52,192 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:19:52,193 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:19:53,590 basehttp "GET /doctor/patient_booked HTTP/1.1" 200 14208
+WARNING 2023-07-20 20:19:53,630 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:19:53,631 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:21:44,275 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\doctor\views.py changed, reloading.
+INFO 2023-07-20 20:21:45,610 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 20:22:09,293 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\doctor\views.py changed, reloading.
+INFO 2023-07-20 20:22:11,053 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 20:22:14,385 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\doctor\views.py changed, reloading.
+INFO 2023-07-20 20:22:16,597 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 20:23:26,912 basehttp "GET /doctor/patient_booked HTTP/1.1" 200 14766
+WARNING 2023-07-20 20:23:26,965 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:23:26,965 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:46:04,002 basehttp "GET /doctor/patient_record HTTP/1.1" 200 13964
+WARNING 2023-07-20 20:46:04,045 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:46:04,046 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:46:07,308 basehttp "GET /doctor/view_prescription/20 HTTP/1.1" 200 16749
+WARNING 2023-07-20 20:46:07,358 log Not Found: /doctor/view_prescription/style.css
+WARNING 2023-07-20 20:46:07,359 basehttp "GET /doctor/view_prescription/style.css HTTP/1.1" 404 9735
+INFO 2023-07-20 20:46:18,536 basehttp "GET /doctor/index HTTP/1.1" 200 17540
+WARNING 2023-07-20 20:46:18,582 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:46:18,583 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:46:21,342 basehttp "GET /doctor/patient_page HTTP/1.1" 200 13381
+WARNING 2023-07-20 20:46:21,381 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:46:21,382 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:46:22,889 basehttp "GET /doctor/patient_booked HTTP/1.1" 200 14766
+WARNING 2023-07-20 20:46:22,928 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:46:22,929 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:46:25,255 basehttp "GET /doctor/patient_record HTTP/1.1" 200 13964
+WARNING 2023-07-20 20:46:25,292 log Not Found: /doctor/style.css
+WARNING 2023-07-20 20:46:25,293 basehttp "GET /doctor/style.css HTTP/1.1" 404 9681
+INFO 2023-07-20 20:48:03,174 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\doctor\views.py changed, reloading.
+INFO 2023-07-20 20:48:04,673 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 20:51:04,473 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\doctor\views.py changed, reloading.
+INFO 2023-07-20 20:51:05,564 autoreload Watching for file changes with StatReloader
+INFO 2023-07-20 20:51:08,147 autoreload C:\Users\user\Desktop\Hospital-Management\hospital_management\doctor\views.py changed, reloading.
+INFO 2023-07-20 20:51:09,349 autoreload Watching for file changes with StatReloader

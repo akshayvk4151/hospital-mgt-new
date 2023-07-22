@@ -73,16 +73,16 @@
 
                         </tr>
                         {% for p in view_patient %}
-                        
 
-                            <tr style="font-size: 18px;font-weight: 600;">
-                                <td>{{ forloop.counter }}</td>
-                                <td>{{p.doctor_name.doctor_name}}</td>
-                                <td>{{p.patient_name}}</td>
-                                <td>{{p.patient_description}}</td>
-                                <td>{{p.booking_date}}</td>
-                            </tr>
-                        
+
+                        <tr style="font-size: 18px;font-weight: 600;">
+                            <td>{{ forloop.counter }}</td>
+                            <td>{{p.doctor_name.doctor_name}}</td>
+                            <td>{{p.patient_name}}</td>
+                            <td>{{p.patient_description}}</td>
+                            <td>{{p.booking_date}}</td>
+                        </tr>
+
                         {% empty %}
                         <h4 class="notFound">No Appointments found.</h4>
 
@@ -90,6 +90,26 @@
 
                     </table>
                 </div>
+
+                <!-- Add pagination navigation links -->
+                <div class="pagination">
+                    <span class="step-links">
+                        {% if view_patient.has_previous %}
+                        <a href="?page=1">&laquo; first</a>
+                        <a href="?page={{ view_patient.previous_page_number }}">previous</a>
+                        {% endif %}
+
+                        <span class="current">
+                            Page {{ view_patient.number }} of {{ view_patient.paginator.num_pages }}.
+                        </span>
+
+                        {% if view_patient.has_next %}
+                        <a href="?page={{ view_patient.next_page_number }}">next</a>
+                        <a href="?page={{ view_patient.paginator.num_pages }}">last &raquo;</a>
+                        {% endif %}
+                    </span>
+                </div>
+
             </div>
         </div>
     </div>

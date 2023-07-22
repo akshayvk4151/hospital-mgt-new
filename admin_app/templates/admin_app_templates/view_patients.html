@@ -106,6 +106,41 @@
                     </table>
                 </div>
 
+                <!-- Add numbered pagination navigation links -->
+                <div class="pagination justify-content-center mt-3">
+                    <ul class="pagination">
+                        {% if view_patient.has_previous %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page=1">&laquo; first</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ view_patient.previous_page_number }}">previous</a>
+                        </li>
+                        {% endif %}
+                
+                        {% for num in view_patient.paginator.page_range %}
+                        {% if num == view_patient.number %}
+                        <li class="page-item active">
+                            <span class="page-link">{{ num }}</span>
+                        </li>
+                        {% else %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                
+                        {% if view_patient.has_next %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ view_patient.next_page_number }}">next</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ view_patient.paginator.num_pages }}">last &raquo;</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+
 
             </div>
             <div><a href="{% url 'admin_app:doctor_page' %}" style="float: left;margin-top: 7px;"

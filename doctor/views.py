@@ -10,6 +10,7 @@ from doctor.models import Prescription
 from django.http import HttpResponse, JsonResponse
 from patient.models import Booking
 from django.contrib import messages
+from django.core.paginator import Paginator
 
 # Create your views here.
 @auth_doctor
@@ -66,6 +67,10 @@ def doctor_patient_page(request):
 def doctor_patient_booked(request):
     doctor = Doctors.objects.get(id = request.session['doctor'])
     booked_patients = Booking.objects.filter(doctor_name = doctor, status = 'booked')
+
+    paginator = Paginator(booked_patients,10)
+    page_number = request.GET.get('page')
+    booked_patients = paginator.get_page(page_number)
     return render(request,'doctor_templates/patient_booked.html',{'booked_patients':booked_patients})
 
 
@@ -75,6 +80,10 @@ def doctor_patient_record(request):
     doctor = Doctors.objects.get(id = request.session['doctor'])
     
     patient_record = Booking.objects.filter(doctor_name = doctor, status = 'consulted')
+
+    paginator = Paginator(patient_record,10)
+    page_number = request.GET.get('page')
+    patient_record = paginator.get_page(page_number)
     
     return render(request,'doctor_templates/patient_record.html',{'patients':patient_record})
 
@@ -164,6 +173,10 @@ def doctor_appointments(request):
 def doctor_view_appointment(request):
     doctor = Doctors.objects.get(id = request.session['doctor'])
     appointment = Booking.objects.filter(doctor_name = doctor,status = 'booked')
+
+    paginator = Paginator(appointment,10)
+    page_number = request.GET.get('page')
+    appointment = paginator.get_page(page_number)
     return render(request, 'doctor_templates/view_appointment.html', {'appointments':appointment})
 
 
